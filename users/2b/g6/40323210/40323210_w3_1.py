@@ -1,5 +1,5 @@
 result = []
-with open("./../../../../2016_cd_2a_2.txt", 'r') as f:
+with open("./../../../2016_cd_2a_2.txt", 'r') as f:
     content = f.readlines()
     #print(content)
     #print(len(content))
