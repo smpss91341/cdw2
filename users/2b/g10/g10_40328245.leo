@@ -10,13 +10,12 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160310104104.2"><vh>NewHeadline</vh></v>
-<v t="leo.20160310104810.1" a="E"><vh>@path ./../../</vh>
-<v t="leo.20160310104810.2"><vh>@edit cdw2_1.py</vh></v>
+<v t="leo.20160310104104.2"><vh>@edit 40328245_W3_1.py</vh></v>
+<v t="leo.20160310112159.1" a="E"><vh>@path ./../../../</vh>
+<v t="leo.20160310112159.2"><vh>@edit cdw2.py</vh></v>
 </v>
 </vnodes>
 <tnodes>
-<t tx="leo.20160310104104.2">print("hello")</t>
-<t tx="leo.20160310104810.1"></t>
+<t tx="leo.20160310112159.1"></t>
 </tnodes>
 </leo_file>
