@@ -9,13 +9,27 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
+<v t="leo.20160310095258.1"><vh>Task0 任務說明</vh></v>
 <v t="leo.20160310091900.1"><vh>@edit 999_w3_1.py</vh></v>
-<v t="leo.20160310091611.2" a="E"><vh>@path ./../../../</vh>
-<v t="leo.20160310091810.1"><vh>@edit 2016_cd_2a_2.txt</vh></v>
-<v t="leo.20160310092023.1"><vh>@edit cdw2_1.py</vh></v>
+<v t="leo.20160310091611.2" a="E"><vh>@path ./../../../2b_files/task0</vh>
+<v t="leo.20160310094820.1"><vh>@edit 2016_cd_2b_1.txt</vh></v>
+<v t="leo.20160310091810.1"><vh>@edit 2016_cd_2b_2.txt</vh></v>
 </v>
 </vnodes>
 <tnodes>
 <t tx="leo.20160310091611.2"></t>
+<t tx="leo.20160310095258.1">先取得各組學員的學號
+
+檔案讀取
+
+排序選出各組組長
+
+排序定出組序
+
+列出各組分組名單
+
+排座位
+
+列出電腦教室的座位表</t>
 </tnodes>
 </leo_file>
