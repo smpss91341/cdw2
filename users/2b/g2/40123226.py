@@ -8,4 +8,5 @@ with open("./../../../2016_cd_2a_2.txt", 'r') as f:
         for line in content[i].splitlines():
             #print(content[i].splitlines())
             result.append(list(line.split(",")))
-g.es(result)
+            
+            g.es(result)
