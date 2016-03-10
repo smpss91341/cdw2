@@ -9,12 +9,8 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160307101823.1" a="E"><vh>@path ./../</vh>
-<v t="leo.20160303085834.2"><vh>@edit cdw2_1</vh></v>
-</v>
-<v t="leo.20160303091129.1"><vh>@edit index.html</vh></v>
+<v t="leo.20160310152409.2"><vh>@edit 40323241_w3_1.py</vh></v>
 </vnodes>
 <tnodes>
-<t tx="leo.20160307101823.1"></t>
 </tnodes>
 </leo_file>
