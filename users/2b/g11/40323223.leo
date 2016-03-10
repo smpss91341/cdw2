@@ -9,11 +9,9 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160310101514.2" a="E"><vh>@path ./</vh>
-<v t="leo.20160310101546.1"><vh>@edit g1.txt</vh></v>
-</v>
+<v t="leo.20160310095302.2"><vh>NewHeadline</vh></v>
 </vnodes>
 <tnodes>
-<t tx="leo.20160310101514.2"></t>
+<t tx="leo.20160310095302.2"></t>
 </tnodes>
 </leo_file>
