@@ -9,12 +9,12 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160303085834.2"><vh>NewHeadline</vh></v>
-<v t="leo.20160303091129.1"><vh>@edit index.html</vh></v>
+<v t="2.20160310094233.2"><vh>@edit 40323231_w3_1.py</vh></v>
+<v t="2.20160310094424.1" a="E"><vh>@path ./../../../../</vh>
+<v t="2.20160310094437.1"><vh>@edit cdw2_1.py</vh></v>
+</v>
 </vnodes>
 <tnodes>
-<t tx="leo.20160303085834.2">#print("hello")
-for i in range(5):
-    g.es("hello")</t>
+<t tx="2.20160310094424.1"></t>
 </tnodes>
 </leo_file>
