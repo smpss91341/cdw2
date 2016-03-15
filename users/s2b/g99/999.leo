@@ -10,6 +10,9 @@
 <find_panel_settings/>
 <vnodes>
 <v t="leo.20160310095258.1"><vh>Task0 任務說明</vh></v>
+<v t="amd.20160315202831.1" a="E"><vh>Cango 繪圖程式庫</vh>
+<v t="amd.20160315204108.1"><vh>畫布圖層</vh></v>
+</v>
 <v t="leo.20160310091900.1"><vh>@edit 999_w3_1.py</vh></v>
 <v t="leo.20160310111205.1"><vh>@edit index.html</vh></v>
 <v t="amd.20160315183617.1"><vh>以下將編輯 cdw2 的 gh-pages index.html</vh></v>
@@ -21,7 +24,7 @@
 <v t="leo.20160310094820.1"><vh>@edit 2016_cd_2b_1.txt</vh></v>
 <v t="leo.20160310091810.1"><vh>@edit 2016_cd_2b_2.txt</vh></v>
 </v>
-<v t="amd.20160314224057.1"><vh>master 分支 flask 程式開發</vh>
+<v t="amd.20160314224057.1" a="E"><vh>master 分支 flask 程式開發</vh>
 <v t="amd.20160314224303.1"><vh>@edit task0.py</vh></v>
 <v t="amd.20160314224737.1" a="E"><vh>@path templates</vh>
 <v t="amd.20160314224744.1"><vh>@edit task1.html</vh></v>
@@ -388,6 +391,8 @@ def fileaxupload():
 <t tx="amd.20160314224737.1"></t>
 <t tx="amd.20160315183617.1"></t>
 <t tx="amd.20160315183643.1"></t>
+<t tx="amd.20160315202831.1"></t>
+<t tx="amd.20160315204108.1">http://www.arc.id.au/CanvasLayers.html</t>
 <t tx="leo.20160310091611.2"></t>
 <t tx="leo.20160310095258.1">先取得各組學員的學號
 
