@@ -9,17 +9,13 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160310103948.1"><vh>@edit g3_40123250_w3_2.py</vh></v>
-<v t="leo.20160317112048.1"><vh>@edit g3_w3_1.py</vh></v>
-<v t="leo.20160310102729.2" a="E"><vh>@path./../../../</vh>
-<v t="leo.20160310102819.1"><vh>@edit 2016_cd_2a_2.txt</vh></v>
-</v>
-<v t="leo.20160317112322.1" a="E"><vh>@path ./../../../2b_files/task0</vh>
-<v t="leo.20160317112124.1"><vh>@edit g3.txt</vh></v>
+<v t="leo.20160310091900.1"><vh>@edit 40323205_w3_1.py</vh></v>
+<v t="leo.20160310091611.2" a="E"><vh>@path ./../../../2b_files/task0</vh>
+<v t="leo.20160310111848.1"><vh>@edit 2016_cd_2b_3.txt</vh></v>
+<v t="leo.20160310111856.1"><vh>@edit g4.txt</vh></v>
 </v>
 </vnodes>
 <tnodes>
-<t tx="leo.20160310102729.2"></t>
-<t tx="leo.20160317112322.1"></t>
+<t tx="leo.20160310091611.2"></t>
 </tnodes>
 </leo_file>
