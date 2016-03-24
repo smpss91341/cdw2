@@ -9,6 +9,7 @@ import init
 # 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
 import users.s2b.g99.task0
 import users.s2a.g100.task0 as ag100_0
+import s2b_files.task1.g1.task0 as bg1_0
 
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
@@ -311,6 +312,8 @@ def download(filename):
 app.register_blueprint(users.s2b.g99.task0.bg99)
 # 註冊位於 ag100_0 (也就是 users.s2a.g100.task0.py 程式中的 ag100 藍圖案例)
 app.register_blueprint(ag100_0.ag100)
+# 註冊位於 bg1_0 (也就是 users.s2a.g100.task0.py 程式中的 ag100 藍圖案例)
+app.register_blueprint(bg1_0.bg1)
 
 if __name__ == "__main__":
     app.run()
