@@ -12,10 +12,24 @@
 <v t="amd.20160316010428.2"><vh>編輯外部的 index.html</vh></v>
 <v t="amd.20160316010520.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160316010535.1"><vh>@edit index.html</vh></v>
+<v t="leo.20160328102827.1"><vh>roller chain</vh></v>
 </v>
 </vnodes>
 <tnodes>
 <t tx="amd.20160316010428.2"></t>
 <t tx="amd.20160316010520.1"></t>
+<t tx="leo.20160328102827.1">English: Layout of a roller chain
+1. Outer plate
+2. Inner plate
+3. Pin
+4. Bushing
+5. Roller
+
+中文: 鍊條的構造
+外板
+內板
+插梢
+軸襯
+轉子</t>
 </tnodes>
 </leo_file>
