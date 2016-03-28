@@ -79,30 +79,39 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 120 度
-    basic1.rotate(120)
-    basic2 = cmbr.dup()
-    basic2.rotate(60)
-    basic2.translate(0, -20)
+    # 複製 cmbr, 然後命名
+    basic40123156_A_1 = cmbr.dup()
+    #轉角度
+    basic40123156_A_1.rotate(30)
+    #定位
+    basic40123156_A_1.translate(-40, 40)
+
+    basic40123156_B_1 = cmbr.dup()
+    basic40123156_B_1.rotate(0)
+    basic40123156_B_1.translate(0, 40)
     
-    basic3 = cmbr.dup()
-    basic3.rotate(60)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
+    basic40123156_B_2 = cmbr.dup()
+    basic40123156_B_2.rotate(60)
+    basic40123156_B_2.translate(20, 40)
     
-    basic4 = cmbr.dup()
-    basic4.rotate(120)
-    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
+    basic40123156_C_1 = cmbr.dup()
+    basic40123156_C_1.rotate(0)
+    basic40123156_C_1.translate(80, 60)
     
-    basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
+    basic40123156_D_1 = cmbr.dup()
+    basic40123156_D_1.rotate(0)
+    basic40123156_D_1.translate(160, 20)
+
+    basic40123156_D_2 = cmbr.dup()
+    basic40123156_D_2.rotate(90)
+    basic40123156_D_2.translate(160, 0)
     
-    cmbr.appendPath(basic1)
-    cmbr.appendPath(basic2)
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
+    cmbr.appendPath(basic40123156_A_1)
+    cmbr.appendPath(basic40123156_B_1)
+    cmbr.appendPath(basic40123156_B_2)
+    cmbr.appendPath(basic40123156_C_1)
+    cmbr.appendPath(basic40123156_D_1)
+    cmbr.appendPath(basic40123156_D_2)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -111,7 +120,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    cgo.render(cmbr, x, y, 1, rot)
 
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
@@ -181,7 +190,7 @@ def task3(x, y, rx, ry, rot, color, border, linewidth):
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    cgo.render(cmbr, x, y, 1, rot)
 
 task3(0, 0, 0, 0, 0, "red", True, 4)
 '''
