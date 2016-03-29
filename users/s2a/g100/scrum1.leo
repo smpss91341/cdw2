@@ -9,6 +9,7 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
+<v t="amd.20160329205817.1"><vh>ag100 註解</vh></v>
 <v t="amd.20160314224057.1" a="E"><vh>master 分支 flask 程式開發</vh>
 <v t="amd.20160329201851.1"><vh>ag100 組程式規畫</vh></v>
 <v t="amd.20160314224303.1"><vh>@edit scrum1_task1.py</vh></v>
@@ -386,5 +387,14 @@ def fileaxupload():
 </t>
 <t tx="amd.20160314224239.1"></t>
 <t tx="amd.20160329201851.1">希望用 /ag100/scrum1_task1 連結來呼叫 ag100 組, scrum1 組員所寫的 task1 程式</t>
+<t tx="amd.20160329205817.1">cdw2 倉儲:
+
+https://github.com/2015fallhw/cdw2.git
+
+利用 scrum_master At mde dot tw 登記的 Openshift 實現 master 分支中的 wsgi 程式
+
+http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1
+
+</t>
 </tnodes>
 </leo_file>
