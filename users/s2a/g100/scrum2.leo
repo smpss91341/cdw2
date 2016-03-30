@@ -1,4 +1,68 @@
-# coding: utf-8
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
+<leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
+<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
+<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
+	<global_window_position top="50" left="50" height="500" width="700"/>
+	<global_log_window_position top="0" left="0" height="0" width="0"/>
+</globals>
+<preferences/>
+<find_panel_settings/>
+<vnodes>
+<v t="amd.20160329205817.1"><vh>ag100 註解</vh></v>
+<v t="amd.20160314224057.1" a="E"><vh>master 分支 flask 程式開發</vh>
+<v t="amd.20160329201851.1"><vh>ag100 組程式規畫</vh></v>
+<v t="amd.20160330194029.1"><vh>@edit scrum1_task1.py</vh></v>
+<v t="amd.20160314224303.1"><vh>@edit scrum2_task1.py</vh></v>
+<v t="amd.20160314224120.1" a="E"><vh>@path ./../../../</vh>
+<v t="amd.20160314224203.1" a="E"><vh>@clean myflaskapp.py</vh>
+<v t="amd.20160314224223.1"><vh>myflaskapp declarations</vh></v>
+<v t="amd.20160314224223.2"><vh>index</vh></v>
+<v t="amd.20160314224223.3"><vh>user</vh></v>
+<v t="amd.20160314224223.4"><vh>red</vh></v>
+<v t="amd.20160314224223.5"><vh>guessform</vh></v>
+<v t="amd.20160314224223.6"><vh>docheck</vh></v>
+<v t="amd.20160314224223.7"><vh>option</vh></v>
+<v t="amd.20160314224223.8"><vh>optionaction</vh></v>
+<v t="amd.20160314224223.9"><vh>fileaxupload</vh></v>
+<v t="amd.20160314224223.10"><vh>fileuploadform</vh></v>
+<v t="amd.20160314224223.11"><vh>download</vh></v>
+</v>
+<v t="amd.20160314224239.1"><vh>@path templates</vh></v>
+</v>
+</v>
+</vnodes>
+<tnodes>
+<t tx="amd.20160314224057.1">目前新增的 Blueprint 方法有
+
+/ag100/task0 在本地端執行: http://localhost:5000/ag100/task0
+
+/ag100/task1 在本地端執行: http://localhost:5000/ag100/task1
+
+task0 直接 return
+
+task1 則利用 render_template 傳回資料</t>
+<t tx="amd.20160314224120.1"></t>
+<t tx="amd.20160314224203.1">@language python
+@tabwidth -4
+@others
+# 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
+# 以下依照班別與組別次序註冊藍圖
+# 二甲
+# 註冊 ag100 的 scrum1_task1.py 檔案中的 scrum1_task1 藍圖
+app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
+# 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
+app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
+# 二乙
+app.register_blueprint(bg1_0.bg1)
+# 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
+app.register_blueprint(users.s2b.g2.task0.bg2)
+
+if __name__ == "__main__":
+    app.run()
+
+</t>
+<t tx="amd.20160314224223.1"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -49,7 +113,46 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 
-@app.route("/")
+</t>
+<t tx="amd.20160314224223.10">@app.route('/fileuploadform')
+def fileuploadform():
+    '''
+    if not session.get('logged_in'):
+        #abort(401)
+        return redirect(url_for('login'))
+    '''
+    return "&lt;h1&gt;file upload&lt;/h1&gt;"+'''
+  &lt;script src="/static/jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="/static/axuploader.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  $(document).ready(function(){
+  $('.prova').axuploader({url:'fileaxupload', allowExt:['jpg','png','gif','7z','pdf','zip','flv','stl','swf'],
+  finish:function(x,files)
+{
+    alert('All files have been uploaded: '+files);
+},
+  enable:true,
+  remotePath:function(){
+  return 'downloads/';
+  }
+  });
+  });
+  &lt;/script&gt;
+  &lt;div class="prova"&gt;&lt;/div&gt;
+  &lt;input type="button" onclick="$('.prova').axuploader('disable')" value="asd" /&gt;
+  &lt;input type="button" onclick="$('.prova').axuploader('enable')" value="ok" /&gt;
+  &lt;/section&gt;&lt;/body&gt;&lt;/html&gt;
+  '''
+</t>
+<t tx="amd.20160314224223.11">@app.route('/downloads/&lt;path:filename&gt;', methods=['GET', 'POST'])
+def download(filename):
+    #return send_from_directory(download_dir, filename=filename, as_attachment=True)
+    return send_from_directory(download_dir, filename=filename)
+    
+
+
+</t>
+<t tx="amd.20160314224223.2">@app.route("/")
 def index():
     #這是猜數字遊戲的起始表單, 主要在產生答案, 並且將 count 歸零
     # 將標準答案存入 answer session 對應區
@@ -60,21 +163,25 @@ def index():
     session['count'] = thecount
 
     return render_template("index.html", answer=theanswer, count=thecount)
-@app.route('/user/<name>')
+</t>
+<t tx="amd.20160314224223.3">@app.route('/user/&lt;name&gt;')
 def user(name):
     return render_template("user.html", name=name)
-@app.route('/red')
+</t>
+<t tx="amd.20160314224223.4">@app.route('/red')
 def red():
     # 重新導向 google
     return redirect("http://www.google.com")
-@app.route('/guessform')
+</t>
+<t tx="amd.20160314224223.5">@app.route('/guessform')
 def guessform():
     session["count"] += 1
     guess = session.get("guess")
     theanswer = session.get("answer")
     count = session.get("count")
     return render_template("guessform.html", guess=guess, answer=theanswer, count=count)
-@app.route('/docheck', methods=['POST'])
+</t>
+<t tx="amd.20160314224223.6">@app.route('/docheck', methods=['POST'])
 def docheck():
     # session[] 存資料
     # session.get() 取 session 資料
@@ -98,17 +205,18 @@ def docheck():
     session["count"] += 1
     count = session.get("count")
     # 答案與所猜數字進行比對
-    if theanswer < theguess:
+    if theanswer &lt; theguess:
         return render_template("toobig.html", guess=guess, answer=theanswer, count=count)
-    elif theanswer > theguess:
+    elif theanswer &gt; theguess:
         return render_template("toosmall.html", guess=guess, answer=theanswer, count=count)
     else:
         # 已經猜對, 從 session 取出累計猜測次數
         thecount = session.get('count')
-        return "猜了 "+str(thecount)+" 次, 終於猜對了, 正確答案為 "+str(theanswer)+": <a href='/'>再猜</a>"
+        return "猜了 "+str(thecount)+" 次, 終於猜對了, 正確答案為 "+str(theanswer)+": &lt;a href='/'&gt;再猜&lt;/a&gt;"
     return render_template("docheck.html", guess=guess)
  
-@app.route('/option', methods=["GET", "POST"])
+</t>
+<t tx="amd.20160314224223.7">@app.route('/option', methods=["GET", "POST"])
 def option():
     # 各組選出組長的方式, 若採遞增, 則各組內學號最小者為組長
     option_list1 = ["遞增", "遞減"]
@@ -122,7 +230,8 @@ def option():
     # 表示這些學員必須與其他同組學員共用電腦
 
     return render_template('option.html', option_list1=option_list1, option_list2=option_list2, option_list3=option_list3, column=column)
-@app.route('/optionaction', methods=['POST'])
+</t>
+<t tx="amd.20160314224223.8">@app.route('/optionaction', methods=['POST'])
 def optionaction():
     # 最後傳回的字串為 out_string
     out_string = ""
@@ -150,7 +259,7 @@ def optionaction():
         # j 為組員序
         for j in range(len(result[i])):
             tmp_string += result[i][j] + ", "
-        out_string += "第" + str(i+1) + "排資料:"+ tmp_string + "<br />"
+        out_string += "第" + str(i+1) + "排資料:"+ tmp_string + "&lt;br /&gt;"
         tmp_string = ""
     for i in range(len(result)):
         # 開始進入組內排序, 根據 request.form["option1"]  的值決定遞增或遞減
@@ -170,14 +279,14 @@ def optionaction():
     else:
         desc_string += "各組長中學號最大者為第1組."
         final_result = sorted(group_sorted, reverse=True)
-    out_string += "<br />" + desc_string + "<br />"
+    out_string += "&lt;br /&gt;" + desc_string + "&lt;br /&gt;"
     # i 為行序
     for i in range(len(final_result)):
         # j 為組員序
         for j in range(len(final_result[i])):
             num_of_stud += 1
             tmp_string += final_result[i][j] + ","
-        out_string += "第" + str(i+1) + "組:"+ tmp_string + "<br />"
+        out_string += "第" + str(i+1) + "組:"+ tmp_string + "&lt;br /&gt;"
         tmp_string = ""
     #return "總共有" + str(i+) + "組"
     # group_num 為總組數
@@ -221,9 +330,9 @@ def optionaction():
     import operator
     seat_dict_sort = sorted(seat_dict.items(), key = operator.itemgetter(0), reverse = False)
     # 依照學號順序, 列出座位表
-    out_string += "<br />按照學號次序列出座位表:<br /><br />"
+    out_string += "&lt;br /&gt;按照學號次序列出座位表:&lt;br /&gt;&lt;br /&gt;"
     for i in range(1, len(seat_dict_sort)):
-        out_string +=  str(i) + ":"+ str(seat_dict_sort[i]) + "<br />"
+        out_string +=  str(i) + ":"+ str(seat_dict_sort[i]) + "&lt;br /&gt;"
     # 結束準備用順序列出學員座號
     # dont know why .reverse() did not work, 只有 [::-1] 可以 reverse list elements
     #g.es(column_list[::-1])
@@ -235,28 +344,29 @@ def optionaction():
     # 列出最後的座位表
     #g.es(final_seat)
     # 最後轉成 html table 標註格式
-    out_string += "<br /> <br />"
-    out_string += "<table border='1' width='100%'>"
-    out_string += "<tr><td colspan='9' style='text-align:center'>講台</td></tr>"
+    out_string += "&lt;br /&gt; &lt;br /&gt;"
+    out_string += "&lt;table border='1' width='100%'&gt;"
+    out_string += "&lt;tr&gt;&lt;td colspan='9' style='text-align:center'&gt;講台&lt;/td&gt;&lt;/tr&gt;"
     for row in range(len(final_seat)):
-        out_string += "<tr>"
+        out_string += "&lt;tr&gt;"
         # 因為每一 row 有 9, 也就是 total_column 個位子
         for i in range(total_column):
             try:
                 if i%2 != 0:
-                    out_string += "<td style='text-align:center'  bgcolor='#FFD78C' height='30'>" + str(final_seat[row][i]) + "</td>"
+                    out_string += "&lt;td style='text-align:center'  bgcolor='#FFD78C' height='30'&gt;" + str(final_seat[row][i]) + "&lt;/td&gt;"
                 else:
-                    out_string += "<td style='text-align:center' height='30'>" + str(final_seat[row][i]) + "</td>"
+                    out_string += "&lt;td style='text-align:center' height='30'&gt;" + str(final_seat[row][i]) + "&lt;/td&gt;"
             except:
-                out_string += "<td>&nbsp;</td>"
-        out_string += "</tr>"
-    out_string += "</table><br /><br /><br />"
+                out_string += "&lt;td&gt;&amp;nbsp;&lt;/td&gt;"
+        out_string += "&lt;/tr&gt;"
+    out_string += "&lt;/table&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;"
     return out_string
     # 等運算或資料處理結束後, 再將相關值送到對應的 template 進行資料的展示
     #return render_template('optionaction.html', option_list1=option_list1, option_list2=option_list2)
     
 
-@app.route('/fileaxupload', methods=['POST'])
+</t>
+<t tx="amd.20160314224223.9">@app.route('/fileaxupload', methods=['POST'])
 # ajax jquery chunked file upload for flask
 def fileaxupload():
     '''
@@ -278,54 +388,17 @@ def fileaxupload():
 
     
     
-@app.route('/fileuploadform')
-def fileuploadform():
-    '''
-    if not session.get('logged_in'):
-        #abort(401)
-        return redirect(url_for('login'))
-    '''
-    return "<h1>file upload</h1>"+'''
-  <script src="/static/jquery.js" type="text/javascript"></script>
-  <script src="/static/axuploader.js" type="text/javascript"></script>
-  <script>
-  $(document).ready(function(){
-  $('.prova').axuploader({url:'fileaxupload', allowExt:['jpg','png','gif','7z','pdf','zip','flv','stl','swf'],
-  finish:function(x,files)
-{
-    alert('All files have been uploaded: '+files);
-},
-  enable:true,
-  remotePath:function(){
-  return 'downloads/';
-  }
-  });
-  });
-  </script>
-  <div class="prova"></div>
-  <input type="button" onclick="$('.prova').axuploader('disable')" value="asd" />
-  <input type="button" onclick="$('.prova').axuploader('enable')" value="ok" />
-  </section></body></html>
-  '''
-@app.route('/downloads/<path:filename>', methods=['GET', 'POST'])
-def download(filename):
-    #return send_from_directory(download_dir, filename=filename, as_attachment=True)
-    return send_from_directory(download_dir, filename=filename)
-    
+</t>
+<t tx="amd.20160314224239.1"></t>
+<t tx="amd.20160329201851.1">希望用 /ag100/scrum1_task1 連結來呼叫 ag100 組, scrum1 組員所寫的 task1 程式</t>
+<t tx="amd.20160329205817.1">cdw2 倉儲:
 
+https://github.com/2015fallhw/cdw2.git
 
-# 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
-# 以下依照班別與組別次序註冊藍圖
-# 二甲
-# 註冊 ag100 的 scrum1_task1.py 檔案中的 scrum1_task1 藍圖
-app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
-# 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
-app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
-# 二乙
-app.register_blueprint(bg1_0.bg1)
-# 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
-app.register_blueprint(users.s2b.g2.task0.bg2)
+利用 scrum_master At mde dot tw 登記的 Openshift 實現 master 分支中的 wsgi 程式
 
-if __name__ == "__main__":
-    app.run()
+http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1
 
+</t>
+</tnodes>
+</leo_file>
