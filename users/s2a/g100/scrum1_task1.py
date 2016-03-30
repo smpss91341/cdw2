@@ -1,3 +1,13 @@
+# 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
+from flask import Blueprint, render_template
+
+# 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
+scrum1_task1 = Blueprint('scrum1_task1', __name__, url_prefix='/ag100', template_folder='templates')
+
+# scrum1_task1 為完整可以單獨執行的繪圖程式
+@scrum1_task1.route('/scrum1_task1')
+def task1():
+    outstring = '''
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,21 +42,6 @@ shapedefs = window.shapeDefs
 obj2d = JSConstructor(window.Obj2D)
 cgo = cango("plotarea")
 
-
-# 設定 SVG 繪圖的格點範圍, 原點位於 (0%, 100%), 也就是原點位於畫布的左上角落點, 而且長與寬的尺寸比例都是 100%
-'''
-cgo.setGridboxSVG(0, cgo.heightPW, 100, cgo.heightPW);
-which sets the grid origin at the UPPER LEFT corner of the canvas and the gridbox width and height equal to the full canvas width and height.
-Calling 'cgo.setGridboxSVG()' with no parameters is equivalent to calling
-cgo.setGridboxSVG(originX, originY, width_scale, height_scale)
-cgo.setGridboxSVG(0, 100, cgo.widthPW, cgo.heightPW)
-which sets the grid origin at the UPPER LEFT corner of the canvas and the gridbox width and height equal to the full canvas width and height.
-另一 Y 向上為正的設定 cgo.setGridboxRHC()
-'''
-#cgo.setGridboxSVG(0, 100, 100, 100)
-# 當使用者沒有設定 cgo.setGridboxSVG() 或 cgo.setGridboxRHC(), 系統採用內定的 cgo.setGridboxRHC()
-# 因為經由 cgo.setGridboxSVG(0, 100, 100, 100) 已經將格點範圍的原點設於畫布的左上角落點
-# 以下的絕對座標設定, 即是將此原點標定為繪圖座標的(-50, -50), 而且畫布的有效座標範圍, 寬為 120, 高也是 120
 cgo.setWorldCoords(-250, -250, 500, 500) 
 
 # 決定要不要畫座標軸線
@@ -74,7 +69,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
-    '''
+
     # 複製 cmbr, 然後命名為 basic1
     basic1 = cmbr.dup()
     # basic1 轉 120 度
@@ -103,7 +98,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
-    '''
+
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
@@ -111,5 +106,15 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
+<!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
+<!-- <script type="text/python" src="/ag100/scrum2_task1"></script>
+<!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 -->
+<!-- <script type="text/python" src="/ag100/scrum3_task1"></script>
 </body>
 </html>
+'''
+    return outstring
+    
+
+    
+    
