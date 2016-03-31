@@ -186,6 +186,25 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic40.rotate(120)
     basic40.translate( 197.3, 10)
 
+    basic40123133_A_1 = cmbr.dup()
+    basic40123133_A_1.rotate(90)
+    basic40123133_A_1.translate(-60, 20)
+    basic40123133_A_2 = cmbr.dup()
+    basic40123133_A_2.rotate(170)
+    basic40123133_A_2.translate(-80, 60)
+    basic40123133_B_1 = cmbr.dup()
+    basic40123133_B_1.rotate(180)
+    basic40123133_B_1.translate(40, 50)
+    basic40123133_C_1 = cmbr.dup()
+    basic40123133_C_1.rotate(90)
+    basic40123133_C_1.translate(100, 80)
+    basic40123133_D_1 = cmbr.dup()
+    basic40123133_D_1.rotate(180)
+    basic40123133_D_1.translate(160, 80)
+    basic40123133_D_2 = cmbr.dup()
+    basic40123133_D_2.rotate(180)
+    basic40123133_D_2.translate(200, 30)
+
     cmbr.appendPath(basic1A)
     cmbr.appendPath(basic2A)
     cmbr.appendPath(basic1B)
@@ -222,7 +241,13 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic26)
     cmbr.appendPath(basic33)
     cmbr.appendPath(basic40)
-    
+    cmbr.appendPath(basic40123133_A_1)
+    cmbr.appendPath(basic40123133_A_2)
+    cmbr.appendPath(basic40123133_B_1)
+    cmbr.appendPath(basic40123133_C_1)
+    cmbr.appendPath(basic40123133_D_1)
+    cmbr.appendPath(basic40123133_D_2)
+
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
@@ -230,6 +255,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
     cgo.render(cmbr, x, y, 1, rot)
+
 
 O(0, 0, 0, 0, 0, "orange", True, 4)
 
