@@ -92,11 +92,27 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic1D.rotate(-300)
     basic1D.translate(180, 90)
 
-    # 複製 cmbr, 然後命名
+    basic40123144_1 = cmbr.dup()
+    basic40123144_1.rotate(194.49)
+    basic40123144_1.translate(-40, 40)
+    basic40123144_2 = cmbr.dup()
+    basic40123144_2.rotate(180)
+    basic40123144_2.translate(0, 20)
+    basic40123144_3 = cmbr.dup()
+    basic40123144_3.rotate(240)
+    basic40123144_3.translate(37.32, 30)
+    basic40123144_4 = cmbr.dup()
+    basic40123144_4.rotate(180)
+    basic40123144_4.translate(80, 14.14)
+    basic40123144_5 = cmbr.dup()
+    basic40123144_5.rotate(180)
+    basic40123144_5.translate(160, 0)
+    basic40123144_6 = cmbr.dup()
+    basic40123144_6.rotate(90)
+    basic40123144_6.translate(160, 0)
+
     basic40123156_A_1 = cmbr.dup()
-    #轉角度
     basic40123156_A_1.rotate(30)
-    #定位
     basic40123156_A_1.translate(-40, 40)
     basic40123156_B_1 = cmbr.dup()
     basic40123156_B_1.rotate(0)
@@ -117,23 +133,18 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic5 = cmbr.dup()
     basic5.rotate(90)
     basic5.translate(-86.9458, 80)
-
     basic12 = cmbr.dup()
     basic12.rotate(0)
     basic12.translate(0, 80)
-
     basic19 = cmbr.dup()
     basic19.rotate(120)
     basic19.translate( 20, 40)
-
     basic26 = cmbr.dup()
     basic26.rotate(120)
     basic26.translate( 80, 70)
-
     basic33 = cmbr.dup()
     basic33.rotate(0)
     basic33.translate( 160, 60)
-
     basic40 = cmbr.dup()
     basic40.rotate(120)
     basic40.translate( 197.3, 10)
@@ -144,6 +155,12 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic2B)
     cmbr.appendPath(basic1C)
     cmbr.appendPath(basic1D)
+    cmbr.appendPath(basic40123144_1)
+    cmbr.appendPath(basic40123144_2)
+    cmbr.appendPath(basic40123144_3)
+    cmbr.appendPath(basic40123144_4)
+    cmbr.appendPath(basic40123144_5)
+    cmbr.appendPath(basic40123144_6)
     cmbr.appendPath(basic40123156_A_1)
     cmbr.appendPath(basic40123156_B_1)
     cmbr.appendPath(basic40123156_B_2)
