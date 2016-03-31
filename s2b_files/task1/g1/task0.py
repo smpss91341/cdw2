@@ -70,43 +70,64 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
+
     # 複製 cmbr, 然後命名為 basic1
 
     basic1A = cmbr.dup()
     basic1A.rotate(0)
     basic1A.translate(-90, 30)
-
     basic2A = cmbr.dup()
     basic2A.rotate(0)
     basic2A.translate(-30, 0)
-
     basic1B = cmbr.dup()
     basic1B.rotate(90)
     basic1B.translate(0, 100)
-
     basic2B = cmbr.dup()
     basic2B.rotate(120)
     basic2B.translate(30, 0)
-
     basic1C = cmbr.dup()
     basic1C.rotate(-120)
     basic1C.translate(90, 0)
-
     basic1D = cmbr.dup()
     basic1D.rotate(-300)
     basic1D.translate(180, 90)
-    
 
+    # 複製 cmbr, 然後命名
+    basic40123156_A_1 = cmbr.dup()
+    #轉角度
+    basic40123156_A_1.rotate(30)
+    #定位
+    basic40123156_A_1.translate(-40, 40)
+    basic40123156_B_1 = cmbr.dup()
+    basic40123156_B_1.rotate(0)
+    basic40123156_B_1.translate(0, 40)
+    basic40123156_B_2 = cmbr.dup()
+    basic40123156_B_2.rotate(60)
+    basic40123156_B_2.translate(20, 40)
+    basic40123156_C_1 = cmbr.dup()
+    basic40123156_C_1.rotate(0)
+    basic40123156_C_1.translate(80, 60)
+    basic40123156_D_1 = cmbr.dup()
+    basic40123156_D_1.rotate(0)
+    basic40123156_D_1.translate(160, 20)
+    basic40123156_D_2 = cmbr.dup()
+    basic40123156_D_2.rotate(90)
+    basic40123156_D_2.translate(160, 0)
     
     cmbr.appendPath(basic1A)
     cmbr.appendPath(basic2A)
-
     cmbr.appendPath(basic1B)
     cmbr.appendPath(basic2B)
-
     cmbr.appendPath(basic1C)
-
     cmbr.appendPath(basic1D)
+
+    cmbr.appendPath(basic40123156_A_1)
+    cmbr.appendPath(basic40123156_B_1)
+    cmbr.appendPath(basic40123156_B_2)
+    cmbr.appendPath(basic40123156_C_1)
+    cmbr.appendPath(basic40123156_D_1)
+    cmbr.appendPath(basic40123156_D_2)
+
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -115,8 +136,8 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
     cgo.render(cmbr, x, y, 1, rot)
-O(0, 0, 0, 0, 0, "orange", True, 4)
 
+O(0, 0, 0, 0, 0, "orange", True, 4)
 
 </script>
 <!-- 以協同方式加上 bg1 的 task3 程式碼 -->
@@ -178,7 +199,9 @@ def task3(x, y, rx, ry, rot, color, border, linewidth):
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
     cgo.render(cmbr, x, y, 1, rot)
-task3(0, 0, 0, 0, 0, "red", True, 4)
+
+
+
 '''
     return outstring
     
