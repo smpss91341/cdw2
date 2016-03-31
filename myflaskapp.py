@@ -16,7 +16,7 @@ import users.s2a.g100.scrum2_task1
 import s2b_files.task1.g1.task0 as bg1_0
 import users.s2b.g2.task0
 import users.s2b.g2.scrum1_task40123235
-
+import users.s2b.g2.scrum2_task40123202
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
 # 設定在雲端與近端的資料儲存目錄
@@ -326,6 +326,7 @@ app.register_blueprint(bg1_0.bg1)
 # 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
 app.register_blueprint(users.s2b.g2.task0.bg2)
 app.register_blueprint(users.s2b.g2.scrum1_task40123235.scrum1_task40123235)
+app.register_blueprint(users.s2b.g2.scrum2_task40123202.scrum2_task40123202)
 if __name__ == "__main__":
     app.run()
 

@@ -2,10 +2,10 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task40123235 = Blueprint('scrum1_task40123235', __name__, url_prefix='/g2', template_folder='templates')
+scrum2_task1 = Blueprint('scrum2_task1', __name__, url_prefix='/g2', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40123235.route('/scrum1_task1')
+@scrum2_task1.route('/scrum2_task1')
 def task1():
     outstring = '''
 <!DOCTYPE html>
@@ -71,13 +71,15 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 A1
-    A1 = cmbr.dup()
-    # A1 轉 120 度
-    A1.rotate(150)
+    A2 = cmbr.dup()
+    A2.rotate(0)
+    A2.translate(0, -20)
     
     
-    cmbr.appendPath(A1)
     
+    
+    cmbr.appendPath(A2)
+   
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -91,7 +93,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 O(0, 0, 0, 0, 0, "yellow", True, 4)
 </script>
 <!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
-<script type="text/python" src="/g2/scrum2_task40123202"></script>
+<script type="text/python" src="/ag100/scrum2_task1"></script>
 <!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 -->
 <!-- <script type="text/python" src="/ag100/scrum3_task1"></script>-->
 </body>

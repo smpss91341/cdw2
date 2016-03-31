@@ -78,7 +78,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    cgo.render(cmbr, x, y, 1, rot)
 
 O(-173, 0, 0, 0, 0, "lightgreen", True, 4)
 '''
