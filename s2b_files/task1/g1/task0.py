@@ -95,6 +95,39 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic1D = cmbr.dup()
     basic1D.rotate(-300)
     basic1D.translate(180, 90)
+
+    basic1 = cmbr.dup()
+    # basic1 轉 120 度
+    basic1.rotate(194.49)
+    basic1.translate(-40, 40)
+    
+    basic2 = cmbr.dup()
+    basic2.rotate(180)
+    basic2.translate(0, 20)
+    
+    basic3 = cmbr.dup()
+    basic3.rotate(240)
+    basic3.translate(37.32, 30)
+    
+    basic4 = cmbr.dup()
+    basic4.rotate(180)
+    basic4.translate(80, 14.14)
+    
+    basic5 = cmbr.dup()
+    basic5.rotate(180)
+    basic5.translate(160, 0)
+    
+    basic6 = cmbr.dup()
+    basic6.rotate(90)
+    basic6.translate(160, 0)
+    
+    
+    cmbr.appendPath(basic1)
+    cmbr.appendPath(basic2)
+    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
+    cmbr.appendPath(basic6)
     
 
     
