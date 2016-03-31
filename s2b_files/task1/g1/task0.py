@@ -79,30 +79,37 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 120 度
-    basic1.rotate(120)
-    basic2 = cmbr.dup()
-    basic2.rotate(60)
-    basic2.translate(0, -20)
-    
-    basic3 = cmbr.dup()
-    basic3.rotate(60)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
-    
-    basic4 = cmbr.dup()
-    basic4.rotate(120)
-    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
-    
+     # 複製 cmbr, 然後命名為 basic1
     basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
-    
-    cmbr.appendPath(basic1)
-    cmbr.appendPath(basic2)
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
+    basic5.rotate(90)
+    basic5.translate(-86.9458, 80)
+
+    basic12 = cmbr.dup()
+    basic12.rotate(0)
+    basic12.translate(0, 80)
+
+    basic19 = cmbr.dup()
+    basic19.rotate(120)
+    basic19.translate( 20, 40)
+
+    basic26 = cmbr.dup()
+    basic26.rotate(120)
+    basic26.translate( 80, 70)
+
+    basic33 = cmbr.dup()
+    basic33.rotate(0)
+    basic33.translate( 160, 60)
+
+    basic40 = cmbr.dup()
+    basic40.rotate(120)
+    basic40.translate( 197.3, 10)
+
     cmbr.appendPath(basic5)
+    cmbr.appendPath(basic12)
+    cmbr.appendPath(basic19)
+    cmbr.appendPath(basic26)
+    cmbr.appendPath(basic33)
+    cmbr.appendPath(basic40)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -111,7 +118,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    cgo.render(cmbr, x, y, 1, rot)
 
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
@@ -124,67 +131,5 @@ O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 '''
     return outstring
     
-# 展示傳回 Brython 程式
-@bg1.route('/task3')
-def task3():
-    outstring = '''
-from javascript import JSConstructor
-from browser import window
-import math
 
-cango = JSConstructor(window.Cango)
-cobj = JSConstructor(window.Cobj)
-shapedefs = window.shapeDefs
-obj2d = JSConstructor(window.Obj2D)
-cgo = cango("plotarea")
-
-cgo.setWorldCoords(-250, -250, 500, 500) 
-
-# 決定要不要畫座標軸線
-cgo.drawAxes(0, 240, 0, 240, {
-    "strokeColor":"#aaaaaa",
-    "fillColor": "#aaaaaa",
-    "xTickInterval": 20,
-    "xLabelInterval": 20,
-    "yTickInterval": 20,
-    "yLabelInterval": 20})
-        
-#cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
-
-deg = math.pi/180  
-
-def task3(x, y, rx, ry, rot, color, border, linewidth):
-    # 旋轉必須要針對相對中心 rot not working yet
-    chamber = "M -6.8397, -1.4894 \
-                     A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
-                     A 40, 40, 0, 0, 1, 6.8397, -18.511 \
-                     A 7, 7, 0, 1, 0, -6.8397, -18.511 \
-                     A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
-    cgoChamber = window.svgToCgoSVG(chamber)
-    cmbr = cobj(cgoChamber, "SHAPE", {
-            "fillColor": color,
-            "border": border,
-            "strokeColor": "tan",
-            "lineWidth": linewidth })
-
-    # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 -60 度
-    basic1.rotate(-60)
-
-    cmbr.appendPath(basic1)
-    
-    # hole 為原點位置
-    hole = cobj(shapedefs.circle(4), "PATH")
-    cmbr.appendPath(hole)
-
-    # 表示放大 3 倍
-    #cgo.render(cmbr, x, y, 3, rot)
-    # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
-
-task3(0, 0, 0, 0, 0, "red", True, 4)
-'''
-    return outstring
-    
     
