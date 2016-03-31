@@ -113,21 +113,49 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic40123156_D_2 = cmbr.dup()
     basic40123156_D_2.rotate(90)
     basic40123156_D_2.translate(160, 0)
-    
+
+    basic5 = cmbr.dup()
+    basic5.rotate(90)
+    basic5.translate(-86.9458, 80)
+
+    basic12 = cmbr.dup()
+    basic12.rotate(0)
+    basic12.translate(0, 80)
+
+    basic19 = cmbr.dup()
+    basic19.rotate(120)
+    basic19.translate( 20, 40)
+
+    basic26 = cmbr.dup()
+    basic26.rotate(120)
+    basic26.translate( 80, 70)
+
+    basic33 = cmbr.dup()
+    basic33.rotate(0)
+    basic33.translate( 160, 60)
+
+    basic40 = cmbr.dup()
+    basic40.rotate(120)
+    basic40.translate( 197.3, 10)
+
     cmbr.appendPath(basic1A)
     cmbr.appendPath(basic2A)
     cmbr.appendPath(basic1B)
     cmbr.appendPath(basic2B)
     cmbr.appendPath(basic1C)
     cmbr.appendPath(basic1D)
-
     cmbr.appendPath(basic40123156_A_1)
     cmbr.appendPath(basic40123156_B_1)
     cmbr.appendPath(basic40123156_B_2)
     cmbr.appendPath(basic40123156_C_1)
     cmbr.appendPath(basic40123156_D_1)
     cmbr.appendPath(basic40123156_D_2)
-
+    cmbr.appendPath(basic5)
+    cmbr.appendPath(basic12)
+    cmbr.appendPath(basic19)
+    cmbr.appendPath(basic26)
+    cmbr.appendPath(basic33)
+    cmbr.appendPath(basic40)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -148,7 +176,7 @@ O(0, 0, 0, 0, 0, "orange", True, 4)
 </html>
 '''
     return outstring
-    
+
 # 展示傳回 Brython 程式
 @bg1.route('/task3')
 def task3():
@@ -204,4 +232,3 @@ def task3(x, y, rx, ry, rot, color, border, linewidth):
 
 '''
     return outstring
-    
