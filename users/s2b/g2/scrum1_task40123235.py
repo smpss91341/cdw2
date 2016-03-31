@@ -70,44 +70,136 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 120 度
-    basic1.rotate(120)
-    basic2 = cmbr.dup()
-    basic2.rotate(60)
-    basic2.translate(0, -20)
+    # 複製 cmbr, 然後命名為 A1
+    A1 = cmbr.dup()
+    # A1 轉 120 度
+    A1.rotate(150)
+    A2 = cmbr.dup()
+    A2.rotate(0)
+    A2.translate(0, -20)
     
-    basic3 = cmbr.dup()
-    basic3.rotate(60)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
+    A3 = cmbr.dup()
+    A3.rotate(90)
+    A3.translate(20*math.cos(60*deg), 20*math.sin(60*deg))
     
-    basic4 = cmbr.dup()
-    basic4.rotate(120)
-    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
+    A4 = cmbr.dup()
+    A4.rotate(30)
+    A4.translate(20*math.cos(60*deg)+20, 20*math.sin(60*deg))
     
-    basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
+    A5 = cmbr.dup()
+    A5.translate(2*20*math.cos(60*deg) +20,0)
     
-    cmbr.appendPath(basic1)
-    cmbr.appendPath(basic2)
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
+    A6 = cmbr.dup()
+    A6.translate(2*20*math.cos(60*deg) +20,-20)
+    
+    A7 = cmbr.dup()
+    A7.rotate(90)
+    A7.translate(0,-20)
+    
+    A8 = cmbr.dup()
+    A8.rotate(90)
+    A8.translate(20,-20)
+    
+    A9 = cmbr.dup()
+    A9.translate(0,-40)
+    
+    A10 = cmbr.dup()
+    A10.translate(2*20*math.cos(60*deg)+20,-40)
+    
+    B1 = cmbr.dup()
+    B1.rotate(0)
+    B1.translate(60, 0)
+    
+    B2 = cmbr.dup()
+    B2.rotate(0)
+    B2.translate(60, 20)
+    
+    B3 = cmbr.dup()
+    B3.rotate(0)
+    B3.translate(60, -20)
+    
+    B4 = cmbr.dup()
+    B4.rotate(90)
+    B4.translate(60, 20)
+    
+    B5 = cmbr.dup()
+    B5.rotate(90)
+    B5.translate(60,-20)
+    
+    B9 = cmbr.dup()
+    B9.rotate(0)
+    B9.translate(60,-40)
+    
+    B6 = cmbr.dup()
+    B6.rotate(60)
+    B6.translate(80,20)
+    
+    B7 = cmbr.dup()
+    B7.rotate(120)
+    B7.translate(80,-20)
+    
+    B8 = cmbr.dup()
+    B8.rotate(0)
+    B8.translate(20*math.cos(30*deg)+80,10)
+    
+    B10 = cmbr.dup()
+    B10.rotate(60)
+    B10.translate(80,-20)
+    
+    B11 = cmbr.dup()
+    B11.rotate(120)
+    B11.translate(80,-60)
+    
+    B12 = cmbr.dup()
+    B12.rotate(0)
+    B12.translate(20*math.cos(30*deg)+80,-30)
+    
+    B13 = cmbr.dup()
+    B13.rotate(90)
+    B13.translate(60,-60)
+    
+    C1 = cmbr.dup()
+    C1.rotate(00)
+    C1.translate(120,0)
+    
+    cmbr.appendPath(A1)
+    cmbr.appendPath(A2)
+    cmbr.appendPath(A3)
+    cmbr.appendPath(A4)
+    cmbr.appendPath(A5)
+    cmbr.appendPath(A6)
+    cmbr.appendPath(A7)
+    cmbr.appendPath(A8)
+    cmbr.appendPath(A9)
+    cmbr.appendPath(A10)
+    cmbr.appendPath(B1)
+    cmbr.appendPath(B2)
+    cmbr.appendPath(B3)
+    cmbr.appendPath(B4)
+    cmbr.appendPath(B5)
+    cmbr.appendPath(B6)
+    cmbr.appendPath(B7)
+    cmbr.appendPath(B8)
+    cmbr.appendPath(B9)
+    cmbr.appendPath(B10)
+    cmbr.appendPath(B11)
+    cmbr.appendPath(B12)
+    cmbr.appendPath(B13)
+    cmbr.appendPath(C1)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
 
     # 表示放大 3 倍
-    #cgo.render(cmbr, x, y, 3, rot)
+    cgo.render(cmbr, x, y, 1, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    #cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "yellow", True, 4)
 </script>
 <!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
-<script type="text/python" src="/ag100/scrum2_task1"></script>
+<!--script type="text/python" src="/ag100/scrum2_task1"></script>-->
 <!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 -->
 <!-- <script type="text/python" src="/ag100/scrum3_task1"></script>-->
 </body>
