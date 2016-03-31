@@ -80,23 +80,29 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 120 度
-    basic1.rotate(120)
-    basic2 = cmbr.dup()
-    basic2.rotate(60)
-    basic2.translate(0, -20)
-    
-    basic3 = cmbr.dup()
-    basic3.rotate(60)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
-    
-    basic4 = cmbr.dup()
-    basic4.rotate(120)
-    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
-    
-    basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
+     basic1A = cmbr.dup()
+    basic1A.rotate(90)
+    basic1A.translate(-60, 20)
+
+    basic2A = cmbr.dup()
+    basic2A.rotate(150)
+    basic2A.translate(-60, 40)
+
+    basic1B = cmbr.dup()
+    basic1B.rotate(90)
+    basic1B.translate(0, 0)
+
+    basic2B = cmbr.dup()
+    basic2B.rotate(60)
+    basic2B.translate(20, 80)
+
+    basic1C = cmbr.dup()
+    basic1C.rotate(90)
+    basic1C.translate(100, 0)
+
+    basic1D = cmbr.dup()
+    basic1D.rotate(15)
+    basic1D.translate(180, 90)
     
     cmbr.appendPath(basic1)
     cmbr.appendPath(basic2)
