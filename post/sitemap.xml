@@ -5,140 +5,147 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/</loc>
-<lastmod>2016-03-31T11:16:08-00:00</lastmod>
+<lastmod>2016-03-31T11:46:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/archives.html</loc>
-<lastmod>2016-03-31T11:16:08-00:00</lastmod>
+<lastmod>2016-03-31T11:46:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/tags.html</loc>
-<lastmod>2016-03-31T11:16:08-00:00</lastmod>
+<lastmod>2016-03-31T11:46:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/categories.html</loc>
-<lastmod>2016-03-31T11:16:08-00:00</lastmod>
+<lastmod>2016-03-31T11:46:07-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/pages/about/</loc>
-<lastmod>2016-03-31T09:48:25+08:00</lastmod>
+<lastmod>2016-03-31T11:40:02+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://2015fallhw.github.io/cdw2/post/40323217scrum3-hui-bao-bg5-scrum3-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</loc>
-<lastmod>2016-03-31T10:50:41+08:00</lastmod>
+<loc>http://2015fallhw.github.io/cdw2/post/40323206scrum2-lian-jie-ce-shi.html</loc>
+<lastmod>2016-03-31T11:43:05+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/user1-ce-shi-content-mu-lu-xia-de-md-dang-an-zhuan-huan.html</loc>
-<lastmod>2016-03-31T09:48:25+08:00</lastmod>
+<lastmod>2016-03-31T11:40:02+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://2015fallhw.github.io/cdw2/post/40323217scrum3-hui-bao-bg5-scrum3-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</loc>
+<lastmod>2016-03-31T11:40:02+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/scrum2-hui-bao-ag100-scrum2-yu-scrum1-hui-tu-jie-he.html</loc>
-<lastmod>2016-03-31T09:48:25+08:00</lastmod>
+<lastmod>2016-03-31T11:40:02+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/scrum2-zai-ci-li-yong-pull-request-yao-qiu-he-bing-gh-pages-fen-zhi-zhong-de-gai-ban-zi-liao.html</loc>
-<lastmod>2016-03-31T09:48:24+08:00</lastmod>
+<lastmod>2016-03-31T11:40:02+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/scrum2-xi-wang-cai-pull-request-fang-shi-he-bing-gh-pages-wang-ye-zi-liao.html</loc>
-<lastmod>2016-03-31T09:48:24+08:00</lastmod>
+<lastmod>2016-03-31T11:40:02+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/40323204scrum1-hui-bao-bg5-scrum1-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</loc>
-<lastmod>2016-03-31T09:48:24+08:00</lastmod>
+<lastmod>2016-03-31T11:40:02+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/category/ag1.html</loc>
-<lastmod>2016-03-31T09:48:25+08:06</lastmod>
+<lastmod>2016-03-31T11:40:02+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/category/ag100.html</loc>
-<lastmod>2016-03-31T09:48:25+08:06</lastmod>
+<lastmod>2016-03-31T11:40:02+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/category/bg5.html</loc>
-<lastmod>2016-03-31T10:50:41+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://2015fallhw.github.io/cdw2/post/tag/task1.html</loc>
-<lastmod>2016-03-31T10:50:41+08:06</lastmod>
+<lastmod>2016-03-31T11:43:05+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/tag/scrum1.html</loc>
-<lastmod>2016-03-31T09:48:24+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://2015fallhw.github.io/cdw2/post/tag/scrum2.html</loc>
-<lastmod>2016-03-31T09:48:25+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://2015fallhw.github.io/cdw2/post/tag/scrum3.html</loc>
-<lastmod>2016-03-31T10:50:41+08:06</lastmod>
+<lastmod>2016-03-31T11:40:02+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/tag/fan-li.html</loc>
-<lastmod>2016-03-31T09:48:25+08:06</lastmod>
+<lastmod>2016-03-31T11:40:02+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://2015fallhw.github.io/cdw2/post/tag/scrum2.html</loc>
+<lastmod>2016-03-31T11:43:05+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://2015fallhw.github.io/cdw2/post/tag/task1.html</loc>
+<lastmod>2016-03-31T11:43:05+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://2015fallhw.github.io/cdw2/post/tag/scrum3.html</loc>
+<lastmod>2016-03-31T11:40:02+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://2015fallhw.github.io/cdw2/post/author/kmol.html</loc>
-<lastmod>2016-03-31T10:50:41+08:06</lastmod>
+<lastmod>2016-03-31T11:43:05+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
