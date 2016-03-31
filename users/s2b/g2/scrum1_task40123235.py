@@ -5,7 +5,7 @@ from flask import Blueprint, render_template
 scrum1_task40123235 = Blueprint('scrum1_task40123235', __name__, url_prefix='/g2', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40123235.route('/scrum1_task1')
+@scrum1_task40123235.route('/scrum1_task40123235')
 def task1():
     outstring = '''
 <!DOCTYPE html>
@@ -71,14 +71,13 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 A1
-    A1 = cmbr.dup()
-    # A1 轉 120 度
-    A1.rotate(150)
-    
-    
-    cmbr.appendPath(A1)
-    
-    
+    #A1 = cmbr.dup()
+    #A1.rotate(150)
+    #A3 = cmbr.dup()
+    #A3.rotate(90)
+    #A3.translate(20*math.cos(60*deg), 20*math.sin(60*deg))
+    #cmbr.appendPath(A3)
+    #cmbr.appendPath(A1)
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
@@ -90,10 +89,20 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 
 O(0, 0, 0, 0, 0, "yellow", True, 4)
 </script>
-<!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
+<!-- 以協同方式加上 g2 的 40123202 組員所寫的 task1 程式碼 -->
 <script type="text/python" src="/g2/scrum2_task40123202"></script>
-<!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 -->
-<!-- <script type="text/python" src="/ag100/scrum3_task1"></script>-->
+<!-- 以協同方式加上 g2 的 40123214 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/g2/scrum2_task40123214"></script>
+<!-- 以協同方式加上 g2 的 40123217 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/g2/scrum2_task40123217"></script>
+<!-- 以協同方式加上 g2 的 40123226 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/g2/scrum2_task40123226"></script>
+<!-- 以協同方式加上 g2 的 40123232 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/g2/scrum2_task40123232"></script>
+<!-- 以協同方式加上 g2 的 40123235 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/g2/scrum2_task40123235"></script>
+<!-- 以協同方式加上 g2 的 40123244 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/g2/scrum2_task40123244"></script>
 </body>
 </html>
 '''

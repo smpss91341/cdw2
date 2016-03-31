@@ -2,10 +2,10 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum2_task40123202 = Blueprint('scrum2_task40123202', __name__, url_prefix='/g2', template_folder='templates')
+scrum2_task40123214 = Blueprint('scrum2_task40123214', __name__, url_prefix='/g2', template_folder='templates')
 
-# scrum1_task40123202 為完整可以單獨執行的繪圖程式
-@scrum2_task40123202.route('/scrum2_task40123202')
+# scrum1_task40123214 為完整可以單獨執行的繪圖程式
+@scrum2_task40123214.route('/scrum2_task40123214')
 def task1():
     outstring = '''
 from javascript import JSConstructor
@@ -46,21 +46,21 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    A1 = cmbr.dup()
-    A1.rotate(150)
-    A8 = cmbr.dup()
-    A8.rotate(90)
-    A8.translate(20,-20)
-    B5 = cmbr.dup()
-    B5.rotate(90)
-    B5.translate(60,-20)
-    B12 = cmbr.dup()
-    B12.rotate(0)
-    B12.translate(20*math.cos(30*deg)+80,-30)
-    cmbr.appendPath(A1)
-    cmbr.appendPath(A8)
-    cmbr.appendPath(B5)
-    cmbr.appendPath(B12)
+    A2 = cmbr.dup()
+    A2.rotate(0)
+    A2.translate(0, -20)
+    A9 = cmbr.dup()
+    A9.translate(0,-40)
+    B9 = cmbr.dup()
+    B9.rotate(0)
+    B9.translate(60,-40)
+    B13 = cmbr.dup()
+    B13.rotate(90)
+    B13.translate(60,-60)
+    cmbr.appendPath(A2)
+    cmbr.appendPath(A9)
+    cmbr.appendPath(B9)
+    cmbr.appendPath(B13)
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
