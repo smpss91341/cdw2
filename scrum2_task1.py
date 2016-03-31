@@ -2,10 +2,10 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task40123235 = Blueprint('scrum1_task40123235', __name__, url_prefix='/g2', template_folder='templates')
+scrum2_task1 = Blueprint('scrum2_task1', __name__, url_prefix='/g2', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40123235.route('/scrum1_task1')
+@scrum2_task1.route('/scrum2_task1')
 def task1():
     outstring = '''
 <!DOCTYPE html>
@@ -70,41 +70,27 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 120 度
-    basic1.rotate(120)
-    basic2 = cmbr.dup()
-    basic2.rotate(60)
-    basic2.translate(0, -20)
+    # 複製 cmbr, 然後命名為 A1
+    A2 = cmbr.dup()
+    A2.rotate(0)
+    A2.translate(0, -20)
     
-    basic3 = cmbr.dup()
-    basic3.rotate(60)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
     
-    basic4 = cmbr.dup()
-    basic4.rotate(120)
-    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
     
-    basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
     
-    cmbr.appendPath(basic1)
-    cmbr.appendPath(basic2)
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
+    cmbr.appendPath(A2)
+   
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
 
     # 表示放大 3 倍
-    #cgo.render(cmbr, x, y, 3, rot)
+    cgo.render(cmbr, x, y, 1, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    #cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "yellow", True, 4)
 </script>
 <!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
 <script type="text/python" src="/ag100/scrum2_task1"></script>
