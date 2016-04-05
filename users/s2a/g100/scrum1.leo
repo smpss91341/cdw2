@@ -20,6 +20,7 @@
 </v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
+<v t="amd.20160405203555.1"><vh>@edit scrum1-20160329.md </vh></v>
 <v t="amd.20160329174131.1" a="E"><vh>@path ag100</vh>
 <v t="amd.20160329174139.1"><vh>@clean scrum1-20160329.md</vh></v>
 </v>
@@ -48,12 +49,12 @@ g.es("admin pelican 執行完畢")
 </t>
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
-Title: scrum1-回報 ag100 scrum1 初步繪圖主機與連結
-Category: ag100
+Title: scrum1-回報 bg5 scrum1 初步繪圖主機與連結
+Category: bg5
 Tags: scrum1, task1
 Author: kmol
 @others
-ag100 組員 scrum1 已經在 cdw2 倉儲中的 master 分支建立對應的組員 scrum1.leo 並且完成 Task1 的繪圖藍圖建立與註冊
+bg5 組員 scrum1 已經在 cdw2 倉儲中的 master 分支建立對應的組員 scrum1.leo 並且完成 Task1 的繪圖藍圖建立與註冊
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
