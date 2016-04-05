@@ -48,11 +48,13 @@ g.es("admin pelican 執行完畢")
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
 Title: 40323204scrum1-回報 bg5 scrum1 初步繪圖主機與連結
-Category: bg5
-Tags: scrum1, task1
+Category: bg9
+Tags: scrum1, task1, 40323204
 Author: kmol
 @others
-bg5 組員 scrum1 已經在 cdw2 倉儲中的 master 分支建立對應的組員 scrum1.leo 並且完成 Task1 的繪圖藍圖建立與註冊
+請注意: 這個 .md 檔案應該要放到 s2b/g5 目錄中, 而且用學號作為 Tags 分類讓使用者可以較容易透過 Tags 找到某一學員所提供的所有內容.
+
+bg9 組員 40323204 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323204.leo 並且完成 Task1 的繪圖藍圖建立與註冊
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
