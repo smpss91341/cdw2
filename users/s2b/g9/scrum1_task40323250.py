@@ -1,11 +1,11 @@
- 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
+#各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task1 = Blueprint('scrum1_task1', __name__, url_prefix='/bg5', template_folder='templates')
+scrum1_task40323250 = Blueprint('scrum1_task40323250', __name__, url_prefix='/bg9', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task1.route('/scrum1_task1')
+@scrum1_task40323250.route('/scrum1_task40323250')
 def task1():
     outstring = '''
 <!DOCTYPE html>

@@ -24,6 +24,9 @@ import users.s2b.g2.scrum2_task40123226
 import users.s2b.g2.scrum2_task40123232
 import users.s2b.g2.scrum2_task40123235
 import users.s2b.g2.scrum2_task40123244
+#g9
+import users.s2b.g9.task0
+import users.s2b.g9.scrum1_task40323250
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
 # 設定在雲端與近端的資料儲存目錄
