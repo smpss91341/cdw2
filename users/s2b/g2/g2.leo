@@ -59,7 +59,7 @@ bg2 已經在 cdw2 倉儲中的 master 分支建立對應的組員 g2.leo 並且
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235 &lt;/a&gt;
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235&lt;/a&gt;
 
 其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
