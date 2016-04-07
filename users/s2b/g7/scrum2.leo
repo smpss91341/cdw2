@@ -22,7 +22,7 @@
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
 <v t="amd.20160329174131.1"><vh>@path ag100</vh></v>
-<v t="amd.20160329174139.1"><vh>@clean scrum1-20160406.md</vh></v>
+<v t="amd.20160329174139.1"><vh>@clean scrum1-20160407.md</vh></v>
 </v>
 </v>
 </vnodes>
@@ -48,14 +48,14 @@ g.es("admin pelican 執行完畢")
 </t>
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
-Title: 40323222scrum1-回報 bg10 scrum1 初步繪圖主機與連結
-Category: bg10
-Tags: scrum1, task1, 40323222
+Title: 40323212scrum1-回報 bg07 scrum1 初步繪圖主機與連結
+Category: bg07
+Tags: scrum1, task1, 40323212
 Author: kmol
 @others
-請注意: 這個 .md 檔案應該要放到 s2b/g10 目錄中, 而且用學號作為 Tags 分類讓使用者可以較容易透過 Tags 找到某一學員所提供的所有內容.
+請注意: 這個 .md 檔案應該要放到 s2b/g6 目錄中, 而且用學號作為 Tags 分類讓使用者可以較容易透過 Tags 找到某一學員所提供的所有內容.
 
-bg11 組員 40323222 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323222.leo 並且完成 Task1 的繪圖藍圖建立與註冊
+bg06 組員 40323212 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323212.leo 並且完成 Task1 的繪圖藍圖建立與註冊
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
