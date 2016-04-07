@@ -17,6 +17,7 @@ import users.s2a.g100.scrum2_task1
 import s2b_files.task1.g1.task0 as bg1_0
 import users.s2b.g1.scrum40123156_task1
 import users.s2b.g1.scrum40123126_task1
+import users.s2b.g1.scrum40123129_task1
 import users.s2b.g1.scrum40123131_task1
 import users.s2b.g1.scrum40123133_task1
 import users.s2b.g1.scrum40123144_task1
@@ -343,6 +344,7 @@ app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
 app.register_blueprint(bg1_0.bg1)
 app.register_blueprint(users.s2b.g1.scrum40123156_task1.scrum40123156_task1)
 app.register_blueprint(users.s2b.g1.scrum40123126_task1.scrum40123126_task1)
+app.register_blueprint(users.s2b.g1.scrum40123129_task1.scrum40123129_task1)
 app.register_blueprint(users.s2b.g1.scrum40123131_task1.scrum40123131_task1)
 app.register_blueprint(users.s2b.g1.scrum40123133_task1.scrum40123133_task1)
 app.register_blueprint(users.s2b.g1.scrum40123144_task1.scrum40123144_task1)
