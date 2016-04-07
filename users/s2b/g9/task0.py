@@ -124,9 +124,9 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
 <!-- 以協同方式加上 ag100 的 task3 程式碼 -->
-<script type="text/python" src="/ag100/task3"></script>
+<!-- script type="text/python" src="/ag100/task3"></script>-->
 <!-- 以協同方式加上 bg99 的 task3 程式碼 -->
-<script type="text/python" src="/bg99/task3"></script>
+<!-- script type="text/python" src="/bg99/task3"></script>-->
 </body>
 </html>
 '''
