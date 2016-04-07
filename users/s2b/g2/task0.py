@@ -258,7 +258,7 @@ def ss1(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 2 倍
     cgo.render(cmbr, x, y, 2, rot)
 
-ss1(0, 0, 0, 0, 0, "red", True, 4)
+ss1(0, 0, 0, 0, 0, "white", True, 4)
 </script>
 </body>
 </html>
@@ -336,7 +336,7 @@ def ss1(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 2 倍
     cgo.render(cmbr, x, y, 2, rot)
 
-ss1(0, 0, 0, 0, 0, "red", True, 4)
+ss1(0, 0, 0, 0, 0, "white", True, 4)
 </script>
 </body>
 </html>
@@ -414,7 +414,7 @@ def ss1(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 2 倍
     cgo.render(cmbr, x, y, 2, rot)
 
-ss1(0, 0, 0, 0, 0, "red", True, 4)
+ss1(0, 0, 0, 0, 0, "white", True, 4)
 </script>
 </body>
 </html>
@@ -492,7 +492,7 @@ def ss1(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 2 倍
     cgo.render(cmbr, x, y, 2, rot)
 
-ss1(0, 0, 0, 0, 0, "red", True, 4)
+ss1(0, 0, 0, 0, 0, "white", True, 4)
 </script>
 </body>
 </html>
