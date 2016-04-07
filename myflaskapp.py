@@ -13,7 +13,9 @@ import init
 import users.s2a.g100.scrum1_task1
 import users.s2a.g100.scrum2_task1
 # 二乙
+#g1
 import s2b_files.task1.g1.task0 as bg1_0
+import users.s2b.g1.scrum40123156_task1
 #g2
 import users.s2b.g2.task0
 import users.s2b.g2.scrum1_task40123235
@@ -332,7 +334,9 @@ app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
 # 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
 # 二乙
+#g1
 app.register_blueprint(bg1_0.bg1)
+app.register_blueprint(users.s2b.g1.scrum40123156_task1.scrum40123156_task1)
 # 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
 app.register_blueprint(users.s2b.g2.task0.bg2)
 #g2
