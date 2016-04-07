@@ -10,6 +10,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="leo.20160310094400.2"><vh>@edit 40123235_w3_1.py</vh></v>
+<v t="leo.20160331180203.1"><vh>@edit scrum2_task40123235.py</vh></v>
 <v t="leo.20160310095254.1"><vh>@path./../../../</vh></v>
 </vnodes>
 <tnodes>
