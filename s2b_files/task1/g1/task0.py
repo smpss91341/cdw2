@@ -35,7 +35,7 @@ window.onload=function(){
 brython(1);
 }
 </script>
-<canvas id="plotarea" width="800" height="800"></canvas>
+<canvas id="plotarea" width="1000" height="1000"></canvas>
 <script type="text/python">
 from javascript import JSConstructor
 from browser import window
@@ -71,25 +71,27 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
+    # 複製 cmbr, 然後命名
     basic1A = cmbr.dup()
+    # 轉角度
     basic1A.rotate(0)
-    basic1A.translate(-90, 30)
+    # 定位
+    basic1A.translate(-70, 30)
     basic2A = cmbr.dup()
     basic2A.rotate(0)
     basic2A.translate(-30, 0)
     basic1B = cmbr.dup()
     basic1B.rotate(90)
-    basic1B.translate(0, 100)
+    basic1B.translate(0, 80)
     basic2B = cmbr.dup()
     basic2B.rotate(120)
-    basic2B.translate(30, 0)
+    basic2B.translate(20, 0)
     basic1C = cmbr.dup()
     basic1C.rotate(-120)
-    basic1C.translate(90, 0)
+    basic1C.translate(100, 0)
     basic1D = cmbr.dup()
     basic1D.rotate(-300)
-    basic1D.translate(180, 90)
+    basic1D.translate(180, 80)
 
     basic40123144_1 = cmbr.dup()
     basic40123144_1.rotate(194.49)
@@ -223,12 +225,12 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic40123156_C_1)
     cmbr.appendPath(basic40123156_D_1)
     cmbr.appendPath(basic40123156_D_2)
-    cmbr.appendPath( basic40123131_A_1)
-    cmbr.appendPath( basic40123131_A_2)
-    cmbr.appendPath( basic40123131_B_1)
-    cmbr.appendPath( basic40123131_B_2)
-    cmbr.appendPath( basic40123131_C_1)
-    cmbr.appendPath( basic40123131_D_1)
+    cmbr.appendPath(basic40123131_A_1)
+    cmbr.appendPath(basic40123131_A_2)
+    cmbr.appendPath(basic40123131_B_1)
+    cmbr.appendPath(basic40123131_B_2)
+    cmbr.appendPath(basic40123131_C_1)
+    cmbr.appendPath(basic40123131_D_1)
     cmbr.appendPath(basic40123126_A_1)
     cmbr.appendPath(basic40123126_A_2)
     cmbr.appendPath(basic40123126_B_1)
@@ -253,9 +255,8 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(hole)
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
-    # 放大 5 倍
+    # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
-
 
 O(0, 0, 0, 0, 0, "orange", True, 4)
 
@@ -317,10 +318,8 @@ def task3(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(hole)
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
-    # 放大 5 倍
+    # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
-
-
 
 '''
     return outstring
