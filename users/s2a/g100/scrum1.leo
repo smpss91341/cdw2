@@ -21,6 +21,7 @@
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
 <v t="amd.20160405203555.1"><vh>@edit scrum1-20160329.md </vh></v>
+<v t="amd.20160408224929.1"><vh>@edit scrum1-20160408.md</vh></v>
 <v t="amd.20160329174131.1" a="E"><vh>@path ag100</vh>
 <v t="amd.20160329174139.1"><vh>@clean scrum1-20160329.md</vh></v>
 </v>
