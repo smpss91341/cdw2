@@ -51,9 +51,9 @@ g.es("admin pelican 執行完畢")
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
 Title: 40323123-回報 ag8初步繪圖主機與連結
-Category: bg5
-Tags: scrum1, task1
-Author: kmol
+Category: ag8
+Tags: 40323123, task1
+Author: 40323123
 @others
 bg5 組員 scrum1 已經在 cdw2 倉儲中的 master 分支建立對應的組員 scrum1.leo 並且完成 Task1 的繪圖藍圖建立與註冊
 
