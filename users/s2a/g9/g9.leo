@@ -52,6 +52,7 @@ Category: ag9
 Tags: scrum1, task1, 40323150
 Author: kmol
 @others
+
 ag9 組員 40323150 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
