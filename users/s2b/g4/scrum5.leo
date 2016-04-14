@@ -47,7 +47,7 @@ g.es("admin pelican 執行完畢")
 </t>
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
-Title: 40323208-回報 bg4 scrum5 初步繪圖主機與連結
+Title: 40323208-回報 bg4 初步繪圖主機與連結
 Category: bg4
 Tags: scrum5, task1, 40323208
 Author: kmol
