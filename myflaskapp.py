@@ -32,6 +32,9 @@ import users.s2b.g2.scrum2_task40123226
 import users.s2b.g2.scrum2_task40123232
 import users.s2b.g2.scrum2_task40123235
 import users.s2b.g2.scrum2_task40123244
+#g6
+import users.s2b.g6.task0
+import users.s2b.g6.scrum1_task40323210
 #g7
 import users.s2b.g7.task0
 import users.s2b.g7.scrum1_task40323212
@@ -369,6 +372,8 @@ app.register_blueprint(users.s2b.g2.scrum2_task40123226.scrum2_task40123226)
 app.register_blueprint(users.s2b.g2.scrum2_task40123232.scrum2_task40123232)
 app.register_blueprint(users.s2b.g2.scrum2_task40123235.scrum2_task40123235)
 app.register_blueprint(users.s2b.g2.scrum2_task40123244.scrum2_task40123244)
+#g6
+app.register_blueprint(users.s2b.g6.scrum1_task40323210.scrum1_task40323210)
 #g7
 app.register_blueprint(users.s2b.g7.scrum1_task40323212.scrum1_task40323212)
 app.register_blueprint(users.s2b.g7.scrum2_task40323216.scrum2_task40323216)
