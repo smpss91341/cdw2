@@ -1057,5 +1057,7 @@ def week8_abc():
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_a'></script>"
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_b'></script>"
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_c'></script>"
+    # 假如 scrum1 程式碼與 scrum2 所寫的程式碼同時更版且在同一台 server 上運行, 否則要給 scrum2_week8_d 的完整 url
+    outstring += "<script type='text/python' src='/ag100/scrum2_week8_d'></script>"
     outstring += week8_tail()
     return outstring
