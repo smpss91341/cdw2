@@ -11,7 +11,56 @@
 <vnodes>
 <v t="leo.20160310102717.2"><vh>@edit 40123214_w3_1.py</vh></v>
 <v t="leo.20160331171724.1"><vh>@edit scrum2_task40123214.py</vh></v>
+<v t="leo.20160414091913.1" a="E"><vh>@path ./../../../</vh>
+<v t="leo.20160414091925.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
+<v t="leo.20160414091933.1"><vh>@button gh-pages pelican</vh></v>
+</v>
+<v t="leo.20160414091950.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
+<v t="leo.20160414092003.1"><vh>@button local pelican</vh></v>
+</v>
+<v t="leo.20160414092019.1"><vh>進入 content 目錄</vh></v>
+</v>
+<v t="leo.20160414092029.1" a="E"><vh>@path content</vh>
+<v t="leo.20160414092041.1"><vh>@edit scrum1_bg2_40123214.md </vh></v>
+<v t="leo.20160414092223.1"><vh>@path bg2</vh></v>
+</v>
 </vnodes>
 <tnodes>
+<t tx="leo.20160414091913.1"></t>
+<t tx="leo.20160414091925.1"></t>
+<t tx="leo.20160414091933.1">@language python
+import os
+os.system("pelican content -o post -s publishconf.py")
+g.es("admin pelican 執行完畢")
+
+</t>
+<t tx="leo.20160414091950.1"></t>
+<t tx="leo.20160414092003.1">@language python
+import os
+#os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
+os.system("pelican content -o post -s local_publishconf.py")
+g.es("admin pelican 近端執行完畢")
+
+
+</t>
+<t tx="leo.20160414092019.1"></t>
+<t tx="leo.20160414092029.1"></t>
+<t tx="leo.20160414092041.1">@language md
+Title: 40123214scrum1-回報 g2 scrum1 初步繪圖主機與連結
+Category: bg2
+Tags: scrum1, task1, 40123214
+Author: kmol
+@others
+請注意: 這個 .md 檔案應該要放到 s2b/g2目錄中, 而且用學號作為 Tags 分類讓使用者可以較容易透過 Tags 找到某一學員所提供的所有內容.
+
+bg2 已經在 cdw2 倉儲中的 master 分支建立對應的組員 g2.leo 並且完成 Task1 的繪圖藍圖建立與註冊
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235&lt;/a&gt;
+
+其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+</t>
+<t tx="leo.20160414092223.1"></t>
 </tnodes>
 </leo_file>
