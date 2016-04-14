@@ -12,6 +12,10 @@
 <v t="leo.20160414094606.1"><vh>因為位於 users/s2b/g2 目錄, 必須跳三層才到外圍</vh></v>
 <v t="leo.20160331180303.1"><vh>@edit scrum2_task40123244.py</vh></v>
 <v t="leo.20160310115627.2"><vh>@edit 40123244.py</vh></v>
+<<<<<<< HEAD
+<v t="leo.20160331180303.1"><vh>@edit scrum2_task40123244.py</vh></v>
+<v t="leo.20160310115644.1"><vh>@path./../../../</vh></v>
+=======
 <v t="leo.20160310115644.1" a="E"><vh>@path ./../../../</vh>
 <v t="leo.20160414094129.1" a="E"><vh>@path content</vh>
 <v t="leo.20160414094137.1"><vh>@path bg2</vh></v>
@@ -25,6 +29,7 @@
 </v>
 </v>
 </v>
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 </vnodes>
 <tnodes>
 <t tx="leo.20160310115644.1"></t>

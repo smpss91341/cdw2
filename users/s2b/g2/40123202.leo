@@ -11,6 +11,11 @@
 <vnodes>
 <v t="leo.20160310095118.1"><vh>@edit 40123202_w3_1.py</vh></v>
 <v t="leo.20160331121254.1"><vh>@edit scrum2_task40123202.py</vh></v>
+<<<<<<< HEAD
+<v t="leo.20160310095542.1" a="E"><vh>@path ./../../../</vh>
+<v t="leo.20160310095553.1"><vh>@edit 2016_cd_2a_3.txt</vh></v>
+<v t="leo.20160310095640.1"><vh>@edit cdw2_1.py</vh></v>
+=======
 <v t="leo.20160412180045.1" a="E"><vh>@path ./../../../</vh>
 <v t="leo.20160412180102.1" a="E"><vh>@path content</vh>
 <v t="leo.20160412180113.1"><vh>@path bg2</vh></v>
@@ -23,6 +28,7 @@
 <v t="leo.20160412180340.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="leo.20160412180349.1"><vh>@button gh-pages pelican</vh></v>
 </v>
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 </v>
 </vnodes>
 <tnodes>

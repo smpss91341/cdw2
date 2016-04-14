@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 @language python
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 # 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
 from flask import Blueprint, render_template
 
@@ -55,9 +58,27 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     B10 = cmbr.dup()
     B10.rotate(60)
     B10.translate(80,-20)
+<<<<<<< HEAD
+    C6 = cmbr.dup()
+    C6.rotate(135)
+    C6.translate(20*math.sin(10*deg)+120, 20*math.cos(10*deg))
+    D6 = cmbr.dup()
+    D6.rotate(60)
+    D6.translate(200, 20)
+    D11 = cmbr.dup()
+    D11.rotate(155)
+    D11.translate(20*math.cos(30*deg)+200, 20*math.sin(30*deg)-60)
     cmbr.appendPath(A6)
     cmbr.appendPath(B3)
     cmbr.appendPath(B10)
+    cmbr.appendPath(C6)
+    cmbr.appendPath(D6)
+    cmbr.appendPath(D11)
+=======
+    cmbr.appendPath(A6)
+    cmbr.appendPath(B3)
+    cmbr.appendPath(B10)
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)

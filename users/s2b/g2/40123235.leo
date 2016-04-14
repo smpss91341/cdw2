@@ -11,6 +11,10 @@
 <vnodes>
 <v t="leo.20160310094400.2"><vh>@edit 40123235_w3_1.py</vh></v>
 <v t="leo.20160331180203.1"><vh>@edit scrum2_task40123235.py</vh></v>
+<<<<<<< HEAD
+<v t="leo.20160310095254.1"><vh>@path./../../../</vh></v>
+=======
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 </vnodes>
 <tnodes>
 </tnodes>
