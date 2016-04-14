@@ -364,6 +364,7 @@ app.register_blueprint(users.s2b.g2.scrum2_task40123235.scrum2_task40123235)
 app.register_blueprint(users.s2b.g2.scrum2_task40123244.scrum2_task40123244)
 #g9
 app.register_blueprint(users.s2b.g9.scrum1_task40323250.scrum1_task40323250)
+app.register_blueprint(users.s2b.g9.scrum2_task40323218.scrum2_task40323218)
 if __name__ == "__main__":
     app.run()
 
