@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
+<<<<<<< HEAD
+=======
+<?xml-stylesheet ekr_test ?>
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
 <globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
@@ -9,6 +13,7 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
+<<<<<<< HEAD
 <v t="amd.20160329205817.1"><vh>ag100 註解</vh></v>
 <v t="amd.20160314224057.1" a="E"><vh>master 分支 flask 程式開發</vh>
 <v t="amd.20160329201851.1"><vh>ag100 組程式規畫</vh></v>
@@ -40,10 +45,29 @@
 <v t="amd.20160412000038.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="amd.20160412000038.4"><vh>old:myflaskapp declarations</vh></v>
 <v t="amd.20160412000038.5"><vh>new:myflaskapp declarations</vh></v>
+=======
+<v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
+<v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
+<v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
+<v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
+</v>
+<v t="amd.20160329163719.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
+<v t="amd.20160329163719.2"><vh>@button local pelican</vh></v>
+</v>
+<v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
+<v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
+<v t="amd.20160405203555.1"><vh>@edit scrum1-20160329.md </vh></v>
+<v t="amd.20160408224929.1"><vh>@edit scrum1-20160408.md</vh></v>
+<v t="amd.20160329174131.1" a="E"><vh>@path ag100</vh>
+<v t="amd.20160329174139.1"><vh>@clean scrum1-20160329.md</vh></v>
+<v t="amd.20160412220701.1"><vh>@clean scrum1-20160412.md</vh></v>
+</v>
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 </v>
 </v>
 </vnodes>
 <tnodes>
+<<<<<<< HEAD
 <t tx="54654.20160407094530.2"></t>
 <t tx="54654.20160407094530.3">(uncached) amd.20160314224223.1
 Diff...
@@ -833,5 +857,57 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
+=======
+<t tx="amd.20160329124554.2"></t>
+<t tx="amd.20160329124849.1"></t>
+<t tx="amd.20160329124903.1"></t>
+<t tx="amd.20160329163719.1"></t>
+<t tx="amd.20160329163719.2">@language python
+import os
+#os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
+os.system("pelican content -o post -s local_publishconf.py")
+g.es("admin pelican 近端執行完畢")
+
+
+</t>
+<t tx="amd.20160329164739.1"></t>
+<t tx="amd.20160329164739.2">@language python
+import os
+os.system("pelican content -o post -s publishconf.py")
+g.es("admin pelican 執行完畢")
+
+</t>
+<t tx="amd.20160329174131.1"></t>
+<t tx="amd.20160329174139.1">@language md
+Title: scrum1-回報 bg5 scrum1 初步繪圖主機與連結
+Category: bg5
+Tags: scrum1, task1
+Author: kmol
+@others
+bg5 組員 scrum1 已經在 cdw2 倉儲中的 master 分支建立對應的組員 scrum1.leo 並且完成 Task1 的繪圖藍圖建立與註冊
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
+
+其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+</t>
+<t tx="amd.20160329211330.1"></t>
+<t tx="amd.20160412220701.1">@language md
+Title: scrum1-Onshape 鏈條組件
+Category: ag100
+Tags: scrum1, task1, onshape
+Author: kmol
+@others
+Scrum1 已經完成 Onshape 基本鏈條組件的繪圖.
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;a href="https://cad.onshape.com/documents/29d1a262b055745e59be7c09/w/1f25948ad73282e2440ffdcf"&gt;bicycle chain Onshape Document&lt;/a&gt;
+
+&lt;a href="https://cad.onshape.com/documents/29d1a262b055745e59be7c09/w/1f25948ad73282e2440ffdcf/e/60bc24e9ffd5d1ef3544c1a9"&gt;Onshpae 鏈條組立件&lt;/a&gt;
+
+&lt;img src="http://chiamingyen.github.io/kmolab_data/files/onshape_bike_chain_assembly.png" width="600" /&gt;</t>
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 </tnodes>
 </leo_file>
