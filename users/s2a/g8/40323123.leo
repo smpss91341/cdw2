@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
-<<<<<<< HEAD
-=======
 <?xml-stylesheet ekr_test ?>
->>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
 <globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
@@ -13,31 +10,6 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<<<<<<< HEAD
-<v t="leo.20160310095258.1"><vh>Task0 任務說明</vh></v>
-<v t="leo.20160310091900.1"><vh>@edit 999_w3_1.py</vh></v>
-<v t="leo.20160310111205.1"><vh>@edit index.html</vh></v>
-<v t="leo.20160310091611.2" a="E"><vh>@path ./../../../2b_files/task0</vh>
-<v t="leo.20160310094820.1"><vh>@edit 2016_cd_2b_1.txt</vh></v>
-<v t="leo.20160310091810.1"><vh>@edit 2016_cd_2b_2.txt</vh></v>
-</v>
-</vnodes>
-<tnodes>
-<t tx="leo.20160310091611.2"></t>
-<t tx="leo.20160310095258.1">先取得各組學員的學號
-
-檔案讀取
-
-排序選出各組組長
-
-排序定出組序
-
-列出各組分組名單
-
-排座位
-
-列出電腦教室的座位表</t>
-=======
 <v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
@@ -78,34 +50,32 @@ g.es("admin pelican 執行完畢")
 </t>
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
-Title: 40323123-回報 ag8初步繪圖主機與連結
+Title: 40323123-期中報告內容
 Category: ag8
-Tags: 40323123, task1
+Tags: 40323123, Middle test
 Author: 40323123
 @others
-ag8 組員 40323123 已經在 cdw2 倉儲中的 master 分支建立對應的組員 scrum1.leo 並且完成 Task1 的繪圖藍圖建立與註冊
+ag8 組員 40323123 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323123.leo 並且完成 其中自評
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
+Onshape組裝與繪畫
+============
+由組員進行協同分配繪畫零組件與設計
+組合圖如下圖所示
+&lt;img src="./../files/ag8Files/Onshape_assamble.png"&gt;
+
+
+
+組裝影片
+============
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1TnbR-ICf2E" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
 
 目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://dwaring-40323123.rhcloud.com/ag100/scrum1_task1"&gt;http://dwaring-40323123.rhcloud.com/&lt;/a&gt;
 
-其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+
+
 </t>
 <t tx="amd.20160329211330.1"></t>
-<t tx="amd.20160405203555.1">@language md
-Title: 40323123-回報 Ag5 40323123 初步繪圖主機與連結
-Category: ag8
-Tags: scrum1, task1, 40323123
-
-Author: kmol
-ag9 組員 40323150 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
-
-其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
-</t>
->>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 </tnodes>
 </leo_file>
