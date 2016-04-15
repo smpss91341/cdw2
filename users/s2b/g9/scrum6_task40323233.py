@@ -2,11 +2,11 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum4_task40323231 = Blueprint('scrum4_task40323231', __name__, url_prefix='/bg9', template_folder='templates')
+scrum6_task40323233 = Blueprint('scrum6_task40323233', __name__, url_prefix='/bg9', template_folder='templates')
 
-# scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum4_task40323231.route('/scrum4_31_1')
-def scrum4_31_1():
+# scrum6_task33 為完整可以單獨執行的繪圖程式
+@scrum6_task40323233.route('/scrum6_33_1')
+def scrum6_33_1():
     outstring = '''
 
 from javascript import JSConstructor
@@ -35,11 +35,11 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
-    
-    
-    
-    cmbr.translate(40, 40)
   
+    cmbr.translate(0, 20)
+    cmbr.rotate(-90)
+    cmbr.translate(20, 20)
+    
     
     # hole 為原點位置
     #hole = cobj(shapedefs.circle(4), "PATH") 
@@ -49,7 +49,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
     
-O(0, 0, 0, 0, 0, "pink", True, 4)
+O(0, 0, 0, 0, 0, "purple", True, 4)
 
 
 

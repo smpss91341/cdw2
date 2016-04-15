@@ -77,39 +77,10 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
-    # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 120 度
-    basic1.rotate(120)
-    basic2 = cmbr.dup()
-    
-    basic2.translate(0, -20)
-    
-    basic3 = cmbr.dup()
-    basic3.rotate(60)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
-    
-    basic4 = cmbr.dup()
-    basic4.rotate(90)
-    basic4.translate(17*math.cos(30*deg), -20)
-    
-    basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
+  
 
-    basic6 = cmbr.dup()
-    basic6.rotate(90)
-    basic6.translate(0, -20)
     
-    basic7 = cmbr.dup()
-    basic7.translate(40*math.cos(30*deg), -20)
-
-    cmbr.appendPath(basic1)
-    cmbr.appendPath(basic2)
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
-    cmbr.appendPath(basic6)
-    cmbr.appendPath(basic7)
+   
     
     
     # hole 為原點位置
@@ -123,10 +94,18 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
-<!-- 以協同方式加上 ag100 的 task3 程式碼 -->
-<!-- script type="text/python" src="/ag100/task3"></script>-->
-<!-- 以協同方式加上 bg99 的 task3 程式碼 -->
-<!-- script type="text/python" src="/bg99/task3"></script>-->
+
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum1_50_1"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum2_18_1"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum3_14_1"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum4_31_1"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum5_30_1"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum6_33_1"></script>
+
+
+
+
+
 </body>
 </html>
 '''

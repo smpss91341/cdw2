@@ -1,0 +1,11 @@
+50  red 
+
+30  yellow 
+
+18  blue
+
+33  purple 
+
+14  green
+
+31  pink
