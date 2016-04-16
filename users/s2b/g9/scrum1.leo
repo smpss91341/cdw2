@@ -53,13 +53,20 @@ Tags: scrum1, task1, 40323250
 Author: kmol
 @others
 
-bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
+目前所完成的 OpenShift 對應繪圖連結(組別畫布): &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2&lt;/a&gt; 
 
-其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+個人畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/scrum1_test&lt;/a&gt;
+
+目前完成兩個字母，但是都以非常耗時的方式繪圖，在旋轉零件部分較為複雜，與組員的座標定位也要準確，否則會導致圖形組不起來
+
+繪圖要注意自己的圖形的起始位置，以及複製圖形的旋轉中心，能夠掌握這兩點就能減少繪圖的出錯率。
+
+暫時先做到這邊。
+
 </t>
 <t tx="amd.20160329211330.1"></t>
 </tnodes>
