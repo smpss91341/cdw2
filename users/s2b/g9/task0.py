@@ -79,7 +79,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
   
 
-    
+    cmbr.translate(0, 20)
    
     
     
@@ -87,20 +87,18 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     #hole = cobj(shapedefs.circle(4), "PATH") 
     #cmbr.appendPath(hole) 
 
-    # 表示放大 3 倍
-    #cgo.render(cmbr, x, y, 3, rot)
     # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
     
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
 
-<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum1_50_1"></script>
-<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum2_18_1"></script>
-<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum3_14_1"></script>
-<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum4_31_1"></script>
-<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum5_30_1"></script>
-<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum6_33_1"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum1_50"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum2_18"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum3_14"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum4_31"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum5_30"></script>
+<script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum6_33"></script>
 
 
 

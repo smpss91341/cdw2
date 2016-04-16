@@ -5,10 +5,29 @@ from flask import Blueprint, render_template
 scrum3_task40323214 = Blueprint('scrum3_task40323214', __name__, url_prefix='/bg9', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum3_task40323214.route('/scrum3_14_1')
-def scrum3_14_1():
+@scrum3_task40323214.route('/scrum3_14')
+def scrum3_14():
     outstring = '''
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>網際 2D 繪圖</title>
+    <!-- IE 9: display inline SVG -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
+</head>
+<body>
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+<canvas id="plotarea" width="800" height="800"></canvas>
+<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math
@@ -29,17 +48,54 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
                      A 40, 40, 0, 0, 1, 6.8397, -18.511 \
                      A 7, 7, 0, 1, 0, -6.8397, -18.511 \
                      A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
-    cgoChamber = window.svgToCgoSVG(chamber)
+    cgoChamber = window.svgToCgoSVG(chamber, 140, 140)
     cmbr = cobj(cgoChamber, "SHAPE", {
             "fillColor": color,
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
+    
+    basic1 = cmbr.dup()
+    basic1.translate(-140, -140)
+    basic1.rotate(210)
+    basic1.translate(40, 40)
+    
+    basic2 = cmbr.dup()
+    basic2.translate(0, 20)
 
-    cmbr.translate(0, 20)  
-    cmbr.rotate(30)
-    cmbr.translate(40, 40)
+    basic3 = cmbr.dup()
+    basic3.translate(20, 20)
+
+    basic4 = cmbr.dup()
+    basic4.translate(-140, -140)
+    basic4.rotate(90)
+    basic4.translate(160, 140)
+
+    basic5 = cmbr.dup()
+    basic5.translate(40, 20)
+
+    basic6 = cmbr.dup()
+    basic6.translate(40, 0)
+    
+    basic7 = cmbr.dup()
+    basic7.translate(-140, -140)
+    basic7.rotate(90)
+    basic7.translate(60, 80)
+    
+    basic8 = cmbr.dup()
+    basic8.translate(-140, -140)
+    basic8.rotate(60)
+    basic8.translate(80, 80)
+    
+    cmbr.appendPath(basic1)
+    cmbr.appendPath(basic2)
+    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
+    cmbr.appendPath(basic6)
+    cmbr.appendPath(basic7)
+    cmbr.appendPath(basic8)
     
     
     # hole 為原點位置
@@ -50,7 +106,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cgo.render(cmbr, x, y, 1, rot)
     
 O(0, 0, 0, 0, 0, "green", True, 4)
-
+</script>
 
 '''
     return outstring
