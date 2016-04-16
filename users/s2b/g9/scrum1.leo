@@ -57,9 +57,9 @@ bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組�
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-目前所完成的 OpenShift 對應繪圖連結(組別畫布): &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2&lt;/a&gt; 
+目前所完成的 OpenShift 對應繪圖連結: &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2"&gt;bg9藍圖&lt;/a&gt; 
 
-個人畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/scrum1_test&lt;/a&gt;
+個人畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/scrum1_test"&gt;scrum1_50_fortest&lt;/a&gt;
 
 目前完成兩個字母，但是都以非常耗時的方式繪圖，在旋轉零件部分較為複雜，與組員的座標定位也要準確，否則會導致圖形組不起來
 
