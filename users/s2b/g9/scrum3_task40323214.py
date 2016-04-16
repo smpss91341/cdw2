@@ -8,26 +8,7 @@ scrum3_task40323214 = Blueprint('scrum3_task40323214', __name__, url_prefix='/bg
 @scrum3_task40323214.route('/scrum3_14')
 def scrum3_14():
     outstring = '''
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>網際 2D 繪圖</title>
-    <!-- IE 9: display inline SVG -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
-</head>
-<body>
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-<canvas id="plotarea" width="800" height="800"></canvas>
-<script type="text/python">
+
 from javascript import JSConstructor
 from browser import window
 import math
@@ -106,7 +87,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cgo.render(cmbr, x, y, 1, rot)
     
 O(0, 0, 0, 0, 0, "green", True, 4)
-</script>
+
 
 '''
     return outstring
