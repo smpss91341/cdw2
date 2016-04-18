@@ -12,6 +12,14 @@ import init
 # 導入 ag100 所屬的模組
 import users.s2a.g100.scrum1_task1
 import users.s2a.g100.scrum2_task1
+#g6
+import users.s2a.g6.ag6
+import users.s2a.g6.ag6_40323112_task1
+import users.s2a.g6.ag6_40323133_task1
+import users.s2a.g6.ag6_40323147_task1
+import users.s2a.g6.ag6_40323152_task1
+import users.s2a.g6.ag6_40323155_task1
+import users.s2a.g6.ag6_40323156_task1
 #g9
 import users.s2a.g9.ag9
 import users.s2a.g9.ag9_40323132_task1
@@ -360,6 +368,14 @@ def download(filename):
 app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
 # 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
+#g6
+app.register_blueprint(users.s2a.g6.ag6.ag6)
+app.register_blueprint(users.s2a.g6.ag6_40323112_task1.ag6_40323112)
+app.register_blueprint(users.s2a.g6.ag6_40323133_task1.ag6_40323133)
+app.register_blueprint(users.s2a.g6.ag6_40323147_task1.ag6_40323147)
+app.register_blueprint(users.s2a.g6.ag6_40323152_task1.ag6_40323152)
+app.register_blueprint(users.s2a.g6.ag6_40323155_task1.ag6_40323155)
+app.register_blueprint(users.s2a.g6.ag6_40323156_task1.ag6_40323156)
 #g9
 app.register_blueprint(users.s2a.g9.ag9.ag9)
 app.register_blueprint(users.s2a.g9.ag9_40323132_task1.ag9_40323132)
