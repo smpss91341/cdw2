@@ -56,21 +56,60 @@ Author: 40323123
 @others
 ag8 組員 40323123 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323123.leo 並且完成 其中自評
 
+2D協同繪圖設計:
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://dwa-40323123.rhcloud.com/ag8/task1All"&gt;http://dwa-40323123.rhcloud.com/ag8/task1All&lt;/a&gt;
+導入openshift並啟動2D協同繪圖的wsgi
+步驟:
+~~~script
+1.先git clone cdw2的程式碼
+
+2.確定可以用python wsgi.py執行
+
+3.開啟OpenShift並且新增一個python3的程式
+
+4.在中間可以看到open source URL →URL填你copy的網址
+
+5.如果順利成功可以看到網頁已經建立成功了~接著打你們的網址列就可以看到2D的圖形顯示了
+
+6.如果要進行修改，必須進入setting新增公私鑰(public key) (private key)
+
+7.如果沒有，使用putty genrate去產生key，複製public key到網址上add public key的地方
+
+8.Export OpenSSH到 Home/.ssh/id_rsa
+
+9.接著就可以進行存取git clone ssh/~~~~~
+
+10.進去資料夾下git rm -rf *  (強制刪除全部)
+
+11.在將更改好的資料複製到資料夾，下git push 就會更新OpenShift中的網站
+
+※主要下git rm all的原因是因為怕資料衝突，那部分要解比較困難，因為有些要遵守的規則和設定上的使用。
+
+~~~
+&lt;br /&gt;
+
+
+協同畫完的ABCD
+&lt;img src="./../files/ag8Files/2Ddwaring.png"&gt;
+
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 Onshape組裝與繪畫
 ============
 由組員進行協同分配繪畫零組件與設計
 組合圖如下圖所示
 &lt;img src="./../files/ag8Files/Onshape_assamble.png"&gt;
-
-
+四個零組件ABCD
+&lt;img src="./../files/ag8Files/Onshape_assamble_a.png"&gt;
+&lt;img src="./../files/ag8Files/Onshape_assamble_b.png"&gt;
+&lt;img src="./../files/ag8Files/Onshape_assamble_c.png"&gt;
+&lt;img src="./../files/ag8Files/Onshape_assamble_d.png"&gt;
 
 組裝影片
 ============
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1TnbR-ICf2E" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://dwaring-40323123.rhcloud.com/ag100/scrum1_task1"&gt;http://dwaring-40323123.rhcloud.com/&lt;/a&gt;
+
 
 
 
