@@ -19,9 +19,6 @@
 <v t="leo.20160418090356.1"><vh>進入 content 目錄</vh></v>
 <v t="leo.20160418090406.1" a="E"><vh>@path content</vh>
 <v t="leo.20160418090412.1" a="E"><vh>@path ag1</vh>
-<v t="leo.20160418090422.1"><vh>@edit scrum40123254.md</vh></v>
-</v>
-<v t="leo.20160418090439.1" a="E"><vh>@path user1</vh>
 <v t="leo.20160418090452.1"><vh>@clean scrum40123254.md</vh></v>
 </v>
 </v>
@@ -48,7 +45,6 @@ g.es("admin pelican 近端執行完畢")
 <t tx="leo.20160418090356.1"></t>
 <t tx="leo.20160418090406.1"></t>
 <t tx="leo.20160418090412.1"></t>
-<t tx="leo.20160418090439.1"></t>
 <t tx="leo.20160418090452.1">@language md
 Title: 40123254-回報 ag1 40123254 初步繪圖主機與連結
 Category: ag1
