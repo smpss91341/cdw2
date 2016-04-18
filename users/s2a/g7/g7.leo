@@ -23,10 +23,18 @@
 <v t="amd.20160405203555.1"><vh>@edit scrum1-20160411.md </vh></v>
 <v t="leo.20160418092404.1"><vh>@edit scrum1-20160412.md </vh></v>
 <v t="leo.20160418092912.1"><vh>@edit scrum1-20160413.md </vh></v>
+<v t="leo.20160418095559.1"><vh>@edit scrum1-20160414.md </vh></v>
+<v t="leo.20160418095726.1"><vh>@edit scrum1-20160415.md </vh></v>
+<v t="leo.20160418095842.1"><vh>@edit scrum1-20160416.md </vh></v>
+<v t="leo.20160418100005.1"><vh>@edit scrum1-20160417.md </vh></v>
 <v t="amd.20160329174131.1" a="E"><vh>@path ag7</vh>
 <v t="amd.20160329174139.1"><vh>@clean scrum1-20160411.md</vh></v>
 <v t="leo.20160418092745.1"><vh>@clean scrum1-20160412.md</vh></v>
 <v t="leo.20160418092938.1"><vh>@clean scrum1-20160413.md</vh></v>
+<v t="leo.20160418095622.1"><vh>@clean scrum1-20160414.md</vh></v>
+<v t="leo.20160418095745.1"><vh>@clean scrum1-20160415.md</vh></v>
+<v t="leo.20160418095905.1"><vh>@clean scrum1-20160416.md</vh></v>
+<v t="leo.20160418100026.1"><vh>@clean scrum1-20160417.md</vh></v>
 </v>
 </v>
 </v>
@@ -90,6 +98,66 @@ Tags: scrum1, task1, 40123119
 Author: kmol
 
 ag7 組員 40123119 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
+
+其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+
+</t>
+<t tx="leo.20160418095622.1">@language md
+Title: 40123141-回報 ag7 初步繪圖主機與連結
+Category: ag7
+Tags: scrum1, task1, 40123141
+Author: kmol
+
+ag7 組員 40123141 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
+
+其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+
+</t>
+<t tx="leo.20160418095745.1">@language md
+Title: 40123149-回報 ag7 初步繪圖主機與連結
+Category: ag7
+Tags: scrum1, task1, 40123149
+Author: kmol
+
+ag7 組員 40123149 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
+
+其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+
+</t>
+<t tx="leo.20160418095905.1">@language md
+Title: 40123216-回報 ag7 初步繪圖主機與連結
+Category: ag7
+Tags: scrum1, task1, 40123216
+Author: kmol
+
+ag7 組員 40123216 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
+
+其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+
+</t>
+<t tx="leo.20160418100026.1">@language md
+Title: 40123255-回報 ag7 初步繪圖主機與連結
+Category: ag7
+Tags: scrum1, task1, 40123255
+Author: kmol
+
+ag7 組員 40123255 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 

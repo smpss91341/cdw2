@@ -19,8 +19,4 @@
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1"&gt;http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum3_task1.py 中的 scrum3_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum3"></category><category term="task1"></category><category term="40323203"></category></entry><entry><title>40323201-回報 bg4 初步繪圖主機與連結</title><link href="./40323201-hui-bao-bg4-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-18T09:23:12+08:00</updated><author><name>kmol</name></author><id>tag:,2016-04-18:./40323201-hui-bao-bg4-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;bg4 組員 40323201 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
-
-
-&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1"&gt;http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323201"></category></entry></feed>
+&lt;p&gt;其中已經在主程式中導入 scrum3_task1.py 中的 scrum3_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum3"></category><category term="task1"></category><category term="40323203"></category></entry></feed>
