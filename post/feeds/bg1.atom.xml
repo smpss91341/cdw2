@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg1.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-18T10:12:40+08:00</updated><entry><title>40123129-回報 bg1 40123129 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123129-hui-bao-bg1-40123129-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-18T10:12:40+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-18:cdw2/post/40123129-hui-bao-bg1-40123129-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;Author: kmol
+=======
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/bg1.atom.xml" rel="self"></link><id>./</id><updated>2016-04-18T09:13:25+08:00</updated><entry><title>40123129-回報 bg1 40123129 初步繪圖主機與連結</title><link href="./40123129-hui-bao-bg1-40123129-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-18T09:13:25+08:00</updated><author><name>kmol</name></author><id>tag:,2016-04-18:./40123129-hui-bao-bg1-40123129-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;Author: kmol
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/bg1.atom.xml" rel="self"></link><id>./</id><updated>2016-04-18T09:23:12+08:00</updated><entry><title>40123129-回報 bg1 40123129 初步繪圖主機與連結</title><link href="./40123129-hui-bao-bg1-40123129-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-18T09:23:12+08:00</updated><author><name>kmol</name></author><id>tag:,2016-04-18:./40123129-hui-bao-bg1-40123129-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;Author: kmol
+>>>>>>> 609137a7ec38c7dfa72410ec4d0c6a4370813634
+>>>>>>> 7d2b8422f0f73de0784867f21234a5bda941e78d
 bg1 組員40123129 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
 
 
