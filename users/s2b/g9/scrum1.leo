@@ -22,6 +22,7 @@
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
 <v t="amd.20160329174131.1"><vh>@path ag100</vh></v>
 <v t="amd.20160329174139.1"><vh>@clean 40323250.md</vh></v>
+<v t="leo.20160419230833.1"><vh>@clean 40323250_2.md</vh></v>
 </v>
 </v>
 </vnodes>
@@ -50,7 +51,7 @@ g.es("admin pelican 執行完畢")
 Title: 40323250-回報 bg9 初步繪圖主機與連結
 Category: bg9
 Tags: scrum1, task1, 40323250
-Author: kmol
+Author: 40323250
 @others
 
 bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母
@@ -69,5 +70,72 @@ bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組�
 
 </t>
 <t tx="amd.20160329211330.1"></t>
+<t tx="leo.20160419230833.1">@language md
+Title: 40323250 - 暫編
+Category: bg9
+Tags: scrum1, task1, 40323250
+Author: 40323250
+@others
+
+&lt;h2&gt;Gh-pages :&lt;/h2&gt;
+在 gh-pages 裡的user/組別 目錄下 新增個人leo檔案，並將.md檔路徑放在content，至於紅色框框為檔案名稱，很多人都使用日期導致檔案一直覆寫。
+
+和上學期個人md檔相同作法，編輯個人學期心得，並顯示於
+&lt;a href="http://2015fallhw.github.io/cdw2/post/"&gt;cdw2首頁&lt;/a&gt; 
+&lt;br&gt;
+&lt;img src="https://copy.com/OIjDRU6EryDLWFE0"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;img src="https://copy.com/pc0ZBtzmu8hKzhMU"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;h2&gt;Master : &lt;/h2&gt;
+用於儲存繪圖程式檔案，並將檔案傳上openshift，能夠在遠端直接顯示圖檔，並能夠導入組員零件，已達成協同要求。
+近端要在cdw2目錄下，使用python wsgi.py指令，才能夠在localhost5000顯示個人圖檔。
+&lt;br&gt;
+繪圖須註冊藍圖，包括組別與個人，註冊位置在cdw2目錄下之simpleflask.leo
+&lt;br&gt;
+&lt;img src="https://copy.com/kYG2AQ4wxNgrTHFk"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;img src="https://copy.com/0f8lBo8il7EddEj9"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2&gt;繪圖 : &lt;/h2&gt;
+&lt;br&gt;
+&lt;img src="https://copy.com/MlxV3eOnc6pBsaNo"width="450"height="450"&gt;
+&lt;br&gt;
+此部分依照你的需求，若是使用你的藍圖為主畫布，則使用此串原始碼
+若為被導入之零件則刪除(尾端/script也要記得刪)
+&lt;br&gt;
+個人檔案  可以使用多個畫布，但導入圖檔畫布要相同
+&lt;br&gt;
+&lt;img src="https://copy.com/vy8ArNEWKh6z3w2P"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;img src="https://copy.com/WRpgJI32hY6fu6CB"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;img src="https://copy.com/IwsvX3pfp4mWaFFn"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;br&gt;
+會依照導入順序顯示圖形
+&lt;br&gt;
+&lt;img src="https://copy.com/wa0eTIZcXjGFVagP"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;br&gt;
+若傳上openshift後，幾天沒有開啟會導致頁面暫時關閉，只需按下重啟即可
+&lt;br&gt;
+&lt;img src="https://copy.com/CFAvDAhZXf6nvFER"width="450"height="450"&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+目前先做到這樣，有空再整理，有問題歡迎洽詢。
+&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;繪圖自己測試，請多發揮想像力，不要過度依賴書本，才有無限可能&lt;/h3&gt;
+
+
+
+
+</t>
 </tnodes>
 </leo_file>
