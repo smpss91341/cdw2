@@ -20,9 +20,10 @@
 </v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329174131.1"><vh>@path ag100</vh></v>
+<v t="leo.20160419235023.1" a="E"><vh>@path bg9</vh>
 <v t="amd.20160329174139.1"><vh>@clean 40323250.md</vh></v>
 <v t="leo.20160419230833.1"><vh>@clean 40323250_2.md</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
@@ -46,7 +47,6 @@ os.system("pelican content -o post -s publishconf.py")
 g.es("admin pelican 執行完畢")
 
 </t>
-<t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
 Title: 40323250-回報 bg9 初步繪圖主機與連結
 Category: bg9
@@ -88,9 +88,9 @@ Author: 40323250
 和上學期個人md檔相同作法，編輯個人學期心得，並顯示於
 &lt;a href="http://2015fallhw.github.io/cdw2/post/"&gt;cdw2首頁&lt;/a&gt; 
 
-&lt;img src="https://copy.com/OIjDRU6EryDLWFE0"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/1.png"&gt;
 
-&lt;img src="https://copy.com/pc0ZBtzmu8hKzhMU"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/2.png"&gt;
 
 
 
@@ -100,36 +100,36 @@ Author: 40323250
 &lt;br&gt;
 繪圖須註冊藍圖，包括組別與個人，註冊位置在cdw2目錄下之simpleflask.leo
 
-&lt;img src="https://copy.com/kYG2AQ4wxNgrTHFk"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/3.png"&gt;
 
-&lt;img src="https://copy.com/0f8lBo8il7EddEj9"width="450"height="450"&gt;
-
+&lt;img src="./../files/bg9/40323250/4.png"&gt;
 
 &lt;h2&gt;繪圖 : &lt;/h2&gt;
 
-&lt;img src="https://copy.com/MlxV3eOnc6pBsaNo"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/5.png"&gt;
 
 此部分依照你的需求，若是使用你的藍圖為主畫布，則使用此串原始碼
 若為被導入之零件則刪除(尾端/script也要記得刪)
 
 個人檔案  可以使用多個畫布，但導入圖檔畫布要相同
 
-&lt;img src="https://copy.com/vy8ArNEWKh6z3w2P"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/6.png"&gt;
 
-&lt;img src="https://copy.com/WRpgJI32hY6fu6CB"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/7.png"&gt;
 
-&lt;img src="https://copy.com/IwsvX3pfp4mWaFFn"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/8.png"&gt;
 
 
 會依照導入順序顯示圖形
 
 
-&lt;img src="https://copy.com/wa0eTIZcXjGFVagP"width="450"height="450"&gt;
+&lt;img src="./../files/bg9/40323250/9.png"&gt;
 
 
 若傳上openshift後，幾天沒有開啟會導致頁面暫時關閉，只需按下重啟即可
-&lt;br&gt;
-&lt;img src="https://copy.com/CFAvDAhZXf6nvFER"width="450"height="450"&gt;
+
+
+&lt;img src="./../files/bg9/40323250/10.png"&gt;
 
 
 
@@ -142,5 +142,6 @@ Author: 40323250
 
 
 </t>
+<t tx="leo.20160419235023.1"></t>
 </tnodes>
 </leo_file>
