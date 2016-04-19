@@ -80,8 +80,7 @@ Author: 40323250
 
 暫編報告
 
-
-&lt;h2&gt;Gh-pages :&lt;/h2&gt;
+Gh-pages :
 在 gh-pages 裡的user/組別 目錄下 新增個人leo檔案，並將.md檔路徑放在content，至於紅色框框為檔案名稱，很多人都使用日期導致檔案一直覆寫。
 
 和上學期個人md檔相同作法，編輯個人學期心得，並顯示於
