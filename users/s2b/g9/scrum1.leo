@@ -54,6 +54,9 @@ Tags: scrum1, task1, 40323250
 Author: 40323250
 @others
 
+
+
+
 bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
