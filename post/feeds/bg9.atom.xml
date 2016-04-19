@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg9.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-19T23:31:50+08:00</updated><entry><title>40323250 - 暫編</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-zan-bian.html" rel="alternate"></link><updated>2016-04-19T23:31:50+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250-zan-bian.html</id><summary type="html">&lt;p&gt;暫編報告&lt;/p&gt;
-&lt;p&gt;Gh-pages :
-在 gh-pages 裡的user/組別 目錄下 新增個人leo檔案，並將.md檔路徑放在content，至於紅色框框為檔案名稱，很多人都使用日期導致檔案一直覆寫。&lt;/p&gt;
+&lt;h2&gt;Gh-pages : &lt;/h2&gt;
+
+&lt;p&gt;在 gh-pages 裡的user/組別 目錄下 新增個人leo檔案，並將.md檔路徑放在content，至於紅色框框為檔案名稱，很多人都使用日期導致檔案一直覆寫。&lt;/p&gt;
 &lt;p&gt;和上學期個人md檔相同作法，編輯個人學期心得，並顯示於
 &lt;a href="http://2015fallhw.github.io/cdw2/post/"&gt;cdw2首頁&lt;/a&gt; 
 &lt;br&gt;
@@ -53,12 +54,7 @@
 目前先做到這樣，有空再整理，有問題歡迎洽詢。
 &lt;br&gt;
 &lt;br&gt;
-&lt;h3&gt;繪圖自己測試，請多發揮想像力，不要過度依賴書本，才有無限可能&lt;/h3&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250scrum1-回報 bg9 scrum1 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40323250scrum1-hui-bao-bg9-scrum1-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-19T23:08:01+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250scrum1-hui-bao-bg9-scrum1-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;請注意: 這個 .md 檔案應該要放到 s2b/g9 目錄中, 而且用學號作為 Tags 分類讓使用者可以較容易透過 Tags 找到某一學員所提供的所有內容.&lt;/p&gt;
-&lt;p&gt;bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323250.leo 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
-
-
-&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250-回報 bg9 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-19T23:08:01+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母&lt;/p&gt;
+&lt;h3&gt;繪圖自己測試，請多發揮想像力，不要過度依賴書本，才有無限可能&lt;/h3&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250-回報 bg9 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-19T23:08:01+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結: &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2"&gt;bg9藍圖&lt;/a&gt; &lt;/p&gt;
