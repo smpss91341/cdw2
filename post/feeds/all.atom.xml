@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/all.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-19T23:31:50+08:00</updated><entry><title>40323250 - 暫編</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-zan-bian.html" rel="alternate"></link><updated>2016-04-19T23:31:50+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250-zan-bian.html</id><summary type="html">&lt;h2&gt;Gh-pages :&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/all.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-19T23:31:50+08:00</updated><entry><title>40323250 - 暫編</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-zan-bian.html" rel="alternate"></link><updated>2016-04-19T23:31:50+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250-zan-bian.html</id><summary type="html">&lt;p&gt;暫編報告&lt;/p&gt;
+&lt;h2&gt;Gh-pages :&lt;/h2&gt;
 
 &lt;p&gt;在 gh-pages 裡的user/組別 目錄下 新增個人leo檔案，並將.md檔路徑放在content，至於紅色框框為檔案名稱，很多人都使用日期導致檔案一直覆寫。&lt;/p&gt;
 &lt;p&gt;和上學期個人md檔相同作法，編輯個人學期心得，並顯示於

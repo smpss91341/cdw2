@@ -55,8 +55,6 @@ Author: 40323250
 @others
 
 
-
-
 bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
@@ -79,6 +77,9 @@ Category: bg9
 Tags: scrum1, task1, 40323250
 Author: 40323250
 @others
+
+暫編報告
+
 
 &lt;h2&gt;Gh-pages :&lt;/h2&gt;
 在 gh-pages 裡的user/組別 目錄下 新增個人leo檔案，並將.md檔路徑放在content，至於紅色框框為檔案名稱，很多人都使用日期導致檔案一直覆寫。
