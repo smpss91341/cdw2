@@ -5,8 +5,8 @@ from flask import Blueprint, render_template
 scrum5_task40323230 = Blueprint('scrum5_task40323230', __name__, url_prefix='/bg9', template_folder='templates')
 
 # scrum5_task30 為完整可以單獨執行的繪圖程式
-@scrum5_task40323230.route('/scrum5_30')
-def scrum5_30():
+@scrum5_task40323230.route('/scrum5_30_1')
+def scrum5_30_1():
     outstring = '''
 
 from javascript import JSConstructor
@@ -101,8 +101,24 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     
     basic15 = cmbr.dup()
     basic15.translate(40+20*math.cos(30*deg), 20*math.sin(30*deg))
+
+    basic16 = cmbr.dup()
+    basic16.translate(-40, -20)
+    basic16.rotate(122.28)
+    basic16.translate(120+20*math.sin(15*deg), 50+20*math.cos(15*deg))
     
+    basic17 = cmbr.dup()
+    basic17.translate(-40, -20)
+    basic17.rotate(37.54)
+    basic17.translate(200+20*math.sin(45*deg), 80-20*math.cos(45*deg))
     
+    basic18 = cmbr.dup()
+    basic18.translate(160+20*math.sin(45*deg)+20*math.sin(37.54*deg), 60-20*math.cos(45*deg)-20*math.cos(37.54*deg))
+    
+    basic19 = cmbr.dup()
+    basic19.translate(-40, -20)
+    basic19.rotate(-37.54)
+    basic19.translate(200+20*math.sin(45*deg)+20*math.sin(37.54*deg), 60-20*math.cos(45*deg)-20*math.cos(37.54*deg))
     
     cmbr.appendPath(basic1)
     cmbr.appendPath(basic2)
@@ -119,6 +135,12 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic13)
     cmbr.appendPath(basic14)
     cmbr.appendPath(basic15)
+    cmbr.appendPath(basic16)
+    cmbr.appendPath(basic17)
+    cmbr.appendPath(basic18)
+    cmbr.appendPath(basic19)
+    
+    
     
     
     # hole 為原點位置
@@ -133,4 +155,79 @@ O(0, 0, 0, 0, 0, "yellow", True, 4)
 
 
 '''
+    return outstring
+    
+    
+@scrum5_task40323230.route('/scrum5_30_2')
+def scrum5_30_2():
+    outstring = '''
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>網際 2D 繪圖</title>
+    <!-- IE 9: display inline SVG -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
+
+</head>
+<body>
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<canvas id="plotarea2" width="800" height="800"></canvas>
+
+<script type="text/python">
+from javascript import JSConstructor
+from browser import window
+import math
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+cgo.setWorldCoords(-250, -250, 500, 500) 
+
+        
+#cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
+deg = math.pi/180  
+def O(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+                     A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+                     A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+                     A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+                     A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber, 0, 0)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+    
+    
+    
+    
+    
+    
+    # hole 為原點位置
+    #hole = cobj(shapedefs.circle(4), "PATH") 
+    #cmbr.appendPath(hole) 
+
+    
+    # 放大 1 倍
+    cgo.render(cmbr, x, y, 1, rot)
+    
+O(0, 0, 0, 0, 0, "yellow", True, 4)
+</script>
+
+'''
+
     return outstring
