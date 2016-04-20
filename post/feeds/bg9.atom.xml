@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg9.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-19T23:51:16+08:00</updated><entry><title>40323250 - 暫編</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-zan-bian.html" rel="alternate"></link><updated>2016-04-19T23:51:16+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250-zan-bian.html</id><summary type="html">&lt;p&gt;暫編報告&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg9.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-20T17:27:37+08:00</updated><entry><title>40323250 - 暫編</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-zan-bian.html" rel="alternate"></link><updated>2016-04-20T17:27:37+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40323250-zan-bian.html</id><summary type="html">&lt;p&gt;暫編報告&lt;/p&gt;
 
 
 &lt;h2&gt;Gh-pages : &lt;/h2&gt;
@@ -32,11 +32,11 @@
 &lt;p&gt;&lt;img src="./../files/bg9/10.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="./../files/bg9/11.png"&gt;&lt;/p&gt;
 &lt;p&gt;目前先做到這樣，有空再整理，有問題歡迎洽詢。&lt;/p&gt;
-&lt;h3&gt;繪圖自己測試，請多發揮想像力，不要過度依賴書本，才有無限可能&lt;/h3&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250-回報 bg9 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-19T23:51:16+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-19:cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母&lt;/p&gt;
+&lt;h3&gt;繪圖自己測試，請多發揮想像力，不要過度依賴書本，才有無限可能&lt;/h3&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250-回報 bg9 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T17:27:37+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結: &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2"&gt;bg9藍圖&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;個人畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/scrum1_test"&gt;scrum1_50_fortest&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;目前完成兩個字母，但是都以非常耗時的方式繪圖，在旋轉零件部分較為複雜，與組員的座標定位也要準確，否則會導致圖形組不起來&lt;/p&gt;
+&lt;p&gt;個人畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/scrum1_50_ABCD"&gt;scrum1_50_ABCD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前完成字母，但是都以非常耗時的方式繪圖，在旋轉零件部分較為複雜，與組員的座標定位也要精確，否則會導致圖形組不起來&lt;/p&gt;
 &lt;p&gt;繪圖要注意自己的圖形的起始位置，以及複製圖形的旋轉中心，能夠掌握這兩點就能減少繪圖的出錯率。&lt;/p&gt;
 &lt;p&gt;暫時先做到這邊。&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry></feed>
