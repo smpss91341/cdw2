@@ -132,13 +132,9 @@ Author: 40323250
 &lt;img src="./../files/bg9/10.png"&gt;
 
 
-
-
-
-
-
-
 &lt;img src="./../files/bg9/ABD.png"&gt;
+
+&lt;img src="./../files/bg9/ABD_2.png"&gt;
 
 目前先做到這樣，有空再整理，有問題歡迎洽詢。
 
