@@ -1021,13 +1021,13 @@ x4, y4 = mychain.basic_rot(x3, y3, 90)
 x5, y5 = mychain.basic_rot(x4, y4, 0)
 # 右斜 -40 度
 x6, y6 = mychain.basic_rot(x5, y5, -40)
-x7, y7 = mychain.basic_rot(x6, y6, -70)
+x7, y7 = mychain.basic_rot(x6, y6, -60)
 # 右中垂直向下單元
 x8, y8 = mychain.basic_rot(x7, y7, -90)
-# -110 度
-x9, y9 = mychain.basic_rot(x8, y8, -100)
-# -150
-x10, y10 = mychain.basic_rot(x9, y9, -150)
+# -120 度
+x9, y9 = mychain.basic_rot(x8, y8, -120)
+# -140
+x10, y10 = mychain.basic_rot(x9, y9, -140)
 # 水平接回原點
 mychain.basic(x10, y10, 0+65*3, 0, color="red")
 '''
@@ -1057,5 +1057,7 @@ def week8_abc():
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_a'></script>"
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_b'></script>"
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_c'></script>"
+    # 假如 scrum1 程式碼與 scrum2 所寫的程式碼同時更版且在同一台 server 上運行, 否則要給 scrum2_week8_d 的完整 url
+    outstring += "<script type='text/python' src='/ag100/scrum2_week8_d'></script>"
     outstring += week8_tail()
     return outstring
