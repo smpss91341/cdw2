@@ -71,24 +71,16 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic1.translate(0, 20)
     
     basic2 = cmbr.dup()
-    basic2.rotate(-14.48)
+    basic2.rotate(-30)
     basic2.translate(0, 40)
-    
-    basic9 = cmbr.dup()
-    basic9.rotate(-14.48)
-    basic9.translate(20*math.cos(75.52*deg), 40+20*math.sin(75.52*deg))
     
     basic3 = cmbr.dup()
     basic3.rotate(-90)
-    basic3.translate(10, 60+20*math.sin(75.52*deg))
+    basic3.translate(10, 40+20*math.cos(30*deg))
     
     basic4 = cmbr.dup()
-    basic4.rotate(14.48)
+    basic4.rotate(30)
     basic4.translate(40, 40)
-    
-    basic10 = cmbr.dup()
-    basic10.rotate(14.48)
-    basic10.translate(40-20*math.cos(75.52*deg), 40+20*math.sin(75.52*deg))
     
     basic5 = cmbr.dup()
     basic5.translate(40, 20)
@@ -112,9 +104,6 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic6)
     cmbr.appendPath(basic7)
     cmbr.appendPath(basic8)
-    cmbr.appendPath(basic9)
-    cmbr.appendPath(basic10)
-    
     
     # hole 為原點位置
     #hole = cobj(shapedefs.circle(4), "PATH") 
@@ -256,214 +245,12 @@ O(0, 0, 0, 0, 0, "RED", True, 4)
 
 '''
     return outstring
-    
-    
-    
-@scrum1_task40323250.route('/scrum1_50_C')
-def scrum1_50_C():
+
+
+@scrum1_task40323250.route('/scrum1_50')
+def scrum1_50():
     outstring = '''
 
-from javascript import JSConstructor
-from browser import window
-import math
-cango = JSConstructor(window.Cango)
-cobj = JSConstructor(window.Cobj)
-shapedefs = window.shapeDefs
-obj2d = JSConstructor(window.Obj2D)
-cgo = cango("plotarea")
-cgo.setWorldCoords(-250, -250, 500, 500) 
-# 決定要不要畫座標軸線
-cgo.drawAxes(0, 240, 0, 240, {
-    "strokeColor":"#aaaaaa",
-    "fillColor": "#aaaaaa",
-    "xTickInterval": 20,
-    "xLabelInterval": 20,
-    "yTickInterval": 20,
-    "yLabelInterval": 20})
-        
-#cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
-deg = math.pi/180  
-def O(x, y, rx, ry, rot, color, border, linewidth):
-    # 旋轉必須要針對相對中心 rot not working yet
-    chamber = "M -6.8397, -1.4894 \
-                     A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
-                     A 40, 40, 0, 0, 1, 6.8397, -18.511 \
-                     A 7, 7, 0, 1, 0, -6.8397, -18.511 \
-                     A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
-    cgoChamber = window.svgToCgoSVG(chamber, 120, 50)
-    cmbr = cobj(cgoChamber, "SHAPE", {
-            "fillColor": color,
-            "border": border,
-            "strokeColor": "tan",
-            "lineWidth": linewidth })
-            
-    
-    basic1 = cmbr.dup()
-    basic1.translate(-120, -50)
-    basic1.rotate(15)
-    basic1.translate(120, 30)
-    
-    basic2 = cmbr.dup()
-    basic2.translate(-120, -50)
-    basic2.rotate(57.72)
-    basic2.translate(120+20*math.sin(15*deg), 30-20*math.cos(15*deg))
-    
-    basic3 = cmbr.dup()
-    basic3.translate(-120, -50)
-    basic3.rotate(90)
-    basic3.translate(120+20*math.sin(15*deg)+20*math.sin(57.72*deg), 30-20*math.cos(15*deg)-20*math.cos(57.72*deg))
-    
-    basic4 = cmbr.dup()
-    basic4.translate(-120, -50)
-    basic4.rotate(165)
-    basic4.translate(120, 50)
-    
-    basic5 = cmbr.dup()
-    basic5.translate(-120, -50)
-    basic5.rotate(122.28)
-    basic5.translate(120+20*math.sin(15*deg), 50+20*math.cos(15*deg))
-    
-    basic6 = cmbr.dup()
-    basic6.translate(-120, -50)
-    basic6.rotate(90)
-    basic6.translate(120+20*math.sin(15*deg)+20*math.sin(57.72*deg), 50+20*math.cos(15*deg)+20*math.cos(57.72*deg))
-   
-   
-    
-    cmbr.appendPath(basic1)
-    cmbr.appendPath(basic2)
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
-    cmbr.appendPath(basic6)
-    
-    # hole 為原點位置
-    #hole = cobj(shapedefs.circle(4), "PATH") 
-    #cmbr.appendPath(hole) 
-
-  
-    # 放大 1 倍
-    cgo.render(cmbr, x, y, 1, rot)
-    
-O(0, 0, 0, 0, 0, "PURPLE", True, 4)
-
-
-
-'''
-    return outstring
-
-
-@scrum1_task40323250.route('/scrum1_50_D')
-def scrum1_50_D():
-    outstring = '''
-
-from javascript import JSConstructor
-from browser import window
-import math
-cango = JSConstructor(window.Cango)
-cobj = JSConstructor(window.Cobj)
-shapedefs = window.shapeDefs
-obj2d = JSConstructor(window.Obj2D)
-cgo = cango("plotarea")
-cgo.setWorldCoords(-250, -250, 500, 500) 
-# 決定要不要畫座標軸線
-cgo.drawAxes(0, 240, 0, 240, {
-    "strokeColor":"#aaaaaa",
-    "fillColor": "#aaaaaa",
-    "xTickInterval": 20,
-    "xLabelInterval": 20,
-    "yTickInterval": 20,
-    "yLabelInterval": 20})
-        
-#cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
-deg = math.pi/180  
-def O(x, y, rx, ry, rot, color, border, linewidth):
-    # 旋轉必須要針對相對中心 rot not working yet
-    chamber = "M -6.8397, -1.4894 \
-                     A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
-                     A 40, 40, 0, 0, 1, 6.8397, -18.511 \
-                     A 7, 7, 0, 1, 0, -6.8397, -18.511 \
-                     A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
-    cgoChamber = window.svgToCgoSVG(chamber, 180, 20)
-    cmbr = cobj(cgoChamber, "SHAPE", {
-            "fillColor": color,
-            "border": border,
-            "strokeColor": "tan",
-            "lineWidth": linewidth })
-            
-    
-    basic1 = cmbr.dup()
-    basic1.translate(0, 20)
-    
-    basic2 = cmbr.dup()
-    basic2.translate(0, 40)
-    
-    basic3 = cmbr.dup()
-    basic3.translate(0, 60)
-    
-    basic4 = cmbr.dup()
-    basic4.translate(-180, 0)
-    basic4.rotate(-90)
-    basic4.translate(180, 80)
-    
-    basic5 = cmbr.dup()
-    basic5.translate(-180, 0)
-    basic5.rotate(-90)
-    basic5.translate(180, 0)
-    
-    basic6 = cmbr.dup()
-    basic6.translate(-180, 0)
-    basic6.rotate(-45)
-    basic6.translate(200, 0)
-    
-    basic7 = cmbr.dup()
-    basic7.translate(-180, 0)
-    basic7.rotate(-135)
-    basic7.translate(200, 80)
-    
-    basic8 = cmbr.dup()
-    basic8.translate(-180, 0)
-    basic8.rotate(-142.46)
-    basic8.translate(200+20*math.cos(45*deg), 80-20*math.sin(45*deg))
-    
-    basic9 = cmbr.dup()
-    basic9.translate(-180, 0)
-    basic9.rotate(-37.54)
-    basic9.translate(200+20*math.cos(45*deg), 20*math.sin(45*deg))
-    
-    basic10 = cmbr.dup()
-    basic10.translate(20+20*math.cos(45*deg)+20*math.cos(52.46*deg), 20*math.sin(45*deg)+20*math.sin(52.46*deg))
-    
-    cmbr.appendPath(basic1)
-    cmbr.appendPath(basic2)
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
-    cmbr.appendPath(basic6)
-    cmbr.appendPath(basic7)
-    cmbr.appendPath(basic8)
-    cmbr.appendPath(basic9)
-    cmbr.appendPath(basic10)
-    
-    # hole 為原點位置
-    #hole = cobj(shapedefs.circle(4), "PATH") 
-    #cmbr.appendPath(hole) 
-
-  
-    # 放大 1 倍
-    cgo.render(cmbr, x, y, 1, rot)
-    
-O(0, 0, 0, 0, 0, "GREEN", True, 4)
-
-
-'''
-    return outstring
-
-
-@scrum1_task40323250.route('/scrum1_50_1')
-def scrum1_50_1():
-    outstring = '''
-    
 from javascript import JSConstructor
 from browser import window
 import math
@@ -500,7 +287,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic1.translate(0, 20)
     
     basic2 = cmbr.dup()
-    basic2.rotate(-14.48)
+    basic2.rotate(-30)
     basic2.translate(0, 40)
     
     basic3 = cmbr.dup()
@@ -549,12 +336,6 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic15.rotate(-90)
     basic15.translate(40, 120)
     
-    basic16 = cmbr.dup()
-    basic16.translate(120, 30)
-    
-    basic17 = cmbr.dup()
-    basic17.translate(180, 40)
-    
     
     cmbr.appendPath(basic1)
     cmbr.appendPath(basic2)
@@ -571,9 +352,6 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic13)
     cmbr.appendPath(basic14)
     cmbr.appendPath(basic15)
-    cmbr.appendPath(basic16)
-    cmbr.appendPath(basic17)
-    
     
     # hole 為原點位置
     #hole = cobj(shapedefs.circle(4), "PATH") 
@@ -587,16 +365,11 @@ O(0, 0, 0, 0, 0, "red", True, 4)
 
 
 
-
-
-
 '''
     return outstring
     
-    
-
-@scrum1_task40323250.route('/scrum1_50_2')
-def scrum1_50_2():
+@scrum1_task40323250.route('/scrum1_test')
+def scrum1_test():
     outstring = '''
 <!DOCTYPE html>
 <html>
@@ -638,12 +411,14 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
                      A 40, 40, 0, 0, 1, 6.8397, -18.511 \
                      A 7, 7, 0, 1, 0, -6.8397, -18.511 \
                      A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
-    cgoChamber = window.svgToCgoSVG(chamber, 0, 0)
+    cgoChamber = window.svgToCgoSVG(chamber)
     cmbr = cobj(cgoChamber, "SHAPE", {
             "fillColor": color,
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
+            
+    
             
             
             
@@ -654,18 +429,74 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic1.translate(0, 20)
     
     basic2 = cmbr.dup()
-    basic2.rotate(-14.48)
+    basic2.rotate(-30)
     basic2.translate(0, 40)
     
     basic3 = cmbr.dup()
     basic3.translate(60, 0)
     
     
+    basic4 = cmbr.dup()
+    basic4.translate(60, 20)
+    
+    basic5 = cmbr.dup()
+    basic5.rotate(-90)
+    basic5.translate(0, 120)
    
+    basic6 = cmbr.dup()
+    basic6.translate(20, 120)
+    
+    basic7 = cmbr.dup()
+    basic7.rotate(-90)
+    basic7.translate(0, 140)
+    
+    basic8 = cmbr.dup()
+    basic8.translate(0, 140)
+    
+    
+    basic9 = cmbr.dup()
+    basic9.rotate(-90)
+    basic9.translate(0, 160)
+    
+    basic10 = cmbr.dup()
+    basic10.translate(40, 120)
+    
+    basic11 = cmbr.dup()
+    basic11.translate(40, 140)
+    
+    basic12 = cmbr.dup()
+    basic12.rotate(-90)
+    basic12.translate(40, 160)
+    
+    basic13 = cmbr.dup()
+    basic13.translate(60, 140)
+    
+    basic14 = cmbr.dup()
+    basic14.translate(60, 120)
+    
+    basic15 = cmbr.dup()
+    basic15.rotate(-90)
+    basic15.translate(40, 120)
+    
+   
+    
     
     cmbr.appendPath(basic1)
     cmbr.appendPath(basic2)
     cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
+    cmbr.appendPath(basic6)
+    cmbr.appendPath(basic7)
+    cmbr.appendPath(basic8)
+    cmbr.appendPath(basic9)
+    cmbr.appendPath(basic10)
+    cmbr.appendPath(basic11)
+    cmbr.appendPath(basic12)
+    cmbr.appendPath(basic13)
+    cmbr.appendPath(basic14)
+    cmbr.appendPath(basic15)
+  
     
     # hole 為原點位置
     #hole = cobj(shapedefs.circle(4), "PATH") 
@@ -676,22 +507,35 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cgo.render(cmbr, x, y, 1, rot)
     
 O(0, 0, 0, 0, 0, "red", True, 4)
-</script>
 
+</script>
 
 '''
     return outstring
-
-
-
-
-
-    
     
 @scrum1_task40323250.route('/scrum1_class')
 def scrum1_class():
     outstring = '''    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>網際 2D 繪圖</title>
+    <!-- IE 9: display inline SVG -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
+</head>
+<body>
+<script>
+window.onload=function(){
+brython(1);
+}
 </script>
+<canvas id="plotarea" width="800" height="800"></canvas>
+<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math
@@ -901,7 +745,6 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic30)
     cmbr.appendPath(basic31)
     cmbr.appendPath(basic32)
-    
     
     # hole 為原點位置
     #hole = cobj(shapedefs.circle(4), "PATH") 
