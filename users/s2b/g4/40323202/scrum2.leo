@@ -10,7 +10,8 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160421112304.1"><vh>@edit scrum2_40323202.html</vh></v>
+<v t="leo.20160421112304.1"><vh>@edit scrum2_task40323202.py</vh></v>
+<v t="leo.20160421121120.1"><vh>@edit scrum2_40323202.html</vh></v>
 <v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
