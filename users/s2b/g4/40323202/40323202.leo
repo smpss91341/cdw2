@@ -9,13 +9,13 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160310102717.2"><vh>@edit 40123214_w3_1.py</vh></v>
-<v t="leo.20160331171724.1"><vh>@edit scrum2_task40123214.py</vh></v>
-<v t="leo.20160310105143.1"><vh>@path ./../../../2b_files</vh></v>
-<v t="leo.20160310103851.1"><vh>@path./../../../</vh></v>
+<v t="leo.20160310091900.1"><vh>@edit 40323202_w3_1.py</vh></v>
+<v t="leo.20160310091611.2" a="E"><vh>@path ./../../../2b_files/task0</vh>
+<v t="leo.20160310111848.1"><vh>@edit 2016_cd_2b_3.txt</vh></v>
+<v t="leo.20160310111856.1"><vh>@edit g4.txt</vh></v>
+</v>
 </vnodes>
 <tnodes>
-<t tx="leo.20160310103851.1"></t>
-<t tx="leo.20160310105143.1"></t>
+<t tx="leo.20160310091611.2"></t>
 </tnodes>
 </leo_file>

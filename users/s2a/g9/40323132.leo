@@ -11,8 +11,7 @@
 <vnodes>
 <v t="amd.20160329205817.1"><vh>ag100 註解</vh></v>
 <v t="amd.20160314224057.1" a="E"><vh>master 分支 flask 程式開發</vh>
-<v t="amd.20160329201851.1"><vh>ag100 組程式規畫</vh></v>
-<v t="amd.20160314224303.1"><vh>@edit scrum1_task1.py</vh></v>
+<v t="amd.20160314224303.1"><vh>@edit ag9_40323132_task1.py</vh></v>
 <v t="amd.20160314224120.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160314224203.1" a="E"><vh>@clean myflaskapp.py</vh>
 <v t="amd.20160314224223.1"><vh>myflaskapp declarations</vh></v>
@@ -30,22 +29,22 @@
 <v t="amd.20160314224239.1"><vh>@path templates</vh></v>
 </v>
 </v>
-<v t="54654.20160407094530.2" a="E"><vh>Recovered Nodes</vh>
+<v t="54654.20160407094530.2"><vh>Recovered Nodes</vh>
 <v t="54654.20160407094530.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="54654.20160407094530.4"><vh>old:myflaskapp declarations</vh></v>
 <v t="54654.20160407094530.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
-<v t="amd.20160412000038.2" a="E"><vh>Recovered Nodes</vh>
+<v t="amd.20160412000038.2"><vh>Recovered Nodes</vh>
 <v t="amd.20160412000038.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="amd.20160412000038.4"><vh>old:myflaskapp declarations</vh></v>
 <v t="amd.20160412000038.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
-<v t="amd.20160414164039.2" a="E"><vh>Recovered Nodes</vh>
-<v t="amd.20160414164039.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="amd.20160414164039.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="amd.20160414164039.5"><vh>new:myflaskapp declarations</vh></v>
+<v t="leo.20160414144019.2"><vh>Recovered Nodes</vh>
+<v t="leo.20160414144019.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
+<v t="leo.20160414144019.4"><vh>old:myflaskapp declarations</vh></v>
+<v t="leo.20160414144019.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
 </vnodes>
@@ -251,13 +250,7 @@ app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
 # 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
 #g9
-app.register_blueprint(users.s2a.g9.ag9.ag9)
 app.register_blueprint(users.s2a.g9.ag9_40323132_task1.ag9_40323132)
-app.register_blueprint(users.s2a.g9.ag9_40323125_task1.ag9_40323125)
-app.register_blueprint(users.s2a.g9.ag9_40323126_task1.ag9_40323126)
-app.register_blueprint(users.s2a.g9.ag9_40323153_task1.ag9_40323153)
-app.register_blueprint(users.s2a.g9.ag9_40323149_task1.ag9_40323149)
-app.register_blueprint(users.s2a.g9.ag9_40323150_task1.ag9_40323150)
 # 二乙
 #g1
 app.register_blueprint(bg1_0.bg1)
@@ -310,13 +303,7 @@ import init
 import users.s2a.g100.scrum1_task1
 import users.s2a.g100.scrum2_task1
 #g9
-import users.s2a.g9.ag9
 import users.s2a.g9.ag9_40323132_task1
-import users.s2a.g9.ag9_40323125_task1
-import users.s2a.g9.ag9_40323126_task1
-import users.s2a.g9.ag9_40323153_task1
-import users.s2a.g9.ag9_40323149_task1
-import users.s2a.g9.ag9_40323150_task1
 # 二乙
 #g1
 import s2b_files.task1.g1.task0 as bg1_0
@@ -660,7 +647,6 @@ def fileaxupload():
     
 </t>
 <t tx="amd.20160314224239.1"></t>
-<t tx="amd.20160329201851.1">希望用 /ag100/scrum1_task1 連結來呼叫 ag100 組, scrum1 組員所寫的 task1 程式</t>
 <t tx="amd.20160329205817.1">cdw2 倉儲:
 
 https://github.com/2015fallhw/cdw2.git
@@ -875,8 +861,8 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="amd.20160414164039.2"></t>
-<t tx="amd.20160414164039.3">(uncached) amd.20160314224223.1
+<t tx="leo.20160414144019.2"></t>
+<t tx="leo.20160414144019.3">(uncached) amd.20160314224223.1
 Diff...
   # coding: utf-8
   from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
@@ -892,14 +878,6 @@ Diff...
   # 導入 ag100 所屬的模組
   import users.s2a.g100.scrum1_task1
   import users.s2a.g100.scrum2_task1
-- #g9
-- import users.s2a.g9.ag9
-- import users.s2a.g9.ag9_40323132_task1
-- import users.s2a.g9.ag9_40323125_task1
-- import users.s2a.g9.ag9_40323126_task1
-- import users.s2a.g9.ag9_40323153_task1
-- import users.s2a.g9.ag9_40323149_task1
-- import users.s2a.g9.ag9_40323150_task1
   # 二乙
   #g1
   import s2b_files.task1.g1.task0 as bg1_0
@@ -967,7 +945,7 @@ Diff...
   
   
 </t>
-<t tx="amd.20160414164039.4"># coding: utf-8
+<t tx="leo.20160414144019.4"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -1037,7 +1015,7 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="amd.20160414164039.5"># coding: utf-8
+<t tx="leo.20160414144019.5"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -1051,14 +1029,6 @@ import init
 # 導入 ag100 所屬的模組
 import users.s2a.g100.scrum1_task1
 import users.s2a.g100.scrum2_task1
-#g9
-import users.s2a.g9.ag9
-import users.s2a.g9.ag9_40323132_task1
-import users.s2a.g9.ag9_40323125_task1
-import users.s2a.g9.ag9_40323126_task1
-import users.s2a.g9.ag9_40323153_task1
-import users.s2a.g9.ag9_40323149_task1
-import users.s2a.g9.ag9_40323150_task1
 # 二乙
 #g1
 import s2b_files.task1.g1.task0 as bg1_0
