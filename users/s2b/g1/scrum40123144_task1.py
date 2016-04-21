@@ -1,10 +1,10 @@
-# ¦U²Õ¤À§O¦b¦U¦Ûªº .py µ{¦¡¤¤«Ø¥ßÀ³¥Îµ{¦¡ (²Ä1¨B/Á`¦@3¨B)
+# å„çµ„åˆ†åˆ¥åœ¨å„è‡ªçš„ .py ç¨‹å¼ä¸­å»ºç«‹æ‡‰ç”¨ç¨‹å¼ (ç¬¬1æ­¥/ç¸½å…±3æ­¥)
 from flask import Blueprint, render_template
 
-# §Q¥Î Blueprint«Ø¥ß scrum40123144_task1, ¨Ã¥B url «eºó¬° /bg1, ¨Ã³]©w template ¦s©ñ¥Ø¿ı
+# åˆ©ç”¨ Blueprintå»ºç«‹ scrum40123133_task1, ä¸¦ä¸” url å‰ç¶´ç‚º /bg1, ä¸¦è¨­å®š template å­˜æ”¾ç›®éŒ„
 scrum40123144_task1 = Blueprint('scrum40123144_task1', __name__, url_prefix='/bg1', template_folder='templates')
 
-# scrum40123144_task1 ¬°§¹¾ã¥i¥H³æ¿W°õ¦æªºÃ¸¹Ïµ{¦¡
+# scrum40123144_task1 ç‚ºå®Œæ•´å¯ä»¥å–®ç¨åŸ·è¡Œçš„ç¹ªåœ–ç¨‹å¼
 @scrum40123144_task1.route('/scrum40123144_task1')
 def task1():
     outstring = '''
@@ -12,7 +12,7 @@ def task1():
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>ºô»Ú 2D Ã¸¹Ï</title>
+    <title>ç¶²éš› 2D ç¹ªåœ–</title>
     <!-- IE 9: display inline SVG -->
     <meta http-equiv="X-UA-Compatible" content="IE=9">
 <script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
@@ -37,7 +37,7 @@ shapedefs = window.shapeDefs
 obj2d = JSConstructor(window.Obj2D)
 cgo = cango("plotarea")
 cgo.setWorldCoords(-250, -250, 500, 500) 
-# ¨M©w­n¤£­nµe®y¼Ğ¶b½u
+# æ±ºå®šè¦ä¸è¦ç•«åº§æ¨™è»¸ç·š
 cgo.drawAxes(0, 240, 0, 240, {
     "strokeColor":"#aaaaaa",
     "fillColor": "#aaaaaa",
@@ -46,10 +46,10 @@ cgo.drawAxes(0, 240, 0, 240, {
     "yTickInterval": 20,
     "yLabelInterval": 20})
         
-#cgo.drawText("¨Ï¥Î Cango Ã¸¹Ïµ{¦¡®w!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
+#cgo.drawText("ä½¿ç”¨ Cango ç¹ªåœ–ç¨‹å¼åº«!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
 deg = math.pi/180  
 def O(x, y, rx, ry, rot, color, border, linewidth):
-    # ±ÛÂà¥²¶·­n°w¹ï¬Û¹ï¤¤¤ß rot not working yet
+    # æ—‹è½‰å¿…é ˆè¦é‡å°ç›¸å°ä¸­å¿ƒ rot not working yet
     chamber = "M -6.8397, -1.4894 \
                      A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
                      A 40, 40, 0, 0, 1, 6.8397, -18.511 \
@@ -61,9 +61,9 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
-    # ½Æ»s cmbr, µM«á©R¦W¬° basic1
+    # è¤‡è£½ cmbr, ç„¶å¾Œå‘½åç‚º basic1
     basic1 = cmbr.dup()
-    # basic1 Âà 120 «×
+    # basic1 è½‰ 120 åº¦
     basic1.rotate(120)
     basic2 = cmbr.dup()
     basic2.rotate(60)
@@ -86,21 +86,20 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic4)
     cmbr.appendPath(basic5)
     
-    # hole ¬°­ìÂI¦ì¸m
+    # hole ç‚ºåŸé»ä½ç½®
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
-    # ªí¥Ü©ñ¤j 3 ­¿
+    # è¡¨ç¤ºæ”¾å¤§ 3 å€
     #cgo.render(cmbr, x, y, 3, rot)
-    # ©ñ¤j 5 ­¿
+    # æ”¾å¤§ 5 å€
     cgo.render(cmbr, x, y, 5, rot)
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
-<!-- ¥H¨ó¦P¤è¦¡¥[¤W ag100 ªº scrum-2 ²Õ­û©Ò¼gªº task1 µ{¦¡½X -->
+<!-- ä»¥å”åŒæ–¹å¼åŠ ä¸Š ag100 çš„ scrum-2 çµ„å“¡æ‰€å¯«çš„ task1 ç¨‹å¼ç¢¼ -->
 <!-- <script type="text/python" src="/ag100/scrum2_task1"></script> -->
-<!-- ¥H¨ó¦P¤è¦¡¥[¤W ag100 ªº  scrum-3 ²Õ­û©Ò¼gªº task1 µ{¦¡½X -->
+<!-- ä»¥å”åŒæ–¹å¼åŠ ä¸Š ag100 çš„  scrum-3 çµ„å“¡æ‰€å¯«çš„ task1 ç¨‹å¼ç¢¼ -->
 <!-- <script type="text/python" src="/ag100/scrum3_task1"></script> -->
 </body>
 </html>
 '''
     return outstring
-    
