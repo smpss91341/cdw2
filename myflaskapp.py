@@ -49,6 +49,16 @@ import users.s2b.g2.scrum2_task40123226
 import users.s2b.g2.scrum2_task40123232
 import users.s2b.g2.scrum2_task40123235
 import users.s2b.g2.scrum2_task40123244
+#g3
+import users.s2b.g3.task0
+import users.s2b.g3.scrum1_task40123250
+import users.s2b.g3.scrum2_task40123224
+import users.s2b.g3.scrum2_task40123239
+import users.s2b.g3.scrum2_task40123242
+import users.s2b.g3.scrum2_task40123250
+import users.s2b.g3.scrum3_task40123224
+import users.s2b.g3.scrum3_task40123242
+import users.s2b.g3.scrum3_task40123250
 #g5
 import users.s2b.g5.task0
 import users.s2b.g5.scrum1_task40323204
@@ -404,7 +414,7 @@ app.register_blueprint(users.s2b.g1.scrum40123131_task1.scrum40123131_task1)
 app.register_blueprint(users.s2b.g1.scrum40123133_task1.scrum40123133_task1)
 app.register_blueprint(users.s2b.g1.scrum40123144_task1.scrum40123144_task1)
 app.register_blueprint(users.s2b.g1.scrum40123134_task1.scrum40123134_task1)
-app.register_blueprint(users.s2b.g1.scrum40123134_task1.bg1_task1)
+
 # 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
 app.register_blueprint(users.s2b.g2.task0.bg2)
 app.register_blueprint(users.s2b.g9.task0.bg9)
@@ -417,7 +427,22 @@ app.register_blueprint(users.s2b.g2.scrum2_task40123226.scrum2_task40123226)
 app.register_blueprint(users.s2b.g2.scrum2_task40123232.scrum2_task40123232)
 app.register_blueprint(users.s2b.g2.scrum2_task40123235.scrum2_task40123235)
 app.register_blueprint(users.s2b.g2.scrum2_task40123244.scrum2_task40123244)
-
+#g3
+app.register_blueprint(users.s2b.g3.scrum1_task40123250.scrum1_task40123250)
+app.register_blueprint(users.s2b.g3.scrum2_task40123224.scrum2_task40123224)
+app.register_blueprint(users.s2b.g3.scrum2_task40123239.scrum2_task40123239)
+app.register_blueprint(users.s2b.g3.scrum2_task40123242.scrum2_task40123242)
+app.register_blueprint(users.s2b.g3.scrum2_task40123250.scrum2_task40123250)
+app.register_blueprint(users.s2b.g3.scrum3_task40123224.scrum3_task40123224)
+app.register_blueprint(users.s2b.g3.scrum3_task40123242.scrum3_task40123242)
+app.register_blueprint(users.s2b.g3.scrum3_task40123250.scrum3_task40123250)
+#g4 
+app.register_blueprint(users.s2b.g4.scrum1_task40323201.scrum1_task40323201)
+app.register_blueprint(users.s2b.g4.scrum2_task40323202.scrum2_task40323202)
+app.register_blueprint(users.s2b.g4.scrum3_task40323203.scrum3_task40323203)
+app.register_blueprint(users.s2b.g4.scrum4_task40323205.scrum4_task40323205)
+app.register_blueprint(users.s2b.g4.scrum5_task40323208.scrum5_task40323208)
+app.register_blueprint(users.s2b.g4.scrum6_task40123128.scrum6_task40123128)
 #g5 
 
 app.register_blueprint(users.s2b.g5.scrum1_task40323204.scrum1_task40323204)
