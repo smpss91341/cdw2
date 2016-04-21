@@ -48,6 +48,15 @@ import users.s2b.g2.scrum2_task40123226
 import users.s2b.g2.scrum2_task40123232
 import users.s2b.g2.scrum2_task40123235
 import users.s2b.g2.scrum2_task40123244
+#g5
+import users.s2b.g5.task0
+import users.s2b.g5.scrum1_task40323204
+import users.s2b.g5.scrum2_task40323206
+import users.s2b.g5.scrum3_task40323217
+import users.s2b.g5.scrum4_task40323251
+import users.s2b.g5.scrum5_task40323253
+import users.s2b.g5.scrum6_task40323255
+
 #g6
 import users.s2b.g6.task0
 import users.s2b.g6.scrum1_task40323210
@@ -406,6 +415,15 @@ app.register_blueprint(users.s2b.g2.scrum2_task40123226.scrum2_task40123226)
 app.register_blueprint(users.s2b.g2.scrum2_task40123232.scrum2_task40123232)
 app.register_blueprint(users.s2b.g2.scrum2_task40123235.scrum2_task40123235)
 app.register_blueprint(users.s2b.g2.scrum2_task40123244.scrum2_task40123244)
+
+#g5 
+
+app.register_blueprint(users.s2b.g5.scrum1_task40323204.scrum1_task40323204)
+app.register_blueprint(users.s2b.g5.scrum1_task40323206.scrum1_task40323206)
+app.register_blueprint(users.s2b.g5.scrum1_task40323217.scrum1_task40323217)
+app.register_blueprint(users.s2b.g5.scrum1_task40323251.scrum1_task40323251)
+app.register_blueprint(users.s2b.g5.scrum1_task40323253.scrum1_task40323253)
+app.register_blueprint(users.s2b.g5.scrum1_task40323255.scrum1_task40323255)
 #g6
 app.register_blueprint(users.s2b.g6.scrum1_task40323210.scrum1_task40323210)
 #g7
