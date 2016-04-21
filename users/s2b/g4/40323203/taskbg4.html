@@ -1,13 +1,4 @@
- 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
-from flask import Blueprint, render_template
 
-# 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task40323201 = Blueprint('scrum1_task40323201', __name__, url_prefix='/bg4', template_folder='templates')
-
-# scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40323201.route('/scrum1_A')
-def scrum1_A():
-    outstring = '''
 <!DOCTYPE html>
 <html>
 <head>
@@ -123,7 +114,6 @@ class chain():
 # 利用 chain class 建立案例, 對應到 mychain 變數
 mychain = chain()
 
-
 # 畫 A
 # 左邊兩個垂直單元
 x1, y1 = mychain.basic_rot(0, 0, 90, color="black")
@@ -143,14 +133,124 @@ x9, y9 = mychain.basic_rot(x8, y8, -90, color="black")
 x10, y10 = mychain.basic_rot(x8, y8, -180, color="black")
 mychain.basic(x10, y10, x1, y1, color="black")
 
+# 畫 B
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(0+ 65, 0, 90, color="yellow")
+x2, y2 = mychain.basic_rot(x1, y1, 90, color="yellow")
+x3, y3 = mychain.basic_rot(x2, y2, 90, color="yellow")
+x4, y4 = mychain.basic_rot(x3, y3, 90, color="yellow")
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0, color="yellow")
+# 右斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30, color="yellow")
+# 右上垂直向下單元
+x7, y7 = mychain.basic_rot(x6, y6, -90, color="yellow")
+# 右斜 240 度
+x8, y8 = mychain.basic_rot(x7, y7, 210, color="yellow")
+# 中間水平
+mychain.basic(x8, y8, x2, y2, color="yellow")
+# 右下斜 -30 度
+x10, y10 = mychain.basic_rot(x8, y8, -30, color="yellow")
+# 右下垂直向下單元
+x11, y11 = mychain.basic_rot(x10, y10, -90, color="yellow")
+# 右下斜 240 度
+x12, y12 = mychain.basic_rot(x11, y11, 210, color="yellow")
+# 水平接回起點
+mychain.basic(x12,y12, 0, 0, color="yellow")
+
+
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90, color="purple")
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80, color="purple")
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30, color="purple")
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0, color="purple")
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80, color="purple")
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30, color="purple")
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0, color="purple")
+
+# 畫 D
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(0+65*3, 0, 90, color="white")
+x2, y2 = mychain.basic_rot(x1, y1, 90, color="white")
+x3, y3 = mychain.basic_rot(x2, y2, 90, color="white")
+x4, y4 = mychain.basic_rot(x3, y3, 90, color="white")
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0, color="white")
+# 右斜 -40 度
+x6, y6 = mychain.basic_rot(x5, y5, -40, color="white")
+x7, y7 = mychain.basic_rot(x6, y6, -70, color="white")
+# 右中垂直向下單元
+x8, y8 = mychain.basic_rot(x7, y7, -90, color="white")
+# -110 度
+x9, y9 = mychain.basic_rot(x8, y8, -100, color="white")
+# -150
+x10, y10 = mychain.basic_rot(x9, y9, -150, color="white")
+# 水平接回原點
+mychain.basic(x10, y10, 0+65*3, 0, color="white")
+
+#畫E
+#下面兩個平行單元
+x1, y1 = mychain.basic_rot(0, -100, 0, color="green")
+x2, y2 = mychain.basic_rot(x1, y1, 0, color="green")
+# 左邊四個垂直個單元
+x3, y3 = mychain.basic_rot(0, -100, 90, color="green")
+x4, y4 = mychain.basic_rot(x3, y3, 90, color="green")
+x5, y5 = mychain.basic_rot(x4, y4, 90, color="green")
+x6, y6 = mychain.basic_rot(x5, y5, 90, color="green")
+#中間一個平行單元
+x7, y7 = mychain.basic_rot(x4, y4, 0, color="green")
+# 上方兩個平行單元
+x8, y8 = mychain.basic_rot(x6, y6, 0, color="green")
+x9, y9 = mychain.basic_rot(x8, y8, 0, color="green")
+ 
+
+#畫F
+#左邊四個垂直個單元
+x1, y1 = mychain.basic_rot(65, -100, 90, color="green")
+x2, y2 = mychain.basic_rot(x1, y1, 90, color="green")
+x3, y3 = mychain.basic_rot(x2, y2, 90, color="green")
+x4, y4 = mychain.basic_rot(x3, y3, 90, color="green")
+#上方兩個平行單元
+x5, y5 = mychain.basic_rot(x4, y4, 0, color="green")
+x6, y6 = mychain.basic_rot(x5, y5, 0, color="green")
+#中間一個平行單元
+x7, y7 = mychain.basic_rot(x2, y2, 0, color="green")
+
+
+# 畫 G
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -70, 90, color="brown")
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80, color="brown")
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30, color="brown")
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0, color="brown")
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -70, -80, color="brown")
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30, color="brown")
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0, color="brown")
+# 下方垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, 90, color="brown")
+# 下方垂直單元
+x9, y9 = mychain.basic_rot(x8, y8, 90, color="brown")
+# 中間水平單元
+x10, y10 = mychain.basic_rot(x9, y9, 180, color="brown")
+
+
+
 
 </script>
-<!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
-<!-- <script type="text/python" src="/bg4/scrum2_task1"></script>
-<!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 -->
-<!-- <script type="text/python" src="/bg4/scrum3_task1"></script>
-
 </body>
 </html>
-'''
-    return outstring

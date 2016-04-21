@@ -1,12 +1,12 @@
- 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
+# 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task40323201 = Blueprint('scrum1_task40323201', __name__, url_prefix='/bg4', template_folder='templates')
+scrum3_task40323203 = Blueprint('scrum3_task40323203', __name__, url_prefix='/bg4', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40323201.route('/scrum1_A')
-def scrum1_A():
+@scrum3_task40323203.route('/scrum3_C')
+def scrum3_C():
     outstring = '''
 <!DOCTYPE html>
 <html>
@@ -124,24 +124,23 @@ class chain():
 mychain = chain()
 
 
-# 畫 A
-# 左邊兩個垂直單元
-x1, y1 = mychain.basic_rot(0, 0, 90, color="black")
-x2, y2 = mychain.basic_rot(x1, y1, 90, color="black")
-# 左斜邊兩個單元
-x3, y3 = mychain.basic_rot(x2, y2, 80, color="black")
-x4, y4 = mychain.basic_rot(x3, y3, 71, color="black")
-# 最上方水平單元
-x5, y5 = mychain.basic_rot(x4, y4, 0, color="black")
-# 右斜邊兩個單元
-x6, y6 = mychain.basic_rot(x5, y5, -71, color="black")
-x7, y7 = mychain.basic_rot(x6, y6, -80, color="black")
-# 右邊兩個垂直單元
-x8, y8 = mychain.basic_rot(x7, y7, -90, color="black")
-x9, y9 = mychain.basic_rot(x8, y8, -90, color="black")
-# 中間兩個水平單元
-x10, y10 = mychain.basic_rot(x8, y8, -180, color="black")
-mychain.basic(x10, y10, x1, y1, color="black")
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90, color="purple")
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80, color="purple")
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30, color="purple")
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0, color="purple")
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80, color="purple")
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30, color="purple")
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0, color="purple")
+
 
 
 </script>

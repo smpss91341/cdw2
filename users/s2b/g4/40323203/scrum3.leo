@@ -10,20 +10,20 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160421112218.1"><vh>@edit scrum5_40323208.html</vh></v>
-<v t="leo.20160421224801.1"><vh>@edit scrum5_task40323208.py</vh></v>
-<v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
+<v t="amd.20160329211330.1"><vh>@edit scrum3_task40323203.py</vh></v>
+<v t="leo.20160415193602.1"><vh>@edit scrum3_40323203.html</vh></v>
+<v t="leo.20160415191703.1"><vh>@edit taskbg4.py</vh></v>
+<v t="leo.20160421171238.1"><vh>@edit taskbg4.html</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
 </v>
-<v t="amd.20160329163719.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
+<v t="amd.20160329163719.1"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="amd.20160329163719.2"><vh>@button local pelican</vh></v>
 </v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329174131.1"><vh>@path ag100</vh></v>
-<v t="amd.20160329174139.1"><vh>@clean scrum5-20160414.md</vh></v>
+<v t="amd.20160405203555.1"><vh>@clean scrum3-20160414.md</vh></v>
 </v>
 </v>
 </vnodes>
@@ -47,22 +47,20 @@ os.system("pelican content -o post -s publishconf.py")
 g.es("admin pelican 執行完畢")
 
 </t>
-<t tx="amd.20160329174131.1"></t>
-<t tx="amd.20160329174139.1">@language md
-Title: 40323208-回報 bg4 初步繪圖主機與連結
+<t tx="amd.20160405203555.1">@language md
+Title: 40323203-回報 bg4 初步繪圖主機與連結
 Category: bg4
-Tags: scrum5, task1, 40323208
+Tags: scrum3, task1, 40323203
 Author: kmol
 @others
 
-bg4 組員 40323208 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+bg4 組員 40323203已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
 目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1"&gt;http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1&lt;/a&gt;
 
-其中已經在主程式中導入 scrum5_task1.py 中的 scrum5_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+其中已經在主程式中導入 scrum3_task1.py 中的 scrum3_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
-<t tx="amd.20160329211330.1"></t>
 </tnodes>
 </leo_file>
