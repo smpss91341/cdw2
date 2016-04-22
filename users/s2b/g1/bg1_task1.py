@@ -68,6 +68,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 <script type="text/python" src="/bg1/scrum40123156_task1"></script>
 <script type="text/python" src="/bg1/scrum40123134_task1"></script>
 <script type="text/python" src="/bg1/scrum40123129_task1"></script>
+<script type="text/python" src="/bg1/scrum40123133_task1"></script>
 </body>
 </html>
 '''
