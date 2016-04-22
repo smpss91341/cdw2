@@ -1,5 +1,5 @@
 # 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, make_response
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
 scrum1_task1 = Blueprint('scrum1_task1', __name__, url_prefix='/ag100', template_folder='templates')
@@ -652,7 +652,12 @@ x9, y9 = mychain.basic_rot(x8, y8, -90)
 x10, y10 = mychain.basic_rot(x8, y8, -180)
 mychain.basic(x10, y10, x1, y1, color="red")
 '''
-    return outstring
+    response = make_response(outstring)
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Origin'] = 'http://cdw2-ladisai.rhcloud.com'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
+    response.headers['Access-Control-Max-Age'] = '86400'
+    return response
 
 
 # 畫 b 函式
@@ -783,7 +788,12 @@ x12, y12 = mychain.basic_rot(x11, y11, 210)
 # 水平接回起點
 mychain.basic(x12,y12, 0, 0, color="red")
 '''
-    return outstring
+    response = make_response(outstring)
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Origin'] = 'http://cdw2-ladisai.rhcloud.com'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
+    response.headers['Access-Control-Max-Age'] = '86400'
+    return response
 
 
 # 畫 C 函式
@@ -1045,8 +1055,14 @@ def week8_abcd():
     outstring = week8_main()
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_a'></script>"
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_b'></script>"
-    outstring += "<script type='text/python' src='/ag100/scrum1_week8_c'></script>"
-    outstring += "<script type='text/python' src='/ag100/scrum1_week8_d'></script>"
+    # C 與 D 打算由 cdw2-ladisai.rhcloud.com 協同者執行繪圖
+    # 由於 cdw2-ag100.rhcloud.com 需要呼叫 cdw2-ladisai.rhcloud.com 的繪圖函式
+    # 因此從 cdw2-ladisai.rhcloud.com 送出的 C 與 D 繪圖內容必須同意此項 cross origin request
+    # 也就是 cdw2-ladisai.rhcloud.com 送出的 header 必須同意讓 cdw2-ag100.rhcloud.com 擷取
+    outstring += "<script type='text/python' src='http://cdw2-ladisai.rhcloud.com/ag100/scrum1_week8_c'></script>"
+    outstring += "<script type='text/python' src='http://cdw2-ladisai.rhcloud.com/ag100/scrum1_week8_d'></script>"
+    #outstring += "<script type='text/python' src='/ag100/scrum1_week8_c'></script>"
+    #outstring += "<script type='text/python' src='/ag100/scrum1_week8_d'></script>"
     outstring += week8_tail()
     return outstring
     
@@ -1061,3 +1077,5 @@ def week8_abc():
     outstring += "<script type='text/python' src='/ag100/scrum2_week8_d'></script>"
     outstring += week8_tail()
     return outstring
+    
+    

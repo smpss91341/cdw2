@@ -12,7 +12,22 @@
 <v t="amd.20160329205817.1"><vh>ag100 註解</vh></v>
 <v t="amd.20160314224057.1" a="E"><vh>master 分支 flask 程式開發</vh>
 <v t="amd.20160329201851.1"><vh>ag100 組程式規畫</vh></v>
-<v t="amd.20160314224303.1"><vh>@edit scrum1_task1.py</vh></v>
+<v t="amd.20160423000839.1" a="E"><vh>@clean scrum1_task1.py</vh>
+<v t="amd.20160423000839.2"><vh>scrum1_task1 declarations</vh></v>
+<v t="amd.20160423000839.3"><vh>task1</vh></v>
+<v t="amd.20160423000839.4"><vh>demo1</vh></v>
+<v t="amd.20160423000839.5"><vh>demo2</vh></v>
+<v t="amd.20160423000839.6"><vh>demo3</vh></v>
+<v t="amd.20160423000839.7"><vh>week8_main</vh></v>
+<v t="amd.20160423000839.8"><vh>week8_tail</vh></v>
+<v t="amd.20160423000839.9"><vh>week8_a</vh></v>
+<v t="amd.20160423000839.10"><vh>week8_b</vh></v>
+<v t="amd.20160423000839.11"><vh>week8_c</vh></v>
+<v t="amd.20160423000839.12"><vh>week8_d</vh></v>
+<v t="amd.20160423000839.13"><vh>week8_test</vh></v>
+<v t="amd.20160423000839.14"><vh>week8_abcd</vh></v>
+<v t="amd.20160423000839.15"><vh>week8_abc</vh></v>
+</v>
 <v t="amd.20160314224120.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160314224203.1" a="E"><vh>@clean myflaskapp.py</vh>
 <v t="amd.20160314224223.1"><vh>myflaskapp declarations</vh></v>
@@ -30,212 +45,8 @@
 <v t="amd.20160314224239.1"><vh>@path templates</vh></v>
 </v>
 </v>
-<v t="54654.20160407094530.2" a="E"><vh>Recovered Nodes</vh>
-<v t="54654.20160407094530.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="54654.20160407094530.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="54654.20160407094530.5"><vh>new:myflaskapp declarations</vh></v>
-</v>
-</v>
-<v t="amd.20160412000038.2" a="E"><vh>Recovered Nodes</vh>
-<v t="amd.20160412000038.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="amd.20160412000038.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="amd.20160412000038.5"><vh>new:myflaskapp declarations</vh></v>
-</v>
-</v>
-<v t="amd.20160414164039.2" a="E"><vh>Recovered Nodes</vh>
-<v t="amd.20160414164039.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="amd.20160414164039.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="amd.20160414164039.5"><vh>new:myflaskapp declarations</vh></v>
-</v>
-</v>
-<v t="leo.20160422211040.2" a="E"><vh>Recovered Nodes</vh>
-<v t="leo.20160422211040.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="leo.20160422211040.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="leo.20160422211040.5"><vh>new:myflaskapp declarations</vh></v>
-</v>
-</v>
 </vnodes>
 <tnodes>
-<t tx="54654.20160407094530.2"></t>
-<t tx="54654.20160407094530.3">(uncached) amd.20160314224223.1
-Diff...
-  # coding: utf-8
-  from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-  import random
-  import math
-  import os
-  # init.py 為自行建立的起始物件
-  import init
-  
-  # 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-  # 以下依照班別與組別導入模組
-  # 二甲
-  # 導入 ag100 所屬的模組
-  import users.s2a.g100.scrum1_task1
-- import users.s2a.g100.scrum2_task1
-  # 二乙
-  import s2b_files.task1.g1.task0 as bg1_0
-- #g2
-  import users.s2b.g2.task0
-+ 
-+ 
-- import users.s2b.g2.scrum1_task40123235
-- import users.s2b.g2.scrum2_task40123202
-- import users.s2b.g2.scrum2_task40123214
-- import users.s2b.g2.scrum2_task40123217
-- import users.s2b.g2.scrum2_task40123226
-- import users.s2b.g2.scrum2_task40123232
-- import users.s2b.g2.scrum2_task40123235
-- import users.s2b.g2.scrum2_task40123244
-- #g9
-- import users.s2b.g9.task0
-- import users.s2b.g9.scrum1_task40323250
-  # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-  _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-  # 設定在雲端與近端的資料儲存目錄
-  if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-      # 表示程式在雲端執行
-      data_dir = os.environ['OPENSHIFT_DATA_DIR']
-      static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-      download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-  else:
-      # 表示程式在近端執行
-      data_dir = _curdir + "/local_data/"
-      static_dir = _curdir + "/static"
-      download_dir = _curdir + "/local_data/downloads/"
-  
-  # 利用 init.py 啟動, 建立所需的相關檔案
-  initobj = init.Init()
-  
-  # 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-  app = Flask(__name__)
-  #app.config['download_dir'] = download_dir
-  
-  # 使用 session 必須要設定 secret_key
-  # In order to use sessions you have to set a secret key
-  # set the secret key.  keep this really secret:
-  app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-  
-  
-  
-  
-  
-  
-  
-</t>
-<t tx="54654.20160407094530.4"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
-import math
-import os
-# init.py 為自行建立的起始物件
-import init
-
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-# 二乙
-import s2b_files.task1.g1.task0 as bg1_0
-import users.s2b.g2.task0
-
-
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
-
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
-
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
-
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
-
-
-
-
-
-</t>
-<t tx="54654.20160407094530.5"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
-import math
-import os
-# init.py 為自行建立的起始物件
-import init
-
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-import users.s2a.g100.scrum2_task1
-# 二乙
-import s2b_files.task1.g1.task0 as bg1_0
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
-
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
-
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
-
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
-
-
-
-
-
-</t>
 <t tx="amd.20160314224057.1">目前新增的 Blueprint 方法有
 
 /ag100/task0 在本地端執行: http://localhost:5000/ag100/task0
@@ -755,810 +566,1102 @@ https://github.com/2015fallhw/cdw2.git
 http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1
 
 </t>
-<t tx="amd.20160412000038.2"></t>
-<t tx="amd.20160412000038.3">(uncached) amd.20160314224223.1
-Diff...
-  # coding: utf-8
-  from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-  import random
-  import math
-  import os
-  # init.py 為自行建立的起始物件
-  import init
-  
-  # 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-  # 以下依照班別與組別導入模組
-  # 二甲
-  # 導入 ag100 所屬的模組
-  import users.s2a.g100.scrum1_task1
-  import users.s2a.g100.scrum2_task1
-  # 二乙
-- #g1
-  import s2b_files.task1.g1.task0 as bg1_0
-- import users.s2b.g1.scrum40123156_task1
-- import users.s2b.g1.scrum40123126_task1
-- import users.s2b.g1.scrum40123129_task1
-- import users.s2b.g1.scrum40123131_task1
-- import users.s2b.g1.scrum40123133_task1
-- import users.s2b.g1.scrum40123144_task1
-- import users.s2b.g1.scrum40123134_task1
-  #g2
-  import users.s2b.g2.task0
-  import users.s2b.g2.scrum1_task40123235
-  import users.s2b.g2.scrum2_task40123202
-  import users.s2b.g2.scrum2_task40123214
-  import users.s2b.g2.scrum2_task40123217
-  import users.s2b.g2.scrum2_task40123226
-  import users.s2b.g2.scrum2_task40123232
-  import users.s2b.g2.scrum2_task40123235
-  import users.s2b.g2.scrum2_task40123244
-  #g9
-  import users.s2b.g9.task0
-  import users.s2b.g9.scrum1_task40323250
-  # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-  _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-  # 設定在雲端與近端的資料儲存目錄
-  if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-      # 表示程式在雲端執行
-      data_dir = os.environ['OPENSHIFT_DATA_DIR']
-      static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-      download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-  else:
-      # 表示程式在近端執行
-      data_dir = _curdir + "/local_data/"
-      static_dir = _curdir + "/static"
-      download_dir = _curdir + "/local_data/downloads/"
-  
-  # 利用 init.py 啟動, 建立所需的相關檔案
-  initobj = init.Init()
-  
-  # 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-  app = Flask(__name__)
-  #app.config['download_dir'] = download_dir
-  
-  # 使用 session 必須要設定 secret_key
-  # In order to use sessions you have to set a secret key
-  # set the secret key.  keep this really secret:
-  app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-  
-  
-  
-  
-  
-  
-  
+<t tx="amd.20160423000839.1">@language python
+@tabwidth -4
+@others
 </t>
-<t tx="amd.20160412000038.4"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
+<t tx="amd.20160423000839.10"># 畫 b 函式
+@scrum1_task1.route('/scrum1_week8_b')
+def week8_b():
+    outstring = '''
+from javascript import JSConstructor
+from browser import alert
+from browser import window
 import math
-import os
-# init.py 為自行建立的起始物件
-import init
-
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-import users.s2a.g100.scrum2_task1
-# 二乙
-import s2b_files.task1.g1.task0 as bg1_0
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
-
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
-
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
-
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
-
-
-
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+# 畫軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+ 
+deg = math.pi/180  
+ 
+# 將繪製鏈條輪廓的內容寫成 class 物件
+class chain():
+    # 輪廓的外型設為成員變數
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+ 
+    # 利用鏈條起點與終點定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic(self, x1, y1, x2, y2, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y2 = y2
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(math.atan2(y2-y1, x2-x1)/deg+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+    # 利用鏈條起點與旋轉角度定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic_rot(self, x1, y1, rot, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.rot = rot
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+        # 根據旋轉角度, 計算 x2 與 y2
+        x2 = x1 + 20*math.cos(rot*deg)
+        y2 = y1 + 20*math.sin(rot*deg)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(rot+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+        return x2, y2
+ 
+# 利用 chain class 建立案例, 對應到 mychain 變數
+mychain = chain()
+ 
+# 畫 B
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(0+ 65, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 右上垂直向下單元
+x7, y7 = mychain.basic_rot(x6, y6, -90)
+# 右斜 240 度
+x8, y8 = mychain.basic_rot(x7, y7, 210)
+# 中間水平
+mychain.basic(x8, y8, x2, y2)
+# 右下斜 -30 度
+x10, y10 = mychain.basic_rot(x8, y8, -30)
+# 右下垂直向下單元
+x11, y11 = mychain.basic_rot(x10, y10, -90)
+# 右下斜 240 度
+x12, y12 = mychain.basic_rot(x11, y11, 210)
+# 水平接回起點
+mychain.basic(x12,y12, 0, 0, color="red")
+'''
+    response = make_response(outstring)
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Origin'] = 'http://cdw2-ladisai.rhcloud.com'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
+    response.headers['Access-Control-Max-Age'] = '86400'
+    return response
 
 
 </t>
-<t tx="amd.20160412000038.5"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
+<t tx="amd.20160423000839.11"># 畫 C 函式
+@scrum1_task1.route('/scrum1_week8_c')
+def week8_c():
+    outstring = '''
+from javascript import JSConstructor
+from browser import alert
+from browser import window
 import math
-import os
-# init.py 為自行建立的起始物件
-import init
-
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-import users.s2a.g100.scrum2_task1
-# 二乙
-#g1
-import s2b_files.task1.g1.task0 as bg1_0
-import users.s2b.g1.scrum40123156_task1
-import users.s2b.g1.scrum40123126_task1
-import users.s2b.g1.scrum40123129_task1
-import users.s2b.g1.scrum40123131_task1
-import users.s2b.g1.scrum40123133_task1
-import users.s2b.g1.scrum40123144_task1
-import users.s2b.g1.scrum40123134_task1
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
-
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
-
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
-
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
-
-
-
-
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+# 畫軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+ 
+deg = math.pi/180  
+ 
+# 將繪製鏈條輪廓的內容寫成 class 物件
+class chain():
+    # 輪廓的外型設為成員變數
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+ 
+    # 利用鏈條起點與終點定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic(self, x1, y1, x2, y2, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y2 = y2
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(math.atan2(y2-y1, x2-x1)/deg+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+    # 利用鏈條起點與旋轉角度定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic_rot(self, x1, y1, rot, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.rot = rot
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+        # 根據旋轉角度, 計算 x2 與 y2
+        x2 = x1 + 20*math.cos(rot*deg)
+        y2 = y1 + 20*math.sin(rot*deg)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(rot+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+        return x2, y2
+ 
+# 利用 chain class 建立案例, 對應到 mychain 變數
+mychain = chain()
+ 
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90)
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80)
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30)
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0)
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80)
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30)
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0, color="red")
+'''
+    return outstring
 
 </t>
-<t tx="amd.20160414164039.2"></t>
-<t tx="amd.20160414164039.3">(uncached) amd.20160314224223.1
-Diff...
-  # coding: utf-8
-  from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-  import random
-  import math
-  import os
-  # init.py 為自行建立的起始物件
-  import init
-  
-  # 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-  # 以下依照班別與組別導入模組
-  # 二甲
-  # 導入 ag100 所屬的模組
-  import users.s2a.g100.scrum1_task1
-  import users.s2a.g100.scrum2_task1
-- #g9
-- import users.s2a.g9.ag9
-- import users.s2a.g9.ag9_40323132_task1
-- import users.s2a.g9.ag9_40323125_task1
-- import users.s2a.g9.ag9_40323126_task1
-- import users.s2a.g9.ag9_40323153_task1
-- import users.s2a.g9.ag9_40323149_task1
-- import users.s2a.g9.ag9_40323150_task1
-  # 二乙
-  #g1
-  import s2b_files.task1.g1.task0 as bg1_0
-  import users.s2b.g1.scrum40123156_task1
-  import users.s2b.g1.scrum40123126_task1
-  import users.s2b.g1.scrum40123129_task1
-  import users.s2b.g1.scrum40123131_task1
-  import users.s2b.g1.scrum40123133_task1
-  import users.s2b.g1.scrum40123144_task1
-  import users.s2b.g1.scrum40123134_task1
-  #g2
-  import users.s2b.g2.task0
-  import users.s2b.g2.scrum1_task40123235
-  import users.s2b.g2.scrum2_task40123202
-  import users.s2b.g2.scrum2_task40123214
-  import users.s2b.g2.scrum2_task40123217
-  import users.s2b.g2.scrum2_task40123226
-  import users.s2b.g2.scrum2_task40123232
-  import users.s2b.g2.scrum2_task40123235
-  import users.s2b.g2.scrum2_task40123244
-- #g6
-- import users.s2b.g6.task0
-- import users.s2b.g6.scrum1_task40323210
-- #g7
-- import users.s2b.g7.task0
-- import users.s2b.g7.scrum1_task40323212
-- import users.s2b.g7.scrum2_task40323216
-- import users.s2b.g7.scrum2_task40323236
-  #g9
-  import users.s2b.g9.task0
-  import users.s2b.g9.scrum1_task40323250
-- import users.s2b.g9.scrum2_task40323218
-- import users.s2b.g9.scrum3_task40323214
-- import users.s2b.g9.scrum4_task40323231
-  # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-  _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-  # 設定在雲端與近端的資料儲存目錄
-  if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-      # 表示程式在雲端執行
-      data_dir = os.environ['OPENSHIFT_DATA_DIR']
-      static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-      download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-  else:
-      # 表示程式在近端執行
-      data_dir = _curdir + "/local_data/"
-      static_dir = _curdir + "/static"
-      download_dir = _curdir + "/local_data/downloads/"
-  
-  # 利用 init.py 啟動, 建立所需的相關檔案
-  initobj = init.Init()
-  
-  # 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-  app = Flask(__name__)
-  #app.config['download_dir'] = download_dir
-  
-  # 使用 session 必須要設定 secret_key
-  # In order to use sessions you have to set a secret key
-  # set the secret key.  keep this really secret:
-  app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-  
-  
-  
-  
-  
-  
-  
-</t>
-<t tx="amd.20160414164039.4"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
+<t tx="amd.20160423000839.12"># 畫 D 函式
+@scrum1_task1.route('/scrum1_week8_d')
+def week8_d():
+    outstring = '''
+from javascript import JSConstructor
+from browser import alert
+from browser import window
 import math
-import os
-# init.py 為自行建立的起始物件
-import init
-
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-import users.s2a.g100.scrum2_task1
-# 二乙
-#g1
-import s2b_files.task1.g1.task0 as bg1_0
-import users.s2b.g1.scrum40123156_task1
-import users.s2b.g1.scrum40123126_task1
-import users.s2b.g1.scrum40123129_task1
-import users.s2b.g1.scrum40123131_task1
-import users.s2b.g1.scrum40123133_task1
-import users.s2b.g1.scrum40123144_task1
-import users.s2b.g1.scrum40123134_task1
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
-
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
-
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
-
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
-
-
-
-
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+# 畫軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+ 
+deg = math.pi/180  
+ 
+# 將繪製鏈條輪廓的內容寫成 class 物件
+class chain():
+    # 輪廓的外型設為成員變數
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+ 
+    # 利用鏈條起點與終點定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic(self, x1, y1, x2, y2, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y2 = y2
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(math.atan2(y2-y1, x2-x1)/deg+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+    # 利用鏈條起點與旋轉角度定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic_rot(self, x1, y1, rot, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.rot = rot
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+        # 根據旋轉角度, 計算 x2 與 y2
+        x2 = x1 + 20*math.cos(rot*deg)
+        y2 = y1 + 20*math.sin(rot*deg)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(rot+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+        return x2, y2
+ 
+# 利用 chain class 建立案例, 對應到 mychain 變數
+mychain = chain()
+ 
+# 畫 D
+# 左邊四個垂直單元
+x1, y1 = mychain.basic_rot(0+65*3, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+x3, y3 = mychain.basic_rot(x2, y2, 90)
+x4, y4 = mychain.basic_rot(x3, y3, 90)
+# 上方一個水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜 -40 度
+x6, y6 = mychain.basic_rot(x5, y5, -40)
+x7, y7 = mychain.basic_rot(x6, y6, -60)
+# 右中垂直向下單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+# -120 度
+x9, y9 = mychain.basic_rot(x8, y8, -120)
+# -140
+x10, y10 = mychain.basic_rot(x9, y9, -140)
+# 水平接回原點
+mychain.basic(x10, y10, 0+65*3, 0, color="red")
+'''
+    return outstring
 
 </t>
-<t tx="amd.20160414164039.5"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
+<t tx="amd.20160423000839.13"># 在內部函式傳回字串的層次呼叫測試
+@scrum1_task1.route('/scrum1_week8_test')
+def week8_test():
+    outstring = week8_main() + week8_a() + week8_tail()
+    return outstring
+
+</t>
+<t tx="amd.20160423000839.14"># 在 URL傳回字串的層次呼叫測試
+@scrum1_task1.route('/scrum1_week8_abcd')
+def week8_abcd():
+    outstring = week8_main()
+    outstring += "&lt;script type='text/python' src='/ag100/scrum1_week8_a'&gt;&lt;/script&gt;"
+    outstring += "&lt;script type='text/python' src='/ag100/scrum1_week8_b'&gt;&lt;/script&gt;"
+    # C 與 D 打算由 cdw2-ladisai.rhcloud.com 協同者執行繪圖
+    # 由於 cdw2-ag100.rhcloud.com 需要呼叫 cdw2-ladisai.rhcloud.com 的繪圖函式
+    # 因此從 cdw2-ladisai.rhcloud.com 送出的 C 與 D 繪圖內容必須同意此項 cross origin request
+    # 也就是 cdw2-ladisai.rhcloud.com 送出的 header 必須同意讓 cdw2-ag100.rhcloud.com 擷取
+    outstring += "&lt;script type='text/python' src='http://cdw2-ladisai.rhcloud.com/ag100/scrum1_week8_c'&gt;&lt;/script&gt;"
+    outstring += "&lt;script type='text/python' src='http://cdw2-ladisai.rhcloud.com/ag100/scrum1_week8_d'&gt;&lt;/script&gt;"
+    #outstring += "&lt;script type='text/python' src='/ag100/scrum1_week8_c'&gt;&lt;/script&gt;"
+    #outstring += "&lt;script type='text/python' src='/ag100/scrum1_week8_d'&gt;&lt;/script&gt;"
+    outstring += week8_tail()
+    return outstring
+    
+</t>
+<t tx="amd.20160423000839.15"># 在 URL傳回字串的層次呼叫測試
+@scrum1_task1.route('/scrum1_week8_abc')
+def week8_abc():
+    outstring = week8_main()
+    outstring += "&lt;script type='text/python' src='/ag100/scrum1_week8_a'&gt;&lt;/script&gt;"
+    outstring += "&lt;script type='text/python' src='/ag100/scrum1_week8_b'&gt;&lt;/script&gt;"
+    outstring += "&lt;script type='text/python' src='/ag100/scrum1_week8_c'&gt;&lt;/script&gt;"
+    # 假如 scrum1 程式碼與 scrum2 所寫的程式碼同時更版且在同一台 server 上運行, 否則要給 scrum2_week8_d 的完整 url
+    outstring += "&lt;script type='text/python' src='/ag100/scrum2_week8_d'&gt;&lt;/script&gt;"
+    outstring += week8_tail()
+    return outstring
+    
+    
+</t>
+<t tx="amd.20160423000839.2"># 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
+from flask import Blueprint, render_template, make_response
+
+# 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
+scrum1_task1 = Blueprint('scrum1_task1', __name__, url_prefix='/ag100', template_folder='templates')
+
+# scrum1_task1 為完整可以單獨執行的繪圖程式
+</t>
+<t tx="amd.20160423000839.3">@scrum1_task1.route('/scrum1_task1')
+def task1():
+    outstring = '''
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;網際 2D 繪圖&lt;/title&gt;
+    &lt;!-- IE 9: display inline SVG --&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=9"&gt;
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;canvas id="plotarea" width="800" height="800"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python"&gt;
+from javascript import JSConstructor
+from browser import window
 import math
-import os
-# init.py 為自行建立的起始物件
-import init
 
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-import users.s2a.g100.scrum2_task1
-#g9
-import users.s2a.g9.ag9
-import users.s2a.g9.ag9_40323132_task1
-import users.s2a.g9.ag9_40323125_task1
-import users.s2a.g9.ag9_40323126_task1
-import users.s2a.g9.ag9_40323153_task1
-import users.s2a.g9.ag9_40323149_task1
-import users.s2a.g9.ag9_40323150_task1
-# 二乙
-#g1
-import s2b_files.task1.g1.task0 as bg1_0
-import users.s2b.g1.scrum40123156_task1
-import users.s2b.g1.scrum40123126_task1
-import users.s2b.g1.scrum40123129_task1
-import users.s2b.g1.scrum40123131_task1
-import users.s2b.g1.scrum40123133_task1
-import users.s2b.g1.scrum40123144_task1
-import users.s2b.g1.scrum40123134_task1
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g6
-import users.s2b.g6.task0
-import users.s2b.g6.scrum1_task40323210
-#g7
-import users.s2b.g7.task0
-import users.s2b.g7.scrum1_task40323212
-import users.s2b.g7.scrum2_task40323216
-import users.s2b.g7.scrum2_task40323236
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
-import users.s2b.g9.scrum2_task40323218
-import users.s2b.g9.scrum3_task40323214
-import users.s2b.g9.scrum4_task40323231
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea")
 
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
+cgo.setWorldCoords(-250, -250, 500, 500) 
 
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
+# 決定要不要畫座標軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+        
+#cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
 
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+deg = math.pi/180  
+def O(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+                     A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+                     A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+                     A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+                     A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
 
+    # 複製 cmbr, 然後命名為 basic1
+    basic1 = cmbr.dup()
+    # basic1 轉 120 度
+    basic1.rotate(120)
+    basic2 = cmbr.dup()
+    basic2.rotate(60)
+    basic2.translate(0, -20)
+    
+    basic3 = cmbr.dup()
+    basic3.rotate(60)
+    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
+    
+    basic4 = cmbr.dup()
+    basic4.rotate(120)
+    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
+    
+    basic5 = cmbr.dup()
+    basic5.translate(2*20*math.cos(30*deg), 0)
+    
+    cmbr.appendPath(basic1)
+    cmbr.appendPath(basic2)
+    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
+    
+    # hole 為原點位置
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
 
+    # 表示放大 3 倍
+    #cgo.render(cmbr, x, y, 3, rot)
+    # 放大 5 倍
+    cgo.render(cmbr, x, y, 5, rot)
 
-
-
-
-
+O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+&lt;/script&gt;
+&lt;!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 --&gt;
+&lt;script type="text/python" src="/ag100/scrum2_task1"&gt;&lt;/script&gt;
+&lt;!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 --&gt;
+&lt;!-- &lt;script type="text/python" src="/ag100/scrum3_task1"&gt;&lt;/script&gt;--&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'''
+    return outstring
+    
 </t>
-<t tx="leo.20160422211040.2"></t>
-<t tx="leo.20160422211040.3">(uncached) amd.20160314224223.1
-Diff...
-  # coding: utf-8
-  from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-  import random
-  import math
-  import os
-  # init.py 為自行建立的起始物件
-  import init
-  
-  # 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-  # 以下依照班別與組別導入模組
-  # 二甲
-  # 導入 ag100 所屬的模組
-  import users.s2a.g100.scrum1_task1
-  import users.s2a.g100.scrum2_task1
-- #g6
-- import users.s2a.g6.ag6
-- import users.s2a.g6.ag6_40323112_task1
-- import users.s2a.g6.ag6_40323133_task1
-- import users.s2a.g6.ag6_40323147_task1
-- import users.s2a.g6.ag6_40323152_task1
-- import users.s2a.g6.ag6_40323155_task1
-- import users.s2a.g6.ag6_40323156_task1
-  #g9
-  import users.s2a.g9.ag9
-  import users.s2a.g9.ag9_40323132_task1
-  import users.s2a.g9.ag9_40323125_task1
-  import users.s2a.g9.ag9_40323126_task1
-  import users.s2a.g9.ag9_40323153_task1
-  import users.s2a.g9.ag9_40323149_task1
-  import users.s2a.g9.ag9_40323150_task1
-  # 二乙
-  #g1
-  import s2b_files.task1.g1.task0 as bg1_0
-  import users.s2b.g1.scrum40123156_task1
-  import users.s2b.g1.scrum40123126_task1
-  import users.s2b.g1.scrum40123129_task1
-  import users.s2b.g1.scrum40123131_task1
-  import users.s2b.g1.scrum40123133_task1
-  import users.s2b.g1.scrum40123144_task1
-  import users.s2b.g1.scrum40123134_task1
-- import users.s2b.g1.bg1_task1
-  #g2
-  import users.s2b.g2.task0
-  import users.s2b.g2.scrum1_task40123235
-  import users.s2b.g2.scrum2_task40123202
-  import users.s2b.g2.scrum2_task40123214
-  import users.s2b.g2.scrum2_task40123217
-  import users.s2b.g2.scrum2_task40123226
-  import users.s2b.g2.scrum2_task40123232
-  import users.s2b.g2.scrum2_task40123235
-  import users.s2b.g2.scrum2_task40123244
-- #g3
-- import users.s2b.g3.task0
-- import users.s2b.g3.scrum1_task40123250
-- import users.s2b.g3.scrum2_task40123224
-- import users.s2b.g3.scrum2_task40123239
-- import users.s2b.g3.scrum2_task40123242
-- import users.s2b.g3.scrum2_task40123250
-- import users.s2b.g3.scrum3_task40123224
-- import users.s2b.g3.scrum3_task40123242
-- import users.s2b.g3.scrum3_task40123250
-- #g4
-- #import users.s2b.g4.taskbg4
-- #import users.s2b.g5.scrum1_task40323201
-- #import users.s2b.g5.scrum2_task40323202
-- #import users.s2b.g5.scrum3_task40323203
-- #import users.s2b.g5.scrum4_task40323205
-- #import users.s2b.g5.scrum5_task40323208
-- #import users.s2b.g5.scrum6_task40123128
-- #以上幾行有錯誤
-- #g5
-- import users.s2b.g5.task0
-- import users.s2b.g5.scrum1_task40323204
-- import users.s2b.g5.scrum2_task40323206
-- import users.s2b.g5.scrum3_task40323217
-- import users.s2b.g5.scrum4_task40323251
-- import users.s2b.g5.scrum5_task40323253
-- import users.s2b.g5.scrum6_task40323255
-- 
-  #g6
-  import users.s2b.g6.task0
-  import users.s2b.g6.scrum1_task40323210
-  #g7
-  import users.s2b.g7.task0
-  import users.s2b.g7.scrum1_task40323212
-  import users.s2b.g7.scrum2_task40323216
-- import users.s2b.g7.scrum3_task40323236
-?                          ^
-+ import users.s2b.g7.scrum2_task40323236
-?                          ^
-  #g9
-  import users.s2b.g9.task0
-  import users.s2b.g9.scrum1_task40323250
-  import users.s2b.g9.scrum2_task40323218
-  import users.s2b.g9.scrum3_task40323214
-  import users.s2b.g9.scrum4_task40323231
-- import users.s2b.g9.scrum5_task40323230
-- import users.s2b.g9.scrum6_task40323233
-  # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-  _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-  # 設定在雲端與近端的資料儲存目錄
-  if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-      # 表示程式在雲端執行
-      data_dir = os.environ['OPENSHIFT_DATA_DIR']
-      static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-      download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-  else:
-      # 表示程式在近端執行
-      data_dir = _curdir + "/local_data/"
-      static_dir = _curdir + "/static"
-      download_dir = _curdir + "/local_data/downloads/"
-  
-  # 利用 init.py 啟動, 建立所需的相關檔案
-  initobj = init.Init()
-  
-  # 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-  app = Flask(__name__)
-  #app.config['download_dir'] = download_dir
-  
-  # 使用 session 必須要設定 secret_key
-  # In order to use sessions you have to set a secret key
-  # set the secret key.  keep this really secret:
-  app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-  
-  
-  
-  
-  
-  
-  
-</t>
-<t tx="leo.20160422211040.4"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
+<t tx="amd.20160423000839.4">@scrum1_task1.route('/scrum1_demo1')
+def demo1():
+    outstring = '''
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;網際 2D 繪圖&lt;/title&gt;
+    &lt;!-- IE 9: display inline SVG --&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=9"&gt;
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"&gt;&lt;/script&gt;
+ 
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+ 
+&lt;canvas id="plotarea" width="800" height="800"&gt;&lt;/canvas&gt;
+ 
+&lt;script type="text/python"&gt;
+from javascript import JSConstructor
+from browser import window
 import math
-import os
-# init.py 為自行建立的起始物件
-import init
-
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-import users.s2a.g100.scrum2_task1
-#g9
-import users.s2a.g9.ag9
-import users.s2a.g9.ag9_40323132_task1
-import users.s2a.g9.ag9_40323125_task1
-import users.s2a.g9.ag9_40323126_task1
-import users.s2a.g9.ag9_40323153_task1
-import users.s2a.g9.ag9_40323149_task1
-import users.s2a.g9.ag9_40323150_task1
-# 二乙
-#g1
-import s2b_files.task1.g1.task0 as bg1_0
-import users.s2b.g1.scrum40123156_task1
-import users.s2b.g1.scrum40123126_task1
-import users.s2b.g1.scrum40123129_task1
-import users.s2b.g1.scrum40123131_task1
-import users.s2b.g1.scrum40123133_task1
-import users.s2b.g1.scrum40123144_task1
-import users.s2b.g1.scrum40123134_task1
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g6
-import users.s2b.g6.task0
-import users.s2b.g6.scrum1_task40323210
-#g7
-import users.s2b.g7.task0
-import users.s2b.g7.scrum1_task40323212
-import users.s2b.g7.scrum2_task40323216
-import users.s2b.g7.scrum2_task40323236
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
-import users.s2b.g9.scrum2_task40323218
-import users.s2b.g9.scrum3_task40323214
-import users.s2b.g9.scrum4_task40323231
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
-
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
-
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
-
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
-
-
-
-
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+# 決定要不要畫座標軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+ 
+deg = math.pi/180  
+def O(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+ 
+    # hole 為原點位置
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
+ 
+    # 放大 5 倍
+    cgo.render(cmbr, x, y, 5, rot)
+ 
+O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+# 準備標示出4個點的座標 (放大 5 倍)
+cgo.drawText("各點的座標值放大5倍", (-6.8397*5)-50, (-1.4894*5)+20, {"fontSize": 12, "fontWeight": 1200, "lorg":5 })
+# 左上角點
+cgo.drawText("(-6.8397, -1.4894)", (-6.8397*5)-50, (-1.4894*5), {"fontSize": 12, "fontWeight": 1200, "lorg":5 })
+cgo.drawShape(shapedefs.circle(4), (-6.8397*5), (-1.4894*5), {"fillColor": "red"})
+# 右上角點
+cgo.drawText("(6.8397, -1.4894)", (6.8397*5)+50, (-1.4894*5)+20, {"fontSize": 12, "fontWeight": 1200, "lorg":5 })
+cgo.drawShape(shapedefs.circle(4), (6.8397*5), (-1.4894*5), {"fillColor": "red"})
+# 左下角點
+cgo.drawText("(-6.8397, -18.511)", (-6.8397*5)-50, (-18.511*5), {"fontSize": 12, "fontWeight": 1200, "lorg":5 })
+cgo.drawShape(shapedefs.circle(4), (-6.8397*5), (-18.511*5), {"fillColor": "red"})
+# 右下角點
+cgo.drawText("(6.8397, -18.511)", (6.8397*5)+50, (-18.511*5), {"fontSize": 12, "fontWeight": 1200, "lorg":5 })
+cgo.drawShape(shapedefs.circle(4), (6.8397*5), (-18.511*5), {"fillColor": "red"})
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'''
+    return outstring
+    
+    
+</t>
+<t tx="amd.20160423000839.5">@scrum1_task1.route('/scrum1_demo2')
+def demo2():
+    outstring = '''
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;網際 2D 繪圖&lt;/title&gt;
+    &lt;!-- IE 9: display inline SVG --&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=9"&gt;
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"&gt;&lt;/script&gt;
+ 
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+ 
+&lt;canvas id="plotarea2" width="800" height="800"&gt;&lt;/canvas&gt;
+ 
+&lt;script type="text/python"&gt;
+from javascript import JSConstructor
+from browser import window
+import math
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+# 決定要不要畫座標軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+ 
+deg = math.pi/180  
+def O(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+ 
+    # hole 為原點位置
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
+ 
+    # 放大 5 倍
+    cgo.render(cmbr, x, y, 5, rot)
+ 
+O(0, 0, 0, 0, 0, "red", True, 4)
+&lt;/script&gt;
+&lt;!-- 以下為第2位組員的零件繪圖 --&gt;
+&lt;script type="text/python"&gt;
+from javascript import JSConstructor
+from browser import window
+import math
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+deg = math.pi/180  
+def O2(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+ 
+    # hole 為原點位置
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
+ 
+    # 複製 cmbr, 然後命名為 basic1
+    basic1 = cmbr.dup()
+    # basic1 轉 120 度
+    basic1.rotate(120)
+ 
+    # 放大 5 倍
+    cgo.render(basic1, x, y, 5, rot)
+ 
+O2(0, 0, 0, 0, 0, "blue", True, 4)
+&lt;/script&gt;
+&lt;!-- 以下為第3位組員的零件繪圖 --&gt;
+&lt;script type="text/python"&gt;
+from javascript import JSConstructor
+from browser import window
+import math
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+deg = math.pi/180  
+def O3(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+ 
+    # hole 為原點位置
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
+ 
+    # 複製 cmbr, 然後命名為 basic1
+    basic1 = cmbr.dup()
+    # basic1 轉 90 度
+    basic1.rotate(90)
+    # 平移到 O2 的鏈條端點
+    basic1.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
+ 
+    # 放大 5 倍
+    cgo.render(basic1, x, y, 5, rot)
+ 
+O3(0, 0, 0, 0, 0, "green", True, 4)
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'''
+    return outstring
+    
+</t>
+<t tx="amd.20160423000839.6">@scrum1_task1.route('/scrum1_demo3')
+def demo3():
+    outstring = '''
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;網際 2D 繪圖&lt;/title&gt;
+    &lt;!-- IE 9: display inline SVG --&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=9"&gt;
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"&gt;&lt;/script&gt;
+ 
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+ 
+&lt;canvas id="plotarea2" width="800" height="800"&gt;&lt;/canvas&gt;
+ 
+&lt;script type="text/python"&gt;
+from javascript import JSConstructor
+from browser import window
+import math
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+# 決定要不要畫座標軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+ 
+deg = math.pi/180  
+def O(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+ 
+    # hole 為原點位置
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
+ 
+    # 放大 5 倍
+    cgo.render(cmbr, x, y, 5, rot)
+ 
+O(0, 0, 0, 0, 0, "red", True, 4)
+&lt;/script&gt;
+&lt;!-- 以下為第2位組員的零件繪圖 --&gt;
+&lt;script type="text/python"&gt;
+from javascript import JSConstructor
+from browser import window
+import math
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+deg = math.pi/180  
+def O2(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+ 
+    # hole 為原點位置
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
+ 
+    # 複製 cmbr, 然後命名為 basic1
+    basic1 = cmbr.dup()
+    # basic1 轉 120 度
+    basic1.rotate(120)
+ 
+    # 放大 5 倍
+    cgo.render(basic1, x, y, 5, rot)
+ 
+O2(0, 0, 0, 0, 0, "blue", True, 4)
+&lt;/script&gt;
+&lt;!-- 以下為第3位組員的零件繪圖 --&gt;
+&lt;script type="text/python" src="/ag100/scrum2_link3"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+'''
+    return outstring
+    
+</t>
+<t tx="amd.20160423000839.7">##########################################################
+##############                      Week 8 範例          ###############
+##########################################################
+@scrum1_task1.route('/scrum1_week8_main')
+def week8_main():
+    outstring = '''
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;網際 2D 繪圖&lt;/title&gt;
+    &lt;!-- IE 9: display inline SVG --&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=9"&gt;
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"&gt;&lt;/script&gt;
+ 
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+ 
+&lt;canvas id="plotarea2" width="800" height="800"&gt;&lt;/canvas&gt;
+'''
+    return outstring
 
 </t>
-<t tx="leo.20160422211040.5"># coding: utf-8
-from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
-import random
+<t tx="amd.20160423000839.8"># tail 關閉  body 與  html 標註 
+@scrum1_task1.route('/scrum1_week8_tail')
+def week8_tail():
+    return "&lt;/body&gt;&lt;/html&gt;"
+
+</t>
+<t tx="amd.20160423000839.9"># 畫 a 函式
+@scrum1_task1.route('/scrum1_week8_a')
+def week8_a():
+    outstring = '''
+from javascript import JSConstructor
+from browser import alert
+from browser import window
 import math
-import os
-# init.py 為自行建立的起始物件
-import init
-
-# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
-# 以下依照班別與組別導入模組
-# 二甲
-# 導入 ag100 所屬的模組
-import users.s2a.g100.scrum1_task1
-import users.s2a.g100.scrum2_task1
-#g6
-import users.s2a.g6.ag6
-import users.s2a.g6.ag6_40323112_task1
-import users.s2a.g6.ag6_40323133_task1
-import users.s2a.g6.ag6_40323147_task1
-import users.s2a.g6.ag6_40323152_task1
-import users.s2a.g6.ag6_40323155_task1
-import users.s2a.g6.ag6_40323156_task1
-#g9
-import users.s2a.g9.ag9
-import users.s2a.g9.ag9_40323132_task1
-import users.s2a.g9.ag9_40323125_task1
-import users.s2a.g9.ag9_40323126_task1
-import users.s2a.g9.ag9_40323153_task1
-import users.s2a.g9.ag9_40323149_task1
-import users.s2a.g9.ag9_40323150_task1
-# 二乙
-#g1
-import s2b_files.task1.g1.task0 as bg1_0
-import users.s2b.g1.scrum40123156_task1
-import users.s2b.g1.scrum40123126_task1
-import users.s2b.g1.scrum40123129_task1
-import users.s2b.g1.scrum40123131_task1
-import users.s2b.g1.scrum40123133_task1
-import users.s2b.g1.scrum40123144_task1
-import users.s2b.g1.scrum40123134_task1
-import users.s2b.g1.bg1_task1
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g3
-import users.s2b.g3.task0
-import users.s2b.g3.scrum1_task40123250
-import users.s2b.g3.scrum2_task40123224
-import users.s2b.g3.scrum2_task40123239
-import users.s2b.g3.scrum2_task40123242
-import users.s2b.g3.scrum2_task40123250
-import users.s2b.g3.scrum3_task40123224
-import users.s2b.g3.scrum3_task40123242
-import users.s2b.g3.scrum3_task40123250
-#g4
-#import users.s2b.g4.taskbg4
-#import users.s2b.g5.scrum1_task40323201
-#import users.s2b.g5.scrum2_task40323202
-#import users.s2b.g5.scrum3_task40323203
-#import users.s2b.g5.scrum4_task40323205
-#import users.s2b.g5.scrum5_task40323208
-#import users.s2b.g5.scrum6_task40123128
-#以上幾行有錯誤
-#g5
-import users.s2b.g5.task0
-import users.s2b.g5.scrum1_task40323204
-import users.s2b.g5.scrum2_task40323206
-import users.s2b.g5.scrum3_task40323217
-import users.s2b.g5.scrum4_task40323251
-import users.s2b.g5.scrum5_task40323253
-import users.s2b.g5.scrum6_task40323255
-
-#g6
-import users.s2b.g6.task0
-import users.s2b.g6.scrum1_task40323210
-#g7
-import users.s2b.g7.task0
-import users.s2b.g7.scrum1_task40323212
-import users.s2b.g7.scrum2_task40323216
-import users.s2b.g7.scrum3_task40323236
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
-import users.s2b.g9.scrum2_task40323218
-import users.s2b.g9.scrum3_task40323214
-import users.s2b.g9.scrum4_task40323231
-import users.s2b.g9.scrum5_task40323230
-import users.s2b.g9.scrum6_task40323233
-# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
-_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-# 設定在雲端與近端的資料儲存目錄
-if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
-    # 表示程式在雲端執行
-    data_dir = os.environ['OPENSHIFT_DATA_DIR']
-    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
-    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
-else:
-    # 表示程式在近端執行
-    data_dir = _curdir + "/local_data/"
-    static_dir = _curdir + "/static"
-    download_dir = _curdir + "/local_data/downloads/"
-
-# 利用 init.py 啟動, 建立所需的相關檔案
-initobj = init.Init()
-
-# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
-app = Flask(__name__)
-#app.config['download_dir'] = download_dir
-
-# 使用 session 必須要設定 secret_key
-# In order to use sessions you have to set a secret key
-# set the secret key.  keep this really secret:
-app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
-
-
-
-
-
+ 
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea2")
+ 
+cgo.setWorldCoords(-250, -250, 500, 500) 
+ 
+# 畫軸線
+cgo.drawAxes(0, 240, 0, 240, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
+ 
+deg = math.pi/180  
+ 
+# 將繪製鏈條輪廓的內容寫成 class 物件
+class chain():
+    # 輪廓的外型設為成員變數
+    chamber = "M -6.8397, -1.4894 \
+            A 7, 7, 0, 1, 0, 6.8397, -1.4894 \
+            A 40, 40, 0, 0, 1, 6.8397, -18.511 \
+            A 7, 7, 0, 1, 0, -6.8397, -18.511 \
+            A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+ 
+    # 利用鏈條起點與終點定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic(self, x1, y1, x2, y2, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.x2 = x2
+        self.y2 = y2
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(math.atan2(y2-y1, x2-x1)/deg+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+    # 利用鏈條起點與旋轉角度定義繪圖, 使用內定的 color, border 與 linewidth 變數
+    def basic_rot(self, x1, y1, rot, color="green", border=True, linewidth=4, scale=1):
+        self.x1 = x1
+        self.y1 = y1
+        self.rot = rot
+        self.color = color
+        self.border = border
+        self.linewidth = linewidth
+        self.scale = scale
+        # 注意, cgo.Chamber 為成員變數
+        cmbr = cobj(self.cgoChamber, "SHAPE", {
+                "fillColor": color,
+                "border": border,
+                "strokeColor": "tan",
+                "lineWidth": linewidth })
+ 
+        # hole 為原點位置
+        hole = cobj(shapedefs.circle(4), "PATH")
+        cmbr.appendPath(hole)
+        # 根據旋轉角度, 計算 x2 與 y2
+        x2 = x1 + 20*math.cos(rot*deg)
+        y2 = y1 + 20*math.sin(rot*deg)
+ 
+        # 複製 cmbr, 然後命名為 basic1
+        basic1 = cmbr.dup()
+        # 因為鏈條的角度由原點向下垂直, 所以必須轉 90 度, 再考量 atan2 的轉角
+        basic1.rotate(rot+90)
+ 
+        # 放大 scale 倍
+        cgo.render(basic1, x1, y1, scale, 0)
+ 
+        return x2, y2
+ 
+# 利用 chain class 建立案例, 對應到 mychain 變數
+mychain = chain()
+ 
+# 畫 A
+# 左邊兩個垂直單元
+x1, y1 = mychain.basic_rot(0, 0, 90)
+x2, y2 = mychain.basic_rot(x1, y1, 90)
+# 左斜邊兩個單元
+x3, y3 = mychain.basic_rot(x2, y2, 80)
+x4, y4 = mychain.basic_rot(x3, y3, 71)
+# 最上方水平單元
+x5, y5 = mychain.basic_rot(x4, y4, 0)
+# 右斜邊兩個單元
+x6, y6 = mychain.basic_rot(x5, y5, -71)
+x7, y7 = mychain.basic_rot(x6, y6, -80)
+# 右邊兩個垂直單元
+x8, y8 = mychain.basic_rot(x7, y7, -90)
+x9, y9 = mychain.basic_rot(x8, y8, -90)
+# 中間兩個水平單元
+x10, y10 = mychain.basic_rot(x8, y8, -180)
+mychain.basic(x10, y10, x1, y1, color="red")
+'''
+    response = make_response(outstring)
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Origin'] = 'http://cdw2-ladisai.rhcloud.com'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
+    response.headers['Access-Control-Max-Age'] = '86400'
+    return response
 
 
 </t>
