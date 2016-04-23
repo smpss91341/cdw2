@@ -131,6 +131,8 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic16)
     
     
+    
+    
     # hole 為原點位置
     #hole = cobj(shapedefs.circle(4), "PATH") 
     #cmbr.appendPath(hole) 
