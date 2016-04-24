@@ -1,8 +1,8 @@
 # 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
 from flask import Blueprint, render_template
 
-# 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task40123254 = Blueprint('scrum1_task40123254', __name__, url_prefix='/ag1', template_folder='templates')
+# 利用 Blueprint建立 ag3, 並且 url 前綴為 /ag3, 並設定 template 存放目錄
+scrum1_task40123254 = Blueprint('scrum1_task40123254', __name__, url_prefix='/ag3', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
 @scrum1_task40123254.route('/scrum1_task1')
@@ -1043,10 +1043,10 @@ def week8_test():
 @scrum1_task40123254.route('/scrum1_week8_abcd')
 def week8_abcd():
     outstring = week8_main()
-    outstring += "<script type='text/python' src='/ag1/scrum1_week8_a'></script>"
-    outstring += "<script type='text/python' src='/ag1/scrum1_week8_b'></script>"
-    outstring += "<script type='text/python' src='/ag1/scrum1_week8_c'></script>"
-    outstring += "<script type='text/python' src='/ag1/scrum1_week8_d'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum1_week8_a'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum1_week8_b'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum1_week8_c'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum1_week8_d'></script>"
     outstring += week8_tail()
     return outstring
     
@@ -1054,10 +1054,10 @@ def week8_abcd():
 @scrum1_task40123254.route('/scrum1_week8_abc')
 def week8_abc():
     outstring = week8_main()
-    outstring += "<script type='text/python' src='/ag1/scrum1_week8_a'></script>"
-    outstring += "<script type='text/python' src='/ag1/scrum1_week8_b'></script>"
-    outstring += "<script type='text/python' src='/ag1/scrum1_week8_c'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum1_week8_a'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum1_week8_b'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum1_week8_c'></script>"
     # 假如 scrum1 程式碼與 scrum2 所寫的程式碼同時更版且在同一台 server 上運行, 否則要給 scrum2_week8_d 的完整 url
-    outstring += "<script type='text/python' src='/ag1/scrum2_week8_d'></script>"
+    outstring += "<script type='text/python' src='/ag3/scrum2_week8_d'></script>"
     outstring += week8_tail()
     return outstring
