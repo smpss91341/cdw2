@@ -72,7 +72,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
   
 
-    cmbr.translate(0, 20)
+    cmbr.translate(800, 800)
    
     
     
@@ -83,7 +83,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
     
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "white", False, 4)
 </script>
 
 <script type="text/python" src="http://2016spring-40323250.rhcloud.com/bg9/scrum1_50_1"></script>
