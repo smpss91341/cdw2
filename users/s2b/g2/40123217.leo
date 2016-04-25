@@ -9,52 +9,37 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160414095529.1"><vh>因為位於 users/s2b/g2 目錄, 必須跳三層才到外圍</vh></v>
-<v t="leo.20160331175243.1"><vh>@edit scrum2_task40123217.py</vh></v>
-<v t="leo.20160310112920.2"><vh>@edit 40123217.py</vh></v>
-<<<<<<< HEAD
-<v t="leo.20160331175243.1"><vh>@edit scrum2_task40123217.py</vh></v>
-<v t="leo.20160310113035.1"><vh>@path./../../../</vh></v>
-=======
-<v t="leo.20160414095554.1" a="E"><vh>@path ./../../../</vh>
-<v t="leo.20160414095601.1" a="E"><vh>@path content</vh>
-<v t="leo.20160414095616.1"><vh>@path ag100</vh></v>
-<v t="leo.20160414095628.1"><vh>@clean scrum1-bg2-40123217.md</vh></v>
-<v t="leo.20160414095655.1"><vh>進入 content 目錄</vh></v>
-<v t="leo.20160414095707.1"><vh>假如要在近端檢視, 使用下列按鈕</vh>
-<v t="leo.20160414095715.1"><vh>@button local pelican</vh></v>
+<v t="leo.20160421110037.2" a="E"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh>
+<v t="leo.20160421110044.1" a="E"><vh>@path ./../../../</vh>
+<v t="leo.20160421110055.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
+<v t="leo.20160421110120.1"><vh>@button gh-pages pelican</vh></v>
 </v>
-<v t="leo.20160414095729.1"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
-<v t="leo.20160414095737.1"><vh>@button gh-pages pelican</vh></v>
+<v t="leo.20160421110112.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
+<v t="leo.20160421110127.1"><vh>@button local pelican</vh></v>
+</v>
+<v t="leo.20160421110112.2"><vh>進入 content 目錄</vh></v>
+<v t="leo.20160421110112.3" a="E"><vh>@path content</vh>
+<v t="leo.20160421110132.1" a="E"><vh>@path bg2</vh>
+<v t="leo.20160421110132.2"><vh>@clean 40123217_2.md</vh></v>
 </v>
 </v>
 </v>
->>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
+</v>
 </vnodes>
 <tnodes>
-<t tx="leo.20160414095529.1"></t>
-<t tx="leo.20160414095554.1"></t>
-<t tx="leo.20160414095601.1"></t>
-<t tx="leo.20160414095616.1"></t>
-<t tx="leo.20160414095628.1">@language md
-Title: 40123217scrum1-回報 g2 scrum1 初步繪圖主機與連結
-Category: bg2
-Tags: scrum1, task1, 40123217
-Author: kmol
-@others
-請注意: 這個 .md 檔案應該要放到 s2b/g2目錄中, 而且用學號作為 Tags 分類讓使用者可以較容易透過 Tags 找到某一學員所提供的所有內容.
+<t tx="leo.20160421110037.2"></t>
+<t tx="leo.20160421110044.1"></t>
+<t tx="leo.20160421110055.1"></t>
+<t tx="leo.20160421110112.1"></t>
+<t tx="leo.20160421110112.2"></t>
+<t tx="leo.20160421110112.3"></t>
+<t tx="leo.20160421110120.1">@language python
+import os
+os.system("pelican content -o post -s publishconf.py")
+g.es("admin pelican 執行完畢")
 
-bg2 已經在 cdw2 倉儲中的 master 分支建立對應的組員 g2.leo 並且完成 Task1 的繪圖藍圖建立與註冊
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235&lt;/a&gt;
-
-其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
-<t tx="leo.20160414095655.1"></t>
-<t tx="leo.20160414095707.1"></t>
-<t tx="leo.20160414095715.1">@language python
+<t tx="leo.20160421110127.1">@language python
 import os
 #os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
 os.system("pelican content -o post -s local_publishconf.py")
@@ -62,12 +47,49 @@ g.es("admin pelican 近端執行完畢")
 
 
 </t>
-<t tx="leo.20160414095729.1"></t>
-<t tx="leo.20160414095737.1">@language python
-import os
-os.system("pelican content -o post -s publishconf.py")
-g.es("admin pelican 執行完畢")
+<t tx="leo.20160421110132.1"></t>
+<t tx="leo.20160421110132.2">@language md
+Title: 40123217 - 期中報告
+Category: bg2
+Tags: scrum1, task1, 40123217
+Author: 40123217
+@others
 
-</t>
+
+期中報告
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+自評分數:79
+
+自評報告須建立md檔,需建在content目錄下的bg2資料夾裡
+
+&lt;img src="./../files/bg2/1.png"&gt;
+
+&lt;img src="./../files/bg2/40123217-1.png"&gt;
+
+md檔內容須在各組員的leo檔裡修改 users\s2b\g2目錄下
+
+Openshift遠端建立需先在近端可以執行
+
+利用老師給的scrum1及scrum2程式來繪製ABCD
+
+scrum1為組合各組員所建立的在scrum2下的指令
+
+&lt;img src="./../files/bg2/5.png"&gt;
+
+&lt;img src="./../files/bg2/40123244-1.png"&gt;
+
+完成後需要註冊各組組員才能執行
+
+&lt;img src="./../files/bg2/3.png"&gt;
+
+&lt;img src="./../files/bg2/4.png"&gt;
+
+完成後須先在近端執行看是否成功
+
+&lt;img src="./../files/bg2/8.png"&gt;
+
+&lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;bg2-openshift&lt;/a&gt; </t>
 </tnodes>
 </leo_file>

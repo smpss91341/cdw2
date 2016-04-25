@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
+<<<<<<< HEAD
+=======
 <?xml-stylesheet ekr_test ?>
+>>>>>>> eea56ee15d4e18ec4ec3c5e0c73288984d7f1366
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
 <globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
@@ -10,6 +13,19 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
+<<<<<<< HEAD
+<v t="leo.20160310102708.1"><vh>@edit scrum2_task40323216.py</vh></v>
+=======
+<<<<<<< HEAD
+<v t="leo.20160310102708.1"><vh>@edit scrum2_task40323236.py</vh></v>
+>>>>>>> 9dc96c34b3a6f9dc46cfbce7adac69e6e778f341
+<v t="leo.20160310102803.1" a="E"><vh>@path ../../../</vh>
+<v t="leo.20160310102838.1"><vh>@edit myflaskapp.py</vh></v>
+</v>
+</vnodes>
+<tnodes>
+<t tx="leo.20160310102803.1"></t>
+=======
 <v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
 <v t="450.20160406083718.1"><vh>@edit scrum1_task1.py</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
@@ -64,5 +80,6 @@ bg06 組員 40323212 已經在 cdw2 倉儲中的 master 分支建立對應的組
 其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
 <t tx="amd.20160329211330.1"></t>
+>>>>>>> eea56ee15d4e18ec4ec3c5e0c73288984d7f1366
 </tnodes>
 </leo_file>

@@ -9,51 +9,36 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="leo.20160414094606.1"><vh>因為位於 users/s2b/g2 目錄, 必須跳三層才到外圍</vh></v>
-<v t="leo.20160331180303.1"><vh>@edit scrum2_task40123244.py</vh></v>
-<v t="leo.20160310115627.2"><vh>@edit 40123244.py</vh></v>
-<<<<<<< HEAD
-<v t="leo.20160331180303.1"><vh>@edit scrum2_task40123244.py</vh></v>
-<v t="leo.20160310115644.1"><vh>@path./../../../</vh></v>
-=======
-<v t="leo.20160310115644.1" a="E"><vh>@path ./../../../</vh>
-<v t="leo.20160414094129.1" a="E"><vh>@path content</vh>
-<v t="leo.20160414094137.1"><vh>@path bg2</vh></v>
-<v t="leo.20160414094144.1"><vh>@clean scrum1-40123244bg2.md</vh></v>
-<v t="leo.20160414094221.1"><vh>進入 content 目錄</vh></v>
-<v t="leo.20160414094231.1"><vh>假如要在近端檢視, 使用下列按鈕</vh>
-<v t="leo.20160414094238.1"><vh>@button local pelican</vh></v>
+<v t="leo.20160421101737.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
+<v t="leo.20160421102029.1" a="E"><vh>@path ./../../../</vh>
+<v t="leo.20160421102038.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
+<v t="leo.20160421102101.1"><vh>@button gh-pages pelican</vh></v>
 </v>
-<v t="leo.20160414094302.1"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
-<v t="leo.20160414094314.1"><vh>@button gh-pages pelican</vh></v>
+<v t="leo.20160421102042.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
+<v t="leo.20160421102109.1"><vh>@button local pelican</vh></v>
+</v>
+<v t="leo.20160421102043.1"><vh>進入 content 目錄</vh></v>
+<v t="leo.20160421102044.1" a="E"><vh>@path content</vh>
+<v t="leo.20160421102118.1" a="E"><vh>@path bg2</vh>
+<v t="leo.20160421102120.1"><vh>@clean 40123244_2.md</vh></v>
 </v>
 </v>
 </v>
->>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
 </vnodes>
 <tnodes>
-<t tx="leo.20160310115644.1"></t>
-<t tx="leo.20160414094129.1"></t>
-<t tx="leo.20160414094137.1"></t>
-<t tx="leo.20160414094144.1">@language md
-Title: 40123244scrum1-回報 g2 scrum1 初步繪圖主機與連結
-Category: bg2
-Tags: scrum1, task1, 40123244
-Author: kmol
-@others
-請注意: 這個 .md 檔案應該要放到 s2b/g2目錄中, 而且用學號作為 Tags 分類讓使用者可以較容易透過 Tags 找到某一學員所提供的所有內容.
+<t tx="leo.20160421101737.1"></t>
+<t tx="leo.20160421102029.1"></t>
+<t tx="leo.20160421102038.1"></t>
+<t tx="leo.20160421102042.1"></t>
+<t tx="leo.20160421102043.1"></t>
+<t tx="leo.20160421102044.1"></t>
+<t tx="leo.20160421102101.1">@language python
+import os
+os.system("pelican content -o post -s publishconf.py")
+g.es("admin pelican 執行完畢")
 
-bg2 已經在 cdw2 倉儲中的 master 分支建立對應的組員 g2.leo 並且完成 Task1 的繪圖藍圖建立與註冊
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235&lt;/a&gt;
-
-其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
-<t tx="leo.20160414094221.1"></t>
-<t tx="leo.20160414094231.1"></t>
-<t tx="leo.20160414094238.1">@language python
+<t tx="leo.20160421102109.1">@language python
 import os
 #os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
 os.system("pelican content -o post -s local_publishconf.py")
@@ -61,13 +46,45 @@ g.es("admin pelican 近端執行完畢")
 
 
 </t>
-<t tx="leo.20160414094302.1"></t>
-<t tx="leo.20160414094314.1">@language python
-import os
-os.system("pelican content -o post -s publishconf.py")
-g.es("admin pelican 執行完畢")
+<t tx="leo.20160421102118.1"></t>
+<t tx="leo.20160421102120.1">@language md
+Title: 40123244 - 期中報告
+Category: bg2
+Tags: scrum1, task1, 40123244
+Author: 40123244
+@others
+
+
+期中報告
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+自評分數:78
+
+Openshift:在master分支下建立各個組員的scrum2程式(直接採用老師給的
+
+scrum1和scrum2,建檔完成後須在myflaskapp.py註冊各組組員
+
+&lt;img src="./../files/bg2/3.png"&gt;
+
+&lt;img src="./../files/bg2/4.png"&gt;
+
+&lt;img src="./../files/bg2/40123244-1.png"&gt;
+
+scum1為統整各組員scrum2的內容所創,完成後須先python wsgi.py在近端測試可否執行
+
+&lt;img src="./../files/bg2/8.png"&gt;
+
+&lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;bg2-openshift&lt;/a&gt; 
+
+md建檔:在content目錄下建立組別資料夾
+
+&lt;img src="./../files/bg2/1.png"&gt;
+
+在cdw2=&gt;users=&gt;s2b=&gt;bg2下新增個人的leo檔,在裡面新增md檔,內容打在裡面
+
+&lt;img src="./../files/bg2/40123244-2.png"&gt;
 
 </t>
-<t tx="leo.20160414094606.1"></t>
 </tnodes>
 </leo_file>

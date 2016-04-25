@@ -20,6 +20,7 @@
 <v t="leo.20160418090406.1" a="E"><vh>@path content</vh>
 <v t="leo.20160418090412.1" a="E"><vh>@path ag1</vh>
 <v t="leo.20160418090452.1"><vh>@clean scrum40123254.md</vh></v>
+<v t="leo.20160422213902.1"><vh>@clean scrum40123254_2.md</vh></v>
 </v>
 </v>
 </v>
@@ -59,5 +60,17 @@ ag1 組員40123254 已經在 cdw2 倉儲中的 master 分支建立對應的組�
 
 其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
+<t tx="leo.20160422213902.1">@language md
+Title: 40123254-ag1期中報告
+Category: ag1
+Tags: scrum1, task1, 40123254
+
+期中報告
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為
+
+&lt;a href="http://python-cadp13bg99.rhcloud.com/ag1/scrum1_week8_abcd"&gt;ag1-openshift&lt;/a&gt;</t>
 </tnodes>
 </leo_file>

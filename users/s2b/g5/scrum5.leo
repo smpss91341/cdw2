@@ -10,6 +10,13 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
+<<<<<<< HEAD
+<v t="leo.20160414111623.2"><vh>NewHeadline</vh></v>
+<v t="leo.20160414111626.1"><vh>@edit scrum5_task40323253.py</vh></v>
+</vnodes>
+<tnodes>
+<t tx="leo.20160414111623.2"></t>
+=======
 <v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
@@ -61,5 +68,6 @@ bg5 組員 scrum1 已經在 cdw2 倉儲中的 master 分支建立對應的組員
 其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
 <t tx="amd.20160329211330.1"></t>
+>>>>>>> 9dc96c34b3a6f9dc46cfbce7adac69e6e778f341
 </tnodes>
 </leo_file>

@@ -27,14 +27,7 @@
 <v t="leo.20160418095726.1"><vh>@edit scrum1-20160415.md </vh></v>
 <v t="leo.20160418095842.1"><vh>@edit scrum1-20160416.md </vh></v>
 <v t="leo.20160418100005.1"><vh>@edit scrum1-20160417.md </vh></v>
-<v t="leo.20160420231121.1"><vh>@edit scrum1-20160418.md </vh></v>
-<v t="leo.20160424221652.1"><vh>@edit scrum1-20160419.md </vh></v>
-<v t="leo.20160424222136.1"><vh>@edit scrum1-20160420.md </vh></v>
-<v t="leo.20160424222334.1"><vh>@edit scrum1-20160421.md </vh></v>
-<v t="leo.20160424222727.1"><vh>@edit scrum1-20160422.md </vh></v>
-<v t="leo.20160424223141.1"><vh>@edit scrum1-20160423.md </vh></v>
-<v t="leo.20160424223309.1"><vh>@edit scrum1-20160424.md </vh></v>
-<v t="leo.20160424223343.1"><vh>@edit scrum1-20160425.md </vh></v>
+<v t="leo.20160420231121.1"><vh>@edit scrum1-20160410.md </vh></v>
 <v t="amd.20160329174131.1" a="E"><vh>@path ag7</vh>
 <v t="amd.20160329174139.1"><vh>@clean scrum1-20160411.md</vh></v>
 <v t="leo.20160418092745.1"><vh>@clean scrum1-20160412.md</vh></v>
