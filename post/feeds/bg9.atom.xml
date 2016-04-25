@@ -8,7 +8,7 @@
 &lt;hr&gt;
 &lt;/br&gt;
 &lt;h4&gt;組別圖檔 :&lt;/h4&gt; 
-&lt;img src="./../files/bg9/30_1.png"&gt;
+&lt;img src="./../files/bg9/bg9_abcd.png"&gt;
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;h4&gt;個人圖檔 : &lt;/h4&gt;
@@ -55,7 +55,7 @@
 &lt;hr&gt;
 &lt;/br&gt;
 &lt;h4&gt;組別圖檔 :&lt;/h4&gt; 
-&lt;img src="./../files/bg9/33_1.png"&gt;
+&lt;img src="./../files/bg9/bg9_abcd.png"&gt;
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;h4&gt;個人圖檔 : &lt;/h4&gt;
@@ -122,11 +122,19 @@
 &lt;p&gt;&lt;img src="./../files/bg9/ABCD.png"&gt;
 &lt;/br&gt;
 &lt;/br&gt;
-&lt;h3&gt;協同繪圖需要用到Allow-Contorl-Allow-Origin功能&lt;/h3&gt;&lt;/p&gt;
+&lt;h3&gt;協同繪圖(可能)使用Allow-Contorl-Allow-Origin功能&lt;/h3&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="./../files/bg9/11.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/br&gt;
 &lt;/br&gt;
 &lt;a href="https://github.com/40323250/STL_png/blob/gh-pages/stl/ABCD.stl"&gt;OnshapeABCD組立stl檔案&lt;/a&gt;
 &lt;/br&gt;
 &lt;/br&gt;
-&lt;script src="https://embed.github.com/view/3d/40323250/STL_png/gh-pages/stl/ABCD.stl"&gt;&lt;/script&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry></feed>
+&lt;script src="https://embed.github.com/view/3d/40323250/STL_png/gh-pages/stl/ABCD.stl"&gt;&lt;/script&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h3&gt;協同需要另外設定允許權限&lt;/h3&gt;
+&lt;img src="./../files/bg9/11.png"&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h3&gt;完成之協同組合圖&lt;/h3&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry></feed>
