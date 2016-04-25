@@ -1,34 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/ag7.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-20T23:27:57+08:00</updated><entry><title>ag7 期中報告 2D 鏈條繪圖</title><link href="http://2015fallhw.github.io/cdw2/post/ag7-qi-zhong-bao-gao-2d-lian-tiao-hui-tu.html" rel="alternate"></link><updated>2016-04-20T23:27:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/ag7-qi-zhong-bao-gao-2d-lian-tiao-hui-tu.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/ag7.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-26T01:33:57+08:00</updated><entry><title>40123141 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40123141-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123141-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
 
 
 &lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&amp;gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40123255-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123255-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T23:25:35+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40123255-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123255 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;上課心得 :&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;網路協同很適合用在不管人在何處的多人小組中，只要每個人都貢獻一點點，累積起來就可以
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;完成一件麻煩的工作，例如本次的A~Z繪圖，這是一件費時費力的任務，但只要每個人都做一點點，很快
+就可以解決，當然還是有些缺點所在，因為大家使用的方法不同，但是呈現出來的結果是相同的，看似
+可以，實際上在統整時就會出現很多小錯誤，為了避免後面的瑣事，一開始應該要給個規範才方便後續
+作業。&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;      這次上課與過去有截然不同的感覺，以前甚麼都聽不懂，很多的術語、名詞、語法，都不懂是
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;在做甚麼，今年看到老師一一解釋用法，且每做一小段就讓我們實際操作，比起之前一次教了很多東西
+卻甚麼都記不得，現在的網頁設計也更人性化，清楚的可以找到上課內容。&lt;/p&gt;
+&lt;p&gt;自評分數 :   80&lt;/p&gt;
+&lt;hr /&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40123149 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40123149-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123149-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;期中報告操作流程介紹&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git clone 班級的倉儲，使遠端資料能夠與個人近端倉儲同步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若已經git clone班級的倉儲過了，則git pull使個人近端倉儲與班上的倉儲同步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入cd tmp進入tmp的資料夾(Y:\tmp )。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入cd cdw2進入tmp的資料夾(Y:\tmp\cdw2)，準備完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;複製scrum1_task1檔(tmp\cdw2\users\s2a\g100)到各組下的資料夾(tmp\cdw2\users\s2a\g7)，然後利用SciTE開啟進行修改。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改檔名與涵式名稱，命名成a12345678_task1。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刪除outstring = ''' 到from javascript import JSConstructor間的程式碼。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刪除O(0, 0, 0, 0, 0, "lightyellow", True, 4) 到 '''  return outstring間的程式碼。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改  basic101 = cmbr.dup()
+            basic101.rotate(180)
+            basic101.translate(80, 100) 與
+cmbr.appendPath(basic101) 等。
+決定每個鍊條的角度、起點位置與終點位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;完成修改個人python檔後，同樣利用SciTE開啟myflaskapp.py檔(tmp\cdw2)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;新增一個同樣的scrum1_task1檔(tmp\cdw2\users\s2a\g100)，此為統整的檔。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改檔名與涵式名稱，命名成ag7_task1。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刪除決定鍊條的程式碼。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;增加&lt;script type="text/python" src="/ag7/a12345678_task1"&gt;&lt;/script&gt;的程式碼，此為呼叫a12345678_task1檔案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每個人完成修改個人的python檔後，同樣利用SciTE開啟myflaskapp.py檔(tmp\cdw2)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;增加 import users.s2a.g7.ag7_task1，此為導入ag7_task1檔案。
+import users.s2a.g7.a12345678_task1，此為導入a12345678_task1檔案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;增加 app.register_blueprint(users.s2a.g7.ag7_task1.ag7_task1)
+此為註冊ag7_task1檔案。
+app.register_blueprint(users.s2a.g7.a12345678_task1.a12345678_task1)
+此為註冊a12345678_task1檔案，完成修改。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git add -A，將新增、修改、刪除所有的檔案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git status，檢查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git commit -m "message"，快速提交，而"message"內為敘述。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git push https://github.com/12345678/cdw2.git，把資料推到遠端的個人倉儲。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入帳號與密碼後，在https://github.com/12345678/cdw2.git點new pull request的按鈕，使個人倉儲與班級倉儲同步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;讓有權限的組員同意與班級倉儲同步，做這步驟前要先確認有無衝突，成功推至遠端。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在已經有openshift的各組網站前提下，把資料複製到python的資料夾下(\tmp\python)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入cd python進入python的資料夾(Y:\tmp\python)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git add -A，將新增、修改、刪除所有的檔案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git status，檢查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git commit -m "message"，快速提交，而"message"內為敘述。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入git push ssh/……………………，把資料推到遠端的openshift各組網站，成功完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;=================================
+期中報告心得&lt;/p&gt;
+&lt;p&gt;根據教授上課內容，能夠利用雲端進行協同設計，有效的節省溝通時間，如果沒有利用雲端協同進行，而是在近端進行設計，光是溝通就有很多困難， 且要花費大量時間，更不要說如果要統整資料會令最後提交著造成嚴重的身心疲憊，就我看來，所謂的協同設計應為有系統、有效率且正確地進行多人同步之產品設計。
+但在學習的當中也是有遇到一些困難，分別列出幾點。&lt;/p&gt;
+&lt;p&gt;一、當在近端設計完成後，沒有檢查便推至遠端，造成衝突，會耗費大量的檢查時間。所以，應該於近端執行檢查，乃至沒有衝突時再與遠端同步，這樣才能降低系統資料癱瘓的機率。&lt;/p&gt;
+&lt;p&gt;二、openshift與github無法同步，當在近端把資料推到遠端時，要分別推至openshift與github，也就是要把其中一個資料複製到另一個資料，而這”複製”的動作便會形成不必要的時間，目前我還無法找到一個可以同時把資料推到遠端之openshift與github的方法。&lt;/p&gt;
+&lt;p&gt;三、多人協同時最大的困難是衝突的發生，不論是個人或是其他人的資料所造成的，故處理衝突是最為累人與麻煩的。
+經由以上幾點瞭解到，協同產品設計應該要有系統、有效率且正確地進行，降低寶貴的時間，當產品在設計時，如果我的產品比其他人更快發表，那我便擁有更多的機會，也會更快獲得消費者的回饋，進而在市場上得到很大的優勢。&lt;/p&gt;
+&lt;p&gt;自評成績 : 85分&lt;/p&gt;
+&lt;p&gt;=================================&lt;/p&gt;
+&lt;p&gt;期中報告內容參考連結&lt;/p&gt;
+&lt;p&gt;個人的倉儲：
+https://github.com/40123149/cdw2&lt;/p&gt;
+&lt;p&gt;期中報告Task1：
+http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/p&gt;
+&lt;p&gt;各組的openshift：
+http://python-40123149.rhcloud.com/&lt;/p&gt;
+&lt;hr /&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40123216 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40123216-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123216-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;期中報告心得&lt;/p&gt;
+&lt;p&gt;這門課讓我學習到透過程式進行零件組立，這可能是在重修之前沒有嘗試過的，以前都只會使用繪圖軟體組合零件，
+對於程式的組立並不熟悉，在這幾堂上課的過程中，漸漸地學會程式的架構，並可以完成作業，
+對於老師上課所講的內容雖然不是完全聽得懂，但是知道如何執行任務，做的可能不是很完整，
+但會不斷嘗試，學會除錯，此外與組員之間的合作是最重要的，分工合作有效提升整個團隊的作業效率，
+課業上有不懂的，除了請教老師外，與同學之間也必須互相學習提問，這樣才能真正了解協同產品設計的概念。&lt;/p&gt;
+&lt;p&gt;自評成績 : 80分&lt;/p&gt;
+&lt;p&gt;=================================&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40123227 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40123227-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123227-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;=================================&lt;/p&gt;
+&lt;p&gt;期中報告流程 : &lt;/p&gt;
+&lt;p&gt;檢視網頁原始碼後複製起來，複製到SciTE上存成html存檔後在SciTE上編輯，邊編輯邊存取，
+即時在網頁上看到實況，不對也能立即在SciTE上改參數。
+每一個鍊條都有對應的位置，而在程式上顯示成
+ｅｘ：basic1 = cmbr.dup()
+      basic1.rotate(60)
+      basic1.translate(20&lt;em&gt;math.cos(30&lt;/em&gt;deg),20&lt;em&gt;math.sin(30&lt;/em&gt;deg))&lt;/p&gt;
+&lt;p&gt;rotate(60)：即表示它與基準水平線夾角60度(鍊條初始水平，逆時針60度擺角)
+translate(20&lt;em&gt;math.cos(30&lt;/em&gt;deg),20&lt;em&gt;math.sin(30&lt;/em&gt;deg))：即表示鍊條一端的擺放位置用（Ｘ,Ｙ）表示要擺放在哪一個水平位置，以及高度要在哪裡&lt;/p&gt;
+&lt;p&gt;舉例表示要做英文字母Ｔ的話，在程式碼上要再多增加一段basic因為鍊條數少一，所以要再多給他一段鍊條，好了之後開始改每一個鍊條的擺角，
+兩個鍊條擺放基準水平位置，其餘四個擺放垂直位置。因此一開始的rotate(60)要改成rotate(180)以及translate(0,0)因為第一個鍊條位置要平放
+在原點位置，第二個也是將rotate的部分改成平放180度再來translate(20,0)這樣兩個就平放扣在已起了形成Ｔ字形上的第一橫槓。再來做直立的部
+分，rotate的角度改成垂直的90度而translate(20,0)，第二個鍊條則是rotate一樣而translate(20,-20)…以此下一個鍊條的Ｙ變量遞減20，因為鍊
+條的中心距為20，都改完了，及英文字母Ｔ就完成了。&lt;/p&gt;
+&lt;p&gt;期中報告心得 :&lt;/p&gt;
+&lt;p&gt;這一次的任務是要我們一起和組員協同利用github和openshift組出A~Z的字母，剛開始什麼都不會，也是東問西問，後來慢慢的可以自己一步步拼出字母，成就感還蠻高的，比較困難的就是fork (互刻)，起初不知道，我們組員就直接推上去，發現會有error，但之後也慢慢排除，和組員一步步完成報告，之後的課程可能更加困難，我們需要更加團結合作。&lt;/p&gt;
+&lt;p&gt;自評成績 : 80分&lt;/p&gt;
+&lt;p&gt;=================================&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40123255 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40123255-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123255-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;=================================
+期中報告心得&lt;/p&gt;
+&lt;p&gt;這次的期中報告，各個組員絞盡腦汁，為的就是想為團隊去做些甚麼，
+大家一起研究程式碼、分工合作的話鍊條圖，並互相教導與學習，很有TEAM的感覺。
+從不會更改程式碼到可以繪製鍊條，畫完2D後又繪製3D圖，雖然過程中有需要進步的地方。
+但是大家都很認真研究，有組員們和組長的合作下，才順利完成本次的報告。&lt;/p&gt;
+&lt;p&gt;自評成績 : 75分&lt;/p&gt;
+&lt;p&gt;=================================&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40023234 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40023234-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40023234-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;心得 : &lt;/p&gt;
+&lt;p&gt;這次協同課程,讓我了解分工合作的重要,尤其是事前溝通分配過程,事後檢查錯誤工作,理性的討論能讓工作進行更順利圓滿,也很謝謝團員從中指導督促,尤其是畫鏈結圖和推到組長的過程中,給予我很大的幫助,也了解到協同工作在未來製造業有著很大重要性,接下來下半學期我一定會更努力學習,充實自己在課程學到的內容,應用在未來~&lt;/p&gt;
+&lt;p&gt;自評分數 :   75&lt;/p&gt;
+&lt;hr /&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40123119 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40123119-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123119-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;一.自評成績：80&lt;/p&gt;
+&lt;p&gt;二.期中報告操作流程介紹：&lt;/p&gt;
+&lt;p&gt;檢視網頁原始碼後複製起來，複製到SciTE上存成html存檔後在SciTE上編輯，邊編輯邊存取，
+即時在網頁上看到實況，不對也能立即在SciTE上改參數。
+每一個鍊條都有對應的位置，而在程式上顯示成
+ｅｘ：basic1 = cmbr.dup()
+      basic1.rotate(60)
+      basic1.translate(20&lt;em&gt;math.cos(30&lt;/em&gt;deg),20&lt;em&gt;math.sin(30&lt;/em&gt;deg))&lt;/p&gt;
+&lt;p&gt;rotate(60)：即表示它與基準水平線夾角60度(鍊條初始水平，逆時針60度擺角)
+translate(20&lt;em&gt;math.cos(30&lt;/em&gt;deg),20&lt;em&gt;math.sin(30&lt;/em&gt;deg))：即表示鍊條一端的擺放位置用（Ｘ,Ｙ）表示要擺放在哪一個水平位置，以及高度要在哪裡&lt;/p&gt;
+&lt;p&gt;舉例表示要做英文字母Ｔ的話，在程式碼上要再多增加一段basic因為鍊條數少一，所以要再多給他一段鍊條，好了之後開始改每一個鍊條的擺角，
+兩個鍊條擺放基準水平位置，其餘四個擺放垂直位置。因此一開始的rotate(60)要改成rotate(180)以及translate(0,0)因為第一個鍊條位置要平放
+在原點位置，第二個也是將rotate的部分改成平放180度再來translate(20,0)這樣兩個就平放扣在已起了形成Ｔ字形上的第一橫槓。再來做直立的部
+分，rotate的角度改成垂直的90度而translate(20,0)，第二個鍊條則是rotate一樣而translate(20,-20)…以此下一個鍊條的Ｙ變量遞減20，因為鍊
+條的中心距為20，都改完了，及英文字母Ｔ就完成了。&lt;/p&gt;
+&lt;p&gt;三.期中報告心得&lt;/p&gt;
+&lt;p&gt;覺得組鍊條這件事情很新奇也很有趣，以前從未做過，首先要先去了解程式碼的意義，在慢慢的一個一個去改去組，在這之前也做了很多
+github、ungit、還有openshfit以及整組的迎文字母整理和整合，學到了很多，受益良多。&lt;/p&gt;
+&lt;p&gt;自評成績：80&lt;/p&gt;
+&lt;p&gt;四.期中報告內容參考連結&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://chiamingyen.github.io/kmolab/blog/xie-tong-chan-pin-she-ji-shi-xi-de-wang-ji-2d-xie-tong-hui-tu.html"&gt;http://chiamingyen.github.io/kmolab/blog/xie-tong-chan-pin-she-ji-shi-xi-de-wang-ji-2d-xie-tong-hui-tu.html&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/2015fallhw/cdw2/blob/efc0bf77c01c2d4218f16fb0603bb5ed27639e1b/users/s2a/g100/scrum1_task1.py"&gt;https://github.com/2015fallhw/cdw2/blob/efc0bf77c01c2d4218f16fb0603bb5ed27639e1b/users/s2a/g100/scrum1_task1.py&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>ag7 期中報告 2D 鏈條繪圖</title><link href="http://2015fallhw.github.io/cdw2/post/ag7-qi-zhong-bao-gao-2d-lian-tiao-hui-tu.html" rel="alternate"></link><updated>2016-04-26T01:33:57+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/ag7-qi-zhong-bao-gao-2d-lian-tiao-hui-tu.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&amp;gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry><entry><title>40123255-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123255-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123255-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123255 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40123255_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40123255_task0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123255"></category></entry><entry><title>40123216-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123216-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T23:25:35+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40123216-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123216 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
+&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123255"></category></entry><entry><title>40123216-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123216-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123216-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123216 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40123216_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40123216_task0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123216"></category></entry><entry><title>40123149-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123149-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T23:25:35+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40123149-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123149 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
-
-
-&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40123149_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40123149_task0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123149"></category></entry><entry><title>40123141-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123141-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T23:25:35+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40123141-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123141 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
+&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123216"></category></entry><entry><title>40123141-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123141-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123141-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123141 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40123141_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40123141_task0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123141"></category></entry><entry><title>40123119-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123119-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T23:25:35+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40123119-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123119 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
+&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123141"></category></entry><entry><title>40123149-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123149-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123149-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123149 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
+
+
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40123149_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40123149_task0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123149"></category></entry><entry><title>40123119-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123119-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123119-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123119 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40123119_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40123119_task0&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123119"></category></entry><entry><title>40023234-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40023234-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T23:25:35+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40023234-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40023234 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
+&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123119"></category></entry><entry><title>40023234-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40023234-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40023234-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40023234 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40023234_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40023234_task0&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40023234"></category></entry><entry><title>40123227-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123227-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-20T23:25:35+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-20:cdw2/post/40123227-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123227 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
+&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40023234"></category></entry><entry><title>40123227-回報 ag7 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40123227-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/40123227-hui-bao-ag7-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;ag7 組員 40123227 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/a40123227_task0"&gt;http://python-40123149.rhcloud.com/ag7/a40123227_task0&lt;/p&gt;
-&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123227"></category></entry></feed>
+&lt;p&gt;其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40123227"></category></entry><entry><title>ag7 期中報告 2D 鏈條繪圖</title><link href="http://2015fallhw.github.io/cdw2/post/ag7-qi-zhong-bao-gao-2d-lian-tiao-hui-tu.html" rel="alternate"></link><updated>2016-04-26T01:30:14+08:00</updated><author><name>kmol</name></author><id>tag:2015fallhw.github.io,2016-04-26:cdw2/post/ag7-qi-zhong-bao-gao-2d-lian-tiao-hui-tu.html</id><summary type="html">&lt;p&gt;ag7 完成 2D鏈條繪圖&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href="http://imgur.com/JvRdJKV"&gt;&lt;img src="http://i.imgur.com/JvRdJKV.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://python-40123149.rhcloud.com/ag7/ag7_task1"&gt;http://python-40123149.rhcloud.com/ag7/ag7_task1&amp;gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="ag7"></category></entry></feed>
