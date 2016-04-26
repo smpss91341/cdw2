@@ -69,10 +69,10 @@ Author:40123242
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;Gh-pages : &lt;/h2&gt;在 gh-pages 裡的user/組別 目錄下 新增個人leo檔案，並將.md檔路徑放在content，至於紅色框框為檔案名稱，很多人都使用日期導致檔案一直覆寫。
-&lt;img src="./../files/bg2/40123242-1.png"&gt;
+&lt;img src="./../files/bg3/40123242-1.png"&gt;
 在cdw2=&gt;users=&gt;s2b=&gt;g3下新增個人的leo檔,在裡面新增md檔,內容打在裡面
 
-&lt;img src="./../files/bg2/40123242-2.png"&gt;
+&lt;img src="./../files/bg3/40123242-2.png"&gt;
 
 和上學期個人md檔相同作法，編輯個人學期心得，並顯示於
 &lt;a href="http://2015fallhw.github.io/cdw2/post/"&gt;cdw2首頁&lt;/a&gt; 
@@ -84,9 +84,9 @@ Author:40123242
 &lt;br&gt;
 繪圖須註冊藍圖，包括組別與個人，註冊位置在cdw2目錄下之simpleflask.leo
 
-&lt;img src="./../files/bg2/40123242-3.png"&gt;
+&lt;img src="./../files/bg3/40123242-3.png"&gt;
 
-&lt;img src="./../files/bg2/40123242-4.png"&gt;
+&lt;img src="./../files/bg3/40123242-4.png"&gt;
 繪圖 : 
 此部分依照你的需求，若是使用你的藍圖為主畫布，則使用此串原始碼
 若為被導入之零件則刪除(尾端/script也要記得刪)
