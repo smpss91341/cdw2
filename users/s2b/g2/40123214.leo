@@ -79,6 +79,15 @@ scum2的內容所用
 &lt;img src="./../files/bg2/7.png"&gt;
 上述完成後須先python wsgi.py在近端測試可否執行,,所有組員都以同一個Openshift 呈現ABCD字母圖形
 &lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;bg2-openshift&lt;/a&gt; 
+近端測試完後即可推上openshift的遠端網頁。
+
+
+&lt;h2&gt;3D
+
+&lt;img src="./../files/bg2/3DA.png"&gt;
+&lt;img src="./../files/bg2/3DB.png"&gt;
+&lt;img src="./../files/bg2/3DC.png"&gt;
+&lt;img src="./../files/bg2/3DD.png"&gt;
 </t>
 </tnodes>
 </leo_file>
