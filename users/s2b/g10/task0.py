@@ -7,8 +7,8 @@ bg10 = Blueprint('bg10', __name__, url_prefix='/bg10', template_folder='template
     
 
 # 展示傳回 Brython 程式
-@bg10.route('/task1')
-def task1():
+@bg10.route('/task2')
+def task2():
     outstring = '''
 <!DOCTYPE html>
 <html>
