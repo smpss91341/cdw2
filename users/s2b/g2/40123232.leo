@@ -20,7 +20,7 @@
 <v t="leo.20160421111844.1"><vh>進入 content 目錄</vh></v>
 <v t="leo.20160421111909.1" a="E"><vh>@path content</vh>
 <v t="leo.20160421111916.1" a="E"><vh>@path bg2</vh>
-<v t="leo.20160421111922.1"><vh>@clean 40123235_2.md</vh></v>
+<v t="leo.20160421111922.1"><vh>@clean 40123232_2.md</vh></v>
 </v>
 </v>
 </v>
@@ -96,6 +96,13 @@ scum2的內容所用
 近端測試完後即可推上openshift的遠端網頁。
 
 &lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;bg2-openshift&lt;/a&gt; 
+
+&lt;h2&gt;3D
+
+&lt;img src="./../files/bg2/3DA.png"&gt;
+&lt;img src="./../files/bg2/3DB.png"&gt;
+&lt;img src="./../files/bg2/3DC.png"&gt;
+&lt;img src="./../files/bg2/3DD.png"&gt;
 </t>
 </tnodes>
 </leo_file>
