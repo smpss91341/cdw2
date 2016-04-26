@@ -4,7 +4,7 @@ from flask import Blueprint, render_template
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
 bg10 = Blueprint('bg10', __name__, url_prefix='/bg10', template_folder='templates')
 
-
+    
 
 # 展示傳回 Brython 程式
 @bg10.route('/task1')
