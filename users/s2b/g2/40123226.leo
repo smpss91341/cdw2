@@ -94,6 +94,53 @@ g.es("admin pelican 近端執行完畢")
 <t tx="leo.20160421110643.1"></t>
 <t tx="leo.20160421110650.1"></t>
 <t tx="leo.20160421110656.1"></t>
-<t tx="leo.20160421110702.1"></t>
+<t tx="leo.20160421110702.1">@language md
+Title: 40123226 - 期中報告
+Category: bg2
+Tags: scrum1, task1, 40123226
+Author: 40123226
+@others
+
+
+期中報告
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h2&gt;自評分數:78
+
+&lt;h2&gt; md檔建立
+
+在各組員的leo檔裡修改 users\s2b\g2目錄下
+
+&lt;img src="./../files/bg2/40123226-1.png"&gt;
+
+&lt;img src="./../files/bg2/40123226-5.png"&gt;
+
+自評內容都在裡面
+
+&lt;h2&gt;Openshift繪圖ABCD
+
+利用老師所給的scrum1及scrum2程式建立各組員的協同繪圖
+
+scrum1為組合各組員所建立的在scrum2下的指令
+
+&lt;img src="./../files/bg2/5.png"&gt;
+
+&lt;img src="./../files/bg2/40123226-4.png"&gt;
+
+以上完成後須在近端測試是否可以執行,指令:python wsgi.py
+
+&lt;img src="./../files/bg2/40123226-3.png"&gt;
+
+可以順利執行則push到遠端Openshift網站中
+
+&lt;a href="http://cdw2-cadp13ag35.rhcloud.com/g2/scrum1_task40123235"&gt;bg2-openshift&lt;/a&gt; 
+
+&lt;h2&gt;3D圖
+
+&lt;img src="./../files/bg2/3DA.png"&gt;
+&lt;img src="./../files/bg2/3DB.png"&gt;
+&lt;img src="./../files/bg2/3DC.png"&gt;
+&lt;img src="./../files/bg2/3DD.png"&gt;</t>
 </tnodes>
 </leo_file>
