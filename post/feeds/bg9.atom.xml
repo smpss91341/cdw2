@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg9.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-27T10:26:28+08:00</updated><entry><title>40323250 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-27T10:26:28+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323250-qi-zhong-bao-gao.html</id><summary type="html">&lt;h3&gt;40323250 - 期中報告&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg9.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-27T12:08:57+08:00</updated><entry><title>40323250 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-27T12:08:57+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323250-qi-zhong-bao-gao.html</id><summary type="html">&lt;h3&gt;40323250 - 期中報告&lt;/h3&gt;
 
 
 
@@ -54,7 +54,7 @@
 &lt;/br&gt;
 &lt;a href="https://github.com/40323250/STL_png/blob/gh-pages/stl/ABCD.stl"&gt;OnshapeABCD組立stl檔案&lt;/a&gt;
 &lt;/br&gt;
-&lt;h3&gt;A的連接部分會有三層，所以有長短軸之分，且一開始就要決定哪一部分為最外層，否則最後接點會重疊&lt;/h3&gt;
+&lt;h3&gt;A與B的連接部分會有三層，所以有長短軸之分，且一開始就要決定哪一部分為最外層，否則最後接點會重疊&lt;/h3&gt;
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;script src="https://embed.github.com/view/3d/40323250/STL_png/gh-pages/stl/ABCD.stl"&gt;&lt;/script&gt;
@@ -68,13 +68,13 @@
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;h3&gt;完成之協同組合圖&lt;/h3&gt;
-&lt;img src="./../files/bg9/bg9.png"&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250-回報 bg9 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-27T10:26:28+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母&lt;/p&gt;
+&lt;img src="./../files/bg9/bg9.png"&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250-回報 bg9 初步繪圖主機與連結</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html" rel="alternate"></link><updated>2016-04-27T12:08:57+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323250-hui-bao-bg9-chu-bu-hui-tu-zhu-ji-yu-lian-jie.html</id><summary type="html">&lt;p&gt;bg9 組員 40323250 已經在 cdw2 倉儲中的 master 分支建立對應的組員 暫時完成繪圖AB字母&lt;/p&gt;
 
 
 &lt;p&gt;目前所完成的 OpenShift 對應繪圖連結: &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_abcd"&gt;bg9藍圖&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;個人畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/scrum1_50_ABCD"&gt;scrum1_50_ABCD&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;字母完成，繪圖部分在旋轉零件時較為複雜，與組員的座標定位也要精確，否則會導致圖形組不起來&lt;/p&gt;
-&lt;p&gt;繪圖要注意自己的圖形的起始位置，以及複製圖形的旋轉中心，能夠掌握這兩點就能減少繪圖的出錯概率。&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323233 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323233-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-27T10:26:28+08:00</updated><author><name>40323233</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323233-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323233 - 期中報告&lt;/p&gt;
+&lt;p&gt;繪圖要注意自己的圖形的起始位置，以及複製圖形的旋轉中心，能夠掌握這兩點就能減少繪圖的出錯概率。&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323233 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323233-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-27T12:08:57+08:00</updated><author><name>40323233</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323233-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323233 - 期中報告&lt;/p&gt;
 
 
 &lt;p&gt;組別畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_homework"&gt;bg9畫布&lt;/a&gt; 
@@ -96,7 +96,7 @@
 &lt;h4&gt;Master主要是用於儲存繪圖程式檔案，
 將檔案傳上openshift，就可以在遠端顯示圖檔，並能夠導入組員的零件。&lt;/h4&gt;
 &lt;/br&gt;
-&lt;h4&gt;近端必須要在cdw2目錄下，使用python wsgi.py指令，才能夠在localhost5000顯示。&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum6"></category><category term="task6"></category><category term="40323233"></category></entry><entry><title>40323230 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323230-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-27T10:26:28+08:00</updated><author><name>40323230</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323230-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323230 - 期中報告&lt;/p&gt;
+&lt;h4&gt;近端必須要在cdw2目錄下，使用python wsgi.py指令，才能夠在localhost5000顯示。&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum6"></category><category term="task6"></category><category term="40323233"></category></entry><entry><title>40323230 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323230-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-27T12:08:57+08:00</updated><author><name>40323230</name></author><id>tag:2015fallhw.github.io,2016-04-27:cdw2/post/40323230-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323230 - 期中報告&lt;/p&gt;
 
 
 &lt;p&gt;組別繪圖 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_homework"&gt;bg9畫布&lt;/a&gt; 
