@@ -24,6 +24,7 @@
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
 <v t="amd.20160405203555.1"><vh>@clean scrum3-20160414.md</vh></v>
+<v t="leo.20160427215630.1"><vh>@clean scrum3-20160427.md</vh></v>
 </v>
 </v>
 </vnodes>
@@ -51,7 +52,22 @@ g.es("admin pelican 執行完畢")
 Title: 40323203-回報 bg4 初步繪圖主機與連結
 Category: bg4
 Tags: scrum3, task1, 40323203
-Author: kmol
+Author: 40323203
+@others
+
+bg4 組員 40323203已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1"&gt;http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1&lt;/a&gt;
+
+其中已經在主程式中導入 scrum3_task1.py 中的 scrum3_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+</t>
+<t tx="leo.20160427215630.1">@language md
+Title: 40323203-期中報告
+Category: bg4
+Tags: scrum3, task1, 40323203
+Author: 40323203
 @others
 
 bg4 組員 40323203已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
