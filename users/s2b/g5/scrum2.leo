@@ -10,15 +10,6 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<<<<<<< HEAD
-<v t="leo.20160414102821.2"><vh>@edit scrum2_task40323206.py</vh></v>
-<v t="leo.20160414103127.1" a="E"><vh>@path ../../../</vh>
-<v t="leo.20160414103127.2"><vh>@edit myflaskapp.py</vh></v>
-</v>
-</vnodes>
-<tnodes>
-<t tx="leo.20160414103127.1"></t>
-=======
 <v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
@@ -29,8 +20,8 @@
 </v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329174131.1" a="E"><vh>@path ag100</vh>
-<v t="amd.20160329174139.1"><vh>@clean scrum2-20160329.md</vh></v>
+<v t="amd.20160329174131.1" a="E"><vh>@path bg5</vh>
+<v t="amd.20160329174139.1"><vh>@clean scrum2-40323206.md</vh></v>
 </v>
 </v>
 </v>
@@ -71,6 +62,5 @@ bg5組員scrum2已連上組別
 其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
 <t tx="amd.20160329211330.1"></t>
->>>>>>> 9dc96c34b3a6f9dc46cfbce7adac69e6e778f341
 </tnodes>
 </leo_file>
