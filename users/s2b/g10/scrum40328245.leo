@@ -58,7 +58,7 @@ bg10 組員 40328245 已經在 cdw2 倉儲中的 master 分支建立對應的組
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum2_task40328245"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum2_task40328245&lt;/a&gt;
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-40328245.rhcloud.com/bg10/scrum2_task40328245"&gt;http://cdw2-40328245.rhcloud.com/bg10/scrum2_task40328245&lt;/a&gt;
 
 已經將Task1的圖傳至OpenShift
 雖然研究許久
