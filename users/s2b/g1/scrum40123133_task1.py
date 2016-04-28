@@ -42,24 +42,30 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
     # 複製 cmbr, 然後命名為 basic1
+
     basic40123133_A_1 = cmbr.dup()
     basic40123133_A_1.rotate(90)
-    basic40123133_A_1.translate(-60, 20)
+    basic40123133_A_1.translate(-60, -20)
+
     basic40123133_A_2 = cmbr.dup()
-    basic40123133_A_2.rotate(170)
-    basic40123133_A_2.translate(-80, 60)
+    basic40123133_A_2.rotate(157.93)
+    basic40123133_A_2.translate(-77.51, 19.84)   
+
     basic40123133_B_1 = cmbr.dup()
-    basic40123133_B_1.rotate(180)
-    basic40123133_B_1.translate(40, 50)
+    basic40123133_B_1.rotate(0)
+    basic40123133_B_1.translate(37.32, 30)
+
     basic40123133_C_1 = cmbr.dup()
     basic40123133_C_1.rotate(90)
-    basic40123133_C_1.translate(100, 80)
+    basic40123133_C_1.translate(99.5, 40)
+
     basic40123133_D_1 = cmbr.dup()
     basic40123133_D_1.rotate(180)
-    basic40123133_D_1.translate(160, 80)
+    basic40123133_D_1.translate(204.48, -10)
+
     basic40123133_D_2 = cmbr.dup()
     basic40123133_D_2.rotate(180)
-    basic40123133_D_2.translate(200, 30)
+    basic40123133_D_2.translate(160, 20)
 
     cmbr.appendPath(basic40123133_A_1)
     cmbr.appendPath(basic40123133_A_2)

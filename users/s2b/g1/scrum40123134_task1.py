@@ -43,23 +43,27 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
     basic40123134_A_1 = cmbr.dup()
     basic40123134_A_1.rotate(90)
-    basic40123134_A_1.translate(-60, 34.6)
-    basic40123134_A_1.translate(-40, 40)
+    basic40123134_A_1.translate(-70, 38.38)
+  
     basic40123134_B_1 = cmbr.dup()
-    basic40123134_B_1.rotate(0)
-    basic40123134_B_1.translate(0, 80)
+    basic40123134_B_1.rotate(180)
+    basic40123134_B_1.translate(0, 20)
+
     basic40123134_B_2 = cmbr.dup()
     basic40123134_B_2.rotate(120)
-    basic40123134_B_2.translate(20, 40)
+    basic40123134_B_2.translate(20, 0)
+
     basic40123134_C_1 = cmbr.dup()
-    basic40123134_C_1.rotate(130)
-    basic40123134_C_1.translate(80, 80)
+    basic40123134_C_1.rotate(120.63)
+    basic40123134_C_1.translate(82.74, 29.81)
+
     basic40123134_D_1 = cmbr.dup()
-    basic40123134_D_1.rotate(0)
-    basic40123134_D_1.translate(160, 60)
+    basic40123134_D_1.rotate(155.3)
+    basic40123134_D_1.translate(196.13, -28.17)
+
     basic40123134_D_2 = cmbr.dup()
-    basic40123134_D_2.rotate(170)
-    basic40123134_D_2.translate(200, 20)
+    basic40123134_D_2.rotate(180)
+    basic40123134_D_2.translate(160, 0)
 
 
     cmbr.appendPath(basic40123134_A_1)
