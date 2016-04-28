@@ -65,10 +65,14 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 </script>
 
 <!-- 以協同方式加上 bg1 的 scrum40123156 組員所寫的 task1 程式碼 -->
-<script type="text/python" src="/bg1/scrum40123156_task1"></script>
 <script type="text/python" src="/bg1/scrum40123134_task1"></script>
 <script type="text/python" src="/bg1/scrum40123129_task1"></script>
 <script type="text/python" src="/bg1/scrum40123133_task1"></script>
+<script type="text/python" src="/bg1/scrum40123126_task1"></script>
+<script type="text/python" src="/bg1/scrum40123144_task1"></script>
+<script type="text/python" src="/bg1/scrum40123126_task1"></script>
+<script type="text/python" src="/bg1/scrum40123131_task1"></script>
+<script type="text/python" src="/bg1/scrum40123156_task1"></script>
 </body>
 </html>
 '''
