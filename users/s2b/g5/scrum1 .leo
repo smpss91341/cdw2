@@ -20,8 +20,8 @@
 </v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329174131.1" a="E"><vh>@path bg5</vh>
-<v t="amd.20160329174139.1"><vh>@edit 40323253.md</vh></v>
+<v t="leo.20160421092702.1" a="E"><vh>@path bg5</vh>
+<v t="amd.20160329174139.1"><vh>@clean scrum1-40323204.md</vh></v>
 </v>
 </v>
 </v>
@@ -46,7 +46,20 @@ os.system("pelican content -o post -s publishconf.py")
 g.es("admin pelican 執行完畢")
 
 </t>
-<t tx="amd.20160329174131.1"></t>
+<t tx="amd.20160329174139.1">@language md
+Title: 40323204scrum1
+Category: bg5
+Tags: scrum1, task1
+Author: kmol
+@others
+bg5組員scrum1已連上組別
+ 
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg5-40323204sandy.rhcloud.com/bg5/scrum1_task40323204"&gt;http://cdw2bg5-40323204sandy.rhcloud.com/bg5/scrum1_task40323204&lt;/a&gt;
+
+在這次課程中我主要的工作是建出網頁供主員們使用，我們主別中的主長和協同者是不一樣的人</t>
 <t tx="amd.20160329211330.1"></t>
+<t tx="leo.20160421092702.1"></t>
 </tnodes>
 </leo_file>
