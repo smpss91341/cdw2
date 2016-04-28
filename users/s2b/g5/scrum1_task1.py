@@ -1,11 +1,11 @@
-#各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
+ 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task40323204 = Blueprint('scrum1_task40323204', __name__, url_prefix='/bg5', template_folder='templates')
+scrum1_task1 = Blueprint('scrum1_task1', __name__, url_prefix='/bg5', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40323204.route('/scrum1_task40323204')
+@scrum1_task1.route('/scrum1_task1')
 def task1():
     outstring = '''
 <!DOCTYPE html>
@@ -39,8 +39,8 @@ cgo = cango("plotarea")
 cgo.setWorldCoords(-250, -250, 500, 500) 
 # 決定要不要畫座標軸線
 cgo.drawAxes(0, 240, 0, 240, {
-    "strokeColor":"#FF8800",
-    "fillColor": "#FF8800",
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
     "xTickInterval": 20,
     "xLabelInterval": 20,
     "yTickInterval": 20,
@@ -64,15 +64,15 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 複製 cmbr, 然後命名為 basic1
     basic1 = cmbr.dup()
     # basic1 轉 120 度
-    basic1.rotate(160)
+    basic1.rotate(120)
     basic2 = cmbr.dup()
-    basic2.rotate(0)
+    basic2.rotate(60)
     basic2.translate(0, -20)
     
     basic3 = cmbr.dup()
-    basic3.rotate(0)
+    basic3.rotate(60)
     basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
-  
+    
     basic4 = cmbr.dup()
     basic4.rotate(120)
     basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
@@ -85,18 +85,14 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic3)
     cmbr.appendPath(basic4)
     cmbr.appendPath(basic5)
- 
-    
     
     # hole 為原點位置
-    #hole = cobj(shapedefs.circle(4), "PATH") 
-    #cmbr.appendPath(hole) 
-
+    hole = cobj(shapedefs.circle(4), "PATH")
+    cmbr.appendPath(hole)
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
-    # 放大 1 倍
-    cgo.render(cmbr, x, y, 1, rot)
-    
+    # 放大 5 倍
+    cgo.render(cmbr, x, y, 5, rot)
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
 <!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
