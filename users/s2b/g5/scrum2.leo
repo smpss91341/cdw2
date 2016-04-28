@@ -57,7 +57,7 @@ Author: 40323206
  
 完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg5-40323206.rhcloud.com/bg5/scrum2_task40323206"&gt;http://cdw2bg5-40323206.rhcloud.com/bg5/scrum2_task40323206&lt;/a&gt;
 
-在班級倉儲cdw2的master建立.leo進行英文字母的繪製，存檔時會自動產生一個.py，建立好後可以在cmd輸入python wsgi.py的指令，就可以在近端開啟http://localhost:5000/bg組別/scrum第幾組員_task學號，可以檢視程式碼畫出的英文字母。
+在班級倉儲cdw2的master建立.leo進行英文字母的繪製，建立好後可以在cmd輸入python wsgi.py的指令，就可以在近端開啟http://localhost:5000/bg組別/scrum第幾組員_task學號，可以檢視程式碼畫出的英文字母。
 &lt;br/&gt;
 我是以圓點開始畫，在依照字母排列的位置進行位移。
 
@@ -150,7 +150,7 @@ cmbr.appendPath(basic1)
 &lt;br/&gt;       
 3.我們再定義完後先將鍊條移回原點再設定&lt;br/&gt;
     basic2 = cmbr.dup()&lt;br/&gt;
-&lt;p&gt;&lt;span style="font-size: 10pt; font-family: 'arial black', 'avant garde';"&gt;&lt;span style="color: #FF0000;"&gt;basic2.translate(-160, 0)&lt;/span&gt;&lt;/p&gt;&lt;br/&gt;
+&lt;span style="font-size: 10pt; font-family: 'arial black', 'avant garde';"&gt;&lt;span style="color: #FF0000;"&gt;basic2.translate(-160, 0)&lt;/span&gt;&lt;br/&gt;
     basic2.rotate(120)&lt;br/&gt;
     basic2.translate(20*math.cos(150*deg), 20*math.sin(150*deg))  
 &lt;br/&gt;  
