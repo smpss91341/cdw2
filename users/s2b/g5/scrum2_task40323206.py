@@ -39,8 +39,8 @@ cgo = cango("plotarea")
 cgo.setWorldCoords(-250, -250, 500, 500) 
 # 決定要不要畫座標軸線
 cgo.drawAxes(0, 240, 0, 240, {
-    "strokeColor":"#FF8800",
-    "fillColor": "#FF8800",
+    "strokeColor":"#66DD00",
+    "fillColor": "#66DD00",
     "xTickInterval": 20,
     "xLabelInterval": 20,
     "yTickInterval": 20,
@@ -61,36 +61,54 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "border": border,
             "strokeColor": "tan",
             "lineWidth": linewidth })
+            
     # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    # basic1 轉 120 度
-    basic1.rotate(160)
-    basic2 = cmbr.dup()
-    basic2.rotate(0)
-    basic2.translate(0, -20)
+    cmbr.rotate(90)
+    cmbr.translate(160, 0)
     
+    basic1 = cmbr.dup()
+    basic1.translate(-160, 0)
+    basic1.rotate(150)
+    basic1.translate(160, 0)
+    
+    basic2 = cmbr.dup()
+    basic2.translate(-160, 0)
+    basic2.rotate(120)
+    basic2.translate(20*math.cos(150*deg), 20*math.sin(150*deg))  
+    basic2.translate(160, 0)
+     
     basic3 = cmbr.dup()
-    basic3.rotate(0)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
-  
+    basic3.translate(-160, 0)
+    basic3.rotate(90)
+    basic3.translate(20*math.cos(150*deg)+20*math.cos(120*deg), 20*math.sin(150*deg)+20*math.sin(120*deg))
+    basic3.translate(160, 0)
+    
     basic4 = cmbr.dup()
-    basic4.rotate(120)
-    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
+    basic4.translate(-160, 0)
+    basic4.rotate(60)
+    basic4.translate(20*math.cos(150*deg)+20*math.cos(120*deg), 20+20*math.sin(150*deg)+20*math.sin(120*deg))
+    basic4.translate(160, 0)
     
     basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
-
-    basic6 = cmbr.dup()
-    basic6.rotate(160)
-    basic6.translate(10*math.cos(30*deg), 40*math.sin(30*deg))
+    basic5.translate(-160, 0)
+    basic5.rotate(30)
+    basic5.translate(20*math.cos(150*deg), 20+20*math.sin(150*deg)+20*math.sin(120*deg)+20*math.sin(60*deg))
+    basic5.translate(160, 0)
     
-    cmbr.appendPath(basic1)
+    basic6 = cmbr.dup()
+    basic6.translate(-160, 0)
+    basic6.rotate(0)
+    basic6.translate(0, 20+20*math.sin(150*deg)+20*math.sin(120*deg)+20*math.sin(60*deg)+20*math.sin(30*deg))
+    basic6.translate(160, 0)
+    
+   
+    
+    cmbr.appendPath(basic1)             
     cmbr.appendPath(basic2)
     cmbr.appendPath(basic3)
     cmbr.appendPath(basic4)
     cmbr.appendPath(basic5)
     cmbr.appendPath(basic6)
-    
     
     # hole 為原點位置
     #hole = cobj(shapedefs.circle(4), "PATH") 
@@ -101,7 +119,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
     
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "#EE7700", True, 4)
 </script>
 <!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
 <!-- <script type="text/python" src="/ag100/scrum2_task1"></script>
