@@ -90,13 +90,13 @@ import users.s2b.g7.scrum3_task40323236
 import users.s2b.g8.scrum1_task40323213
 
 #g9
-#import users.s2b.g9.task0
-#import users.s2b.g9.scrum1_task40323250
-#import users.s2b.g9.scrum2_task40323218
-#import users.s2b.g9.scrum3_task40323214
-#import users.s2b.g9.scrum4_task40323231
-#import users.s2b.g9.scrum5_task40323230
-#import users.s2b.g9.scrum6_task40323233
+import users.s2b.g9.task0
+import users.s2b.g9.scrum1_task40323250
+import users.s2b.g9.scrum2_task40323218
+import users.s2b.g9.scrum3_task40323214
+import users.s2b.g9.scrum4_task40323231
+import users.s2b.g9.scrum5_task40323230
+import users.s2b.g9.scrum6_task40323233
 
 #g10
 import users.s2b.g10.task0
@@ -482,13 +482,13 @@ app.register_blueprint(users.s2b.g7.scrum3_task40323236.scrum3_task40323236)
 #g8
 app.register_blueprint(users.s2b.g8.scrum1_task40323213.scrum1_task40323213)
 #g9
-#app.register_blueprint(users.s2b.g9.task0.bg9)
-#app.register_blueprint(users.s2b.g9.scrum1_task40323250.scrum1_task40323250)
-#app.register_blueprint(users.s2b.g9.scrum2_task40323218.scrum2_task40323218)
-#app.register_blueprint(users.s2b.g9.scrum4_task40323231.scrum4_task40323231)
-#app.register_blueprint(users.s2b.g9.scrum3_task40323214.scrum3_task40323214)
-#app.register_blueprint(users.s2b.g9.scrum5_task40323230.scrum5_task40323230)
-#app.register_blueprint(users.s2b.g9.scrum6_task40323233.scrum6_task40323233)
+app.register_blueprint(users.s2b.g9.task0.bg9)
+app.register_blueprint(users.s2b.g9.scrum1_task40323250.scrum1_task40323250)
+app.register_blueprint(users.s2b.g9.scrum2_task40323218.scrum2_task40323218)
+app.register_blueprint(users.s2b.g9.scrum4_task40323231.scrum4_task40323231)
+app.register_blueprint(users.s2b.g9.scrum3_task40323214.scrum3_task40323214)
+app.register_blueprint(users.s2b.g9.scrum5_task40323230.scrum5_task40323230)
+app.register_blueprint(users.s2b.g9.scrum6_task40323233.scrum6_task40323233)
 #g10
 app.register_blueprint(users.s2b.g10.task0.bg10) 
 app.register_blueprint(users.s2b.g10.scrum1_task40328242.scrum1_task40328242)
