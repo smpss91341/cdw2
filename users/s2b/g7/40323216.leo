@@ -10,7 +10,6 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
@@ -20,8 +19,8 @@
 </v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329174131.1" a="E"><vh>@path bg5</vh>
-<v t="amd.20160329174139.1"><vh>@edit 40323253.md</vh></v>
+<v t="leo.20160414134149.2" a="E"><vh>@path bg7</vh>
+<v t="leo.20160414134149.1"><vh>@edit 40323216.md</vh></v>
 </v>
 </v>
 </v>
@@ -46,7 +45,6 @@ os.system("pelican content -o post -s publishconf.py")
 g.es("admin pelican 執行完畢")
 
 </t>
-<t tx="amd.20160329174131.1"></t>
-<t tx="amd.20160329211330.1"></t>
+<t tx="leo.20160414134149.2"></t>
 </tnodes>
 </leo_file>
