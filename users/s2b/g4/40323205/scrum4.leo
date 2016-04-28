@@ -55,14 +55,21 @@ Tags: scrum4, task1, 40323205
 Author: kmol
 @others
 
-bg4 組員 40323205 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
+bg4 組員 40323205 已經在 cdw2 倉儲中的 master 分支建立對應的組員
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
+【字母分配】
+A (黑色) --- 40323201
+B (黃色) --- 40323202
+C (紫色) --- 40323203
+D (白色) --- 40323205
+E及F (綠色) --- 40123128
+G (棕色) --- 40323208
+
 目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1"&gt;http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1&lt;/a&gt;
 
-其中已經在主程式中導入 scrum4_task1.py 中的 scrum4_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
-</t>
+其中已經在主程式中導入 scrum4_task1.py 中的 scrum4_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.</t>
 <t tx="amd.20160329211330.1"></t>
 </tnodes>
 </leo_file>
