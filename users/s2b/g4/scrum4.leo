@@ -11,7 +11,6 @@
 <find_panel_settings/>
 <vnodes>
 <v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
-<v t="leo.20160427234036.1"><vh>@edit scrum4_task40323205.py</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
@@ -21,9 +20,8 @@
 </v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329174131.1" a="E"><vh>@path bg4</vh>
+<v t="amd.20160329174131.1"><vh>@path ag100</vh></v>
 <v t="amd.20160329174139.1"><vh>@clean scrum4-20160414.md</vh></v>
-</v>
 </v>
 </v>
 </vnodes>
@@ -52,16 +50,16 @@ g.es("admin pelican 執行完畢")
 Title: 40323205-回報 bg4 初步繪圖主機與連結
 Category: bg4
 Tags: scrum4, task1, 40323205
-Author: 40323205
+Author: kmol
 @others
 
 bg4 組員 40323205 已經在 cdw2 倉儲中的 master 分支建立對應的組員 並且完成 Task1 的繪圖藍圖建立與註冊
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg4-40323201.rhcloud.com/bg4/taskbg4"&gt;bg4藍圖&lt;/a&gt;
+目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1"&gt;http://cdw2bg4-40323201.rhcloud.com/bg4/scrum1_task1&lt;/a&gt;
 
-其中已經在主程式中導入 scrum4_task40323205.py 中的 scrum4_task40323205 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+其中已經在主程式中導入 scrum4_task1.py 中的 scrum4_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 </t>
 <t tx="amd.20160329211330.1"></t>
 </tnodes>
