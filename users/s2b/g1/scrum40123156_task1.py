@@ -42,23 +42,28 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
     basic40123156_A_1 = cmbr.dup()
-    basic40123156_A_1.rotate(30)
-    basic40123156_A_1.translate(-40, 40)
+    basic40123156_A_1.rotate(187.07)
+    basic40123156_A_1.translate(-40, 0)
+
     basic40123156_B_1 = cmbr.dup()
-    basic40123156_B_1.rotate(0)
-    basic40123156_B_1.translate(0, 40)
+    basic40123156_B_1.rotate(60)
+    basic40123156_B_1.translate(20, 0)
+
     basic40123156_B_2 = cmbr.dup()
-    basic40123156_B_2.rotate(60)
-    basic40123156_B_2.translate(20, 40)
+    basic40123156_B_2.rotate(0)
+    basic40123156_B_2.translate(0, 0)
+
     basic40123156_C_1 = cmbr.dup()
-    basic40123156_C_1.rotate(0)
-    basic40123156_C_1.translate(80, 60)
+    basic40123156_C_1.rotate(180)
+    basic40123156_C_1.translate(80, -10)
+
     basic40123156_D_1 = cmbr.dup()
-    basic40123156_D_1.rotate(0)
-    basic40123156_D_1.translate(160, 20)
+    basic40123156_D_1.rotate(90)
+    basic40123156_D_1.translate(160, -40)
+
     basic40123156_D_2 = cmbr.dup()
-    basic40123156_D_2.rotate(90)
-    basic40123156_D_2.translate(160, 0)
+    basic40123156_D_2.rotate(180)
+    basic40123156_D_2.translate(160, -40)
 
     cmbr.appendPath(basic40123156_A_1)
     cmbr.appendPath(basic40123156_B_1)
