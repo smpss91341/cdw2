@@ -10,7 +10,6 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20160329211330.1"><vh>因為位於 users/s2a/g100 目錄, 必須跳三層才到外圍</vh></v>
 <v t="amd.20160329124554.2" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
@@ -57,14 +56,13 @@ Author: 40323206
 bg5組員scrum2已連上組別
  
 &lt;!-- PELICAN_END_SUMMARY --&gt;
-
+ 
 目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
 
 其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
 
 
 </t>
-<t tx="amd.20160329211330.1"></t>
 <t tx="leo.20160428112536.1">@language md
 Title: 40323206-期中報告
 Category: bg5
