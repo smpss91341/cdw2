@@ -57,7 +57,7 @@ Author: 40323206
  
 完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2bg5-40323206.rhcloud.com/bg5/scrum2_task40323206"&gt;http://cdw2bg5-40323206.rhcloud.com/bg5/scrum2_task40323206&lt;/a&gt;
 
-在班級倉儲cdw2的master建立.leo進行英文字母的繪製，建立好後可以在cmd輸入python wsgi.py的指令，就可以在近端開啟http://localhost:5000/bg組別/scrum第幾組員_task學號，可以檢視程式碼畫出的英文字母。
+在班級倉儲cdw2的master建立.leo進行英文字母的繪製(會自動產生一個.py)，建立好後可以在cmd輸入python wsgi.py的指令，就可以在近端開啟http://localhost:5000/bg組別/scrum第幾組員_task學號，可以檢視程式碼畫出的英文字母。
 &lt;br/&gt;
 我是以圓點開始畫，在依照字母排列的位置進行位移。
 
@@ -143,7 +143,7 @@ cmbr.appendPath(basic1)
 1.如果我們要將字母X位移160，先將初始鍊條X位移160&lt;br/&gt;
   cmbr.translate(0, 0)→cmbr.translate(160, 0)
 &lt;br/&gt;  
-2.這是第二鍊條原本的位置&lt;br/&gt;    
+2.這是第二鍊條原本的位置    
     basic2 = cmbr.dup()&lt;br/&gt;
     basic2.rotate(120)&lt;br/&gt;
     basic2.translate(20*math.cos(150*deg), 20*math.sin(150*deg)) 
@@ -163,11 +163,50 @@ cmbr.appendPath(basic1)
 &lt;br /&gt;
      
 
-&lt;hr/&gt;
+&lt;br /&gt;
 &lt;span style="font-size: 14pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #660077;"&gt;以字母C作為範例&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;
 &lt;br /&gt;
 
 &lt;img src="./../files/bg5/C.JPG"&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style="font-size: 14pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #003366;"&gt;Openshift的對應建立&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;br /&gt;
+◎可參考課程網頁&lt;br /&gt;
+ &lt;a href="http://chiamingyen.github.io/kmolab/blog/ren-wu-yi-2d-xie-tong-hui-tu.html"&gt;http://chiamingyen.github.io/kmolab/blog/ren-wu-yi-2d-xie-tong-hui-tu.html&lt;/a&gt;
+&lt;br /&gt;
+1.建立新的Application，並在Source Code輸入https://github.com/2015fallhw/cdw2.git &lt;br /&gt;
+&lt;img src="./../files/bg5/連結.JPG"&gt;
+&lt;br /&gt;
+2.建立鑰匙&lt;br /&gt;
+&lt;img src="./../files/bg5/KEY1.JPG"&gt;
+&lt;br /&gt;
+&lt;img src="./../files/bg5/KEY2.JPG"&gt;
+&lt;br /&gt;
+3.git clone 後修改除了.git以外的檔案&lt;br /&gt;
+4.建議直接複製github的master，操作較簡易，但無用檔案較多&lt;br /&gt;
+5.push完後點選openshift的連結(會出現猜數字)在網址後輸入你的畫布位置&amp;名稱&lt;br /&gt;
+EX: /bg5/scrum2_task40323206
+
+&lt;hr/&gt;
+&lt;span style="font-size: 14pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #003366;"&gt;期中心得&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;br /&gt;
+這次的任務做了半個學期，其實了解鍊條排列的程式後做起來就會很輕鬆很有成就感，但重點我認為並不是英文字母，而是班級同學之間的協同。&lt;br /&gt;
+其實cmd裡面的指令不外乎就是：&lt;br /&gt;
+1.git clone&lt;br /&gt;
+2.git checkout master /gh-pages&lt;br /&gt;
+3.git add -A&lt;br /&gt;
+4.git commit -m ""&lt;br /&gt;
+5.git push origin gh-pages&lt;br /&gt;
+那還有甚麼困難？困難的地方就在第一步和最後一步，大家雖然是fork老師fork組長產生了cdw2的倉儲，表面上看起來好像是獨立的，可是不並非如此！&lt;br /&gt;
+因為大家不了解協同的意義和運作方式，所以協同者(組長)才會這麼累，所以班級倉儲才會故障！老實說我覺得除了那些有心去了解，和維護倉儲的同學以外，其他人根本不知道"協同"的意義在哪？&lt;br /&gt;
+對他們而言，不過就是完成鍊條的英文字母罷了，所以我覺得這塊還有待加強，如果，你真的想知道這堂課的意義，你必須要：&lt;br /&gt;
+1.在乎你的組員(不要只顧自己好，要分享)&lt;br /&gt;
+2.了解你在組別裡的工作(大家要分工)&lt;br /&gt;
+3.尊重其他組別(可以互相參考資訊，但不要"偷竊")&lt;br /&gt;
+4.隨時注意整個環境的變動(記得改版更新)&lt;br /&gt;
+5.在乎這個班級(不要忘了倉儲是"年級"共用的，但我就不先說隔壁班了...)&lt;br /&gt;
+
 </t>
 </tnodes>
 </leo_file>
