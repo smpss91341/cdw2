@@ -266,6 +266,7 @@ Task1 相關: &lt;a href="https://cmsimply-cadlab.rhcloud.com/get_page?heading=2
 之後打開cmd，輸入git clone https網址，載下自己的倉儲，然後打開資料夾，找到自己相對應的組別就可以開是繪圖。
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 22pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #FF8C00;"&gt;繪圖介紹：&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 1.先定義自己的檔案內容，url _prefix 為前綴、scrum1_task40323250為藍圖，make_response則是該組員零件需要被導到別的圖時需要的東西。(scrum1為老師設定的範例，當初不知道，所以都拿過來用了，發現的時候已經來不及了)
 &lt;img src="./../files/bg9/40323250/blueprint.png"&gt;
@@ -296,6 +297,7 @@ Task1 相關: &lt;a href="https://cmsimply-cadlab.rhcloud.com/get_page?heading=2
 &lt;img src="./../files/bg9/40323250/paint_2.png"&gt;
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 18pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #FF00FF;"&gt;繪圖方式：&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 1.下圖為主要圖形，決定顯示的形狀，透過solvespace輸出2d-section存成.svg檔之結果。
 &lt;img src="./../files/bg9/40323250/shape.png"&gt;
@@ -311,6 +313,7 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 &lt;img src="./../files/bg9/40323250/position.png"&gt;
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 22pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #FF8C00;"&gt;輸出與導入：&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 學會繪圖之後，再來就是將自己的檔案導入組別的畫布裡了。
 &lt;/br&gt;
@@ -340,6 +343,7 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 &lt;img src="./../files/bg9/40323250/part4.png"&gt;
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 22pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #FF0000;"&gt;將檔案上傳Openshift&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 既然圖形都畫完了，再來就是將檔案上傳至openshift囉~
 &lt;/br&gt;
@@ -355,6 +359,7 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 檔案每個組員都要推，每個人的openshift才能產生各個要導入的圖檔。
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 22pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #FF0000;"&gt;Pull Request&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 檔案都編輯完之後，一樣要推回自己Fork的倉儲，並透過Pull Request，經過協同者認可之後檔案就可以到老師的倉儲上了
 &lt;img src="./../files/bg9/40323250/pullrequest_1.png"&gt;
@@ -369,6 +374,7 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 22pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #82FF82;"&gt;Gh-Pages的報告網頁&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 既然圖都畫好了，就可以來做期中報告了。
 &lt;/br&gt;
@@ -380,11 +386,13 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 &lt;img src="./../files/bg9/40323250/gh.png"&gt;
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 16pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #006400;"&gt;再往下就是內文，就是個人的報告囉，要如何呈現就看自己吸收多少吧!&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 完成之後，點選左端local pelican節點，按上方local-pelican按鈕，轉出近端html檔案，即可在post內檢查，沒問題再指向gh-pages pelican並按下gh-pages-pelican後，透過Pull Request就可以推回去囉。
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 16pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #FFA500;"&gt;註記&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 1.轉檔時，如果Tittle有重複，在post內的檔案會錯誤，導致轉檔失敗。
 2.如果檔案名稱有變更，也要利用cmd刪除，否則也會導致錯誤。
@@ -393,6 +401,7 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;/br&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;span style="font-size: 16pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #FF4500;"&gt;以上花了我3個小時，請細心參閱&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323214 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323214-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-29T21:59:25+08:00</updated><author><name>40323214</name></author><id>tag:2015fallhw.github.io,2016-04-29:cdw2/post/40323214-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323214 - 期中報告&lt;/p&gt;
 
 
