@@ -55,7 +55,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
                      A 40, 40, 0, 0, 1, 6.8397, -18.511 \
                      A 7, 7, 0, 1, 0, -6.8397, -18.511 \
                      A 40, 40, 0, 0, 1, -6.8397, -1.4894 z"
-    cgoChamber = window.svgToCgoSVG(chamber)
+    cgoChamber = window.svgToCgoSVG(chamber, 80, 20)
     cmbr = cobj(cgoChamber, "SHAPE", {
             "fillColor": color,
             "border": border,
@@ -64,27 +64,69 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 複製 cmbr, 然後命名為 basic1
     basic1 = cmbr.dup()
     # basic1 轉 120 度
-    basic1.rotate(160)
+    basic1.rotate(0)
+    basic1.translate(0, 20)
+    
     basic2 = cmbr.dup()
     basic2.rotate(0)
-    basic2.translate(0, -20)
+    basic2.translate(0, 40)
     
     basic3 = cmbr.dup()
     basic3.rotate(0)
-    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
-  
+    basic3.translate(0, 60)
+
     basic4 = cmbr.dup()
-    basic4.rotate(120)
-    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
+    basic4.rotate(90)
+    basic4.translate(100, 0)
     
     basic5 = cmbr.dup()
-    basic5.translate(2*20*math.cos(30*deg), 0)
+    basic5.rotate(60)
+    basic5.translate(78, 0)
+  
+    basic6 = cmbr.dup()
+    basic6.rotate(180)
+    basic6.translate(198, 70)  
     
+    basic7 = cmbr.dup()
+    basic7.rotate(120)
+    basic7.translate(158, -20)  
+    
+    basic8 = cmbr.dup()
+    basic8.rotate(90)
+    basic8.translate(100, -40)
+    
+    basic9 = cmbr.dup()
+    basic9.rotate(90)
+    basic9.translate(100, -80)
+    
+    basic10 = cmbr.dup()
+    basic10.rotate(60)
+    basic10.translate(78, -40)
+    
+    basic11 = cmbr.dup()
+    basic11.rotate(180)
+    basic11.translate(198, 29)
+    
+    basic12 = cmbr.dup()
+    basic12.rotate(120)
+    basic12.translate(158, -60)
+
+
+
+
+
     cmbr.appendPath(basic1)
     cmbr.appendPath(basic2)
     cmbr.appendPath(basic3)
     cmbr.appendPath(basic4)
     cmbr.appendPath(basic5)
+    cmbr.appendPath(basic6)
+    cmbr.appendPath(basic7)
+    cmbr.appendPath(basic8)
+    cmbr.appendPath(basic9)
+    cmbr.appendPath(basic10)
+    cmbr.appendPath(basic11) 
+    cmbr.appendPath(basic12)
  
     
     
