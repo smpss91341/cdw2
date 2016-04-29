@@ -5,8 +5,8 @@ from flask import Blueprint, render_template
 scrum1_task40323213 = Blueprint('scrum1_task40323213', __name__, url_prefix='/bg8', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40323213.route('/scrum1_13')
-def scrum1_13():
+@scrum1_task40323213.route('/scrum1_13_ABCD')
+def scrum1_13_ABCD():
     outstring = '''
 <!DOCTYPE html>  
 <html>
@@ -143,17 +143,9 @@ x9, y9 = mychain.basic_rot(x8, y8, -90, color="red")
 x10, y10 = mychain.basic_rot(x8, y8, -180, color="red")
 # -180
 x11, y11 = mychain.basic_rot(x10, y10, -180, color="red")
-
-
-
-
+ 
+ 
 </script>
-<!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
-<!-- <script type="text/python" src="/bg4/scrum2_task1"></script>
-<!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 -->
-<!-- <script type="text/python" src="/bg4/scrum3_task1"></script>
 
-</body>
-</html>
 '''
     return outstring
