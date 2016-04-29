@@ -68,7 +68,7 @@ Author: 40323253
 &lt;img src="./../files/bg5/53_2.png"&gt;
 
 &lt;h2&gt;計算表 : &lt;/h2&gt;
-&lt;img src="./../files/bg5/計算表.JPG"&gt;
+&lt;img src="./../files/bg5/53_4.jpg"&gt;
 
 
 &lt;h2&gt;gh-pages : &lt;/h2&gt;
