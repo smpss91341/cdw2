@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg9.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-30T01:15:11+08:00</updated><entry><title>40323250 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T01:15:11+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323250-qi-zhong-bao-gao.html</id><summary type="html">&lt;h3&gt;40323250 - 期中報告&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CDW2 網頁 (虎尾科大MDE)</title><link href="http://2015fallhw.github.io/cdw2/post/" rel="alternate"></link><link href="http://2015fallhw.github.io/cdw2/post/feeds/bg9.atom.xml" rel="self"></link><id>http://2015fallhw.github.io/cdw2/post/</id><updated>2016-04-30T15:32:50+08:00</updated><entry><title>40323250 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T15:32:50+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323250-qi-zhong-bao-gao.html</id><summary type="html">&lt;h3&gt;40323250 - 期中報告&lt;/h3&gt;
 
 
 
@@ -68,7 +68,7 @@
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;h3&gt;完成之協同組合圖&lt;/h3&gt;
-&lt;img src="./../files/bg9/bg9.png"&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250 - 重編報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-zhong-bian-bao-gao.html" rel="alternate"></link><updated>2016-04-30T01:15:11+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323250-zhong-bian-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;img src="./../files/bg9/bg9.png"&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323250 - 重編報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323250-zhong-bian-bao-gao.html" rel="alternate"></link><updated>2016-04-30T15:32:50+08:00</updated><author><name>40323250</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323250-zhong-bian-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;&lt;span style="font-size: 22pt; font-family: 'arial black', 'avant garde';"&gt;&amp;nbsp;&lt;strong&gt;&lt;span style="color: #82FF82;"&gt;取得檔案：&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 
@@ -223,7 +223,53 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 &lt;/br&gt;
 &lt;/br&gt;
 &lt;/br&gt;
-&lt;hr&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323214 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323214-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T01:15:11+08:00</updated><author><name>40323214</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323214-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323214 - 期中報告&lt;/p&gt;
+&lt;hr&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323250"></category></entry><entry><title>40323233 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323233-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T15:32:50+08:00</updated><author><name>40323233</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323233-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323233 - 期中報告&lt;/p&gt;
+
+
+&lt;p&gt;組別畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_homework"&gt;bg9畫布&lt;/a&gt; 
+&lt;/br&gt;
+個人畫布 : &lt;a href="http://2016spring-w2651363.rhcloud.com/bg9/scrum6_33_2"&gt;scrum6_33_2&lt;/a&gt; 
+&lt;hr&gt;
+&lt;/br&gt;
+&lt;h4&gt;組別圖檔 :&lt;/h4&gt; 
+&lt;img src="./../files/bg9/bg9.png"&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h4&gt;個人圖檔 : &lt;/h4&gt;
+&lt;img src="./../files/bg9/33_2.png"&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h4&gt;這次的作業比較複雜，需要與組員一同去完成繪製鍊條，老師這次出的作業是為了讓我們理解如何更容易和別人協同，也可以透過這次機會，學會該如何在團隊裡分配任務，並和組員溝通與表達&lt;/h4&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h4&gt;Master主要是用於儲存繪圖程式檔案，
+將檔案傳上openshift，就可以在遠端顯示圖檔，並能夠導入組員的零件。&lt;/h4&gt;
+&lt;/br&gt;
+&lt;h4&gt;近端必須要在cdw2目錄下，使用python wsgi.py指令，才能夠在localhost5000顯示。&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum6"></category><category term="task6"></category><category term="40323233"></category></entry><entry><title>40323230 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323230-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T15:32:50+08:00</updated><author><name>40323230</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323230-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323230 - 期中報告&lt;/p&gt;
+
+
+&lt;p&gt;組別繪圖 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_homework"&gt;bg9畫布&lt;/a&gt; 
+&lt;/br&gt;
+個人繪圖 : &lt;a href="http://2016spring-40323230.rhcloud.com/bg9/scrum5_30_2"&gt;scrum5_30_2&lt;/a&gt; 
+&lt;hr&gt;
+&lt;/br&gt;
+&lt;h4&gt;組別圖檔 :&lt;/h4&gt; 
+&lt;img src="./../files/bg9/bg9.png"&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h4&gt;個人圖檔 : &lt;/h4&gt;
+&lt;img src="./../files/bg9/30_2.png"&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h3&gt;心得 :&lt;/h3&gt;
+&lt;h4&gt;這次作業依靠Github和Onshape的協同功能，完成在雲端下指令繪製2D和3D圖形的任務。&lt;/h4&gt;
+&lt;/br&gt;
+&lt;h4&gt;剛開始雖然有些不清楚，但是在研究和比較彼此系統的差異後能夠快速了解自己該做些甚麼、如何分擔自己組內的工作，較大家各別工作時更有效率，而非一頭霧水，拖累其他人的進度。&lt;/h4&gt;
+&lt;/br&gt;
+&lt;h4&gt;而這次在多重確認機制下，修改檔案犯的錯也能先在自己的倉儲察覺到，預先提防覆蓋其他人的成品，雖然這個機制現階段仍有些不周，但是對於組員之間的配合以及防範嚴重的錯誤上還是有不錯的成效。&lt;/h4&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h4&gt;做作業時，由於對指令不太熟悉，只能去研究各個參數的作用，或是觀察其他人修改時造成的效果。由於自己不太習慣用筆記，所以親身嘗試、模仿和自行找一些資料學習效果較顯著，只要不要在公共倉儲造成失誤，引來其他組員的麻煩就好。&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum5"></category><category term="task5"></category><category term="40323230"></category></entry><entry><title>40323214 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323214-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T15:32:50+08:00</updated><author><name>40323214</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323214-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323214 - 期中報告&lt;/p&gt;
 
 
 &lt;p&gt;組別繪圖 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_homework"&gt;b9畫布&lt;/a&gt;
@@ -248,50 +294,4 @@ basic1 = cmbr.dup()和cmbr.appendPath(basic1)為一組，複製主要圖形，�
 &lt;/br&gt;
 &lt;h4&gt;而還可以利用onshape與組員一起組裝立體的英文字母。&lt;/h4&gt;
 &lt;/br&gt;
-&lt;h4&gt;此次報告給自己75分&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323214"></category></entry><entry><title>40323230 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323230-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T01:15:11+08:00</updated><author><name>40323230</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323230-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323230 - 期中報告&lt;/p&gt;
-
-
-&lt;p&gt;組別繪圖 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_homework"&gt;bg9畫布&lt;/a&gt; 
-&lt;/br&gt;
-個人繪圖 : &lt;a href="http://2016spring-40323230.rhcloud.com/bg9/scrum5_30_2"&gt;scrum5_30_2&lt;/a&gt; 
-&lt;hr&gt;
-&lt;/br&gt;
-&lt;h4&gt;組別圖檔 :&lt;/h4&gt; 
-&lt;img src="./../files/bg9/bg9.png"&gt;
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;h4&gt;個人圖檔 : &lt;/h4&gt;
-&lt;img src="./../files/bg9/30_2.png"&gt;
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;h3&gt;心得 :&lt;/h3&gt;
-&lt;h4&gt;這次作業依靠Github和Onshape的協同功能，完成在雲端下指令繪製2D和3D圖形的任務。&lt;/h4&gt;
-&lt;/br&gt;
-&lt;h4&gt;剛開始雖然有些不清楚，但是在研究和比較彼此系統的差異後能夠快速了解自己該做些甚麼、如何分擔自己組內的工作，較大家各別工作時更有效率，而非一頭霧水，拖累其他人的進度。&lt;/h4&gt;
-&lt;/br&gt;
-&lt;h4&gt;而這次在多重確認機制下，修改檔案犯的錯也能先在自己的倉儲察覺到，預先提防覆蓋其他人的成品，雖然這個機制現階段仍有些不周，但是對於組員之間的配合以及防範嚴重的錯誤上還是有不錯的成效。&lt;/h4&gt;
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;h4&gt;做作業時，由於對指令不太熟悉，只能去研究各個參數的作用，或是觀察其他人修改時造成的效果。由於自己不太習慣用筆記，所以親身嘗試、模仿和自行找一些資料學習效果較顯著，只要不要在公共倉儲造成失誤，引來其他組員的麻煩就好。&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum5"></category><category term="task5"></category><category term="40323230"></category></entry><entry><title>40323233 - 期中報告</title><link href="http://2015fallhw.github.io/cdw2/post/40323233-qi-zhong-bao-gao.html" rel="alternate"></link><updated>2016-04-30T01:15:11+08:00</updated><author><name>40323233</name></author><id>tag:2015fallhw.github.io,2016-04-30:cdw2/post/40323233-qi-zhong-bao-gao.html</id><summary type="html">&lt;p&gt;40323233 - 期中報告&lt;/p&gt;
-
-
-&lt;p&gt;組別畫布 : &lt;a href="http://2016spring-40323250.rhcloud.com/bg9/task2_homework"&gt;bg9畫布&lt;/a&gt; 
-&lt;/br&gt;
-個人畫布 : &lt;a href="http://2016spring-w2651363.rhcloud.com/bg9/scrum6_33_2"&gt;scrum6_33_2&lt;/a&gt; 
-&lt;hr&gt;
-&lt;/br&gt;
-&lt;h4&gt;組別圖檔 :&lt;/h4&gt; 
-&lt;img src="./../files/bg9/bg9.png"&gt;
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;h4&gt;個人圖檔 : &lt;/h4&gt;
-&lt;img src="./../files/bg9/33_2.png"&gt;
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;h4&gt;這次的作業比較複雜，需要與組員一同去完成繪製鍊條，老師這次出的作業是為了讓我們理解如何更容易和別人協同，也可以透過這次機會，學會該如何在團隊裡分配任務，並和組員溝通與表達&lt;/h4&gt;
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;h4&gt;Master主要是用於儲存繪圖程式檔案，
-將檔案傳上openshift，就可以在遠端顯示圖檔，並能夠導入組員的零件。&lt;/h4&gt;
-&lt;/br&gt;
-&lt;h4&gt;近端必須要在cdw2目錄下，使用python wsgi.py指令，才能夠在localhost5000顯示。&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum6"></category><category term="task6"></category><category term="40323233"></category></entry></feed>
+&lt;h4&gt;此次報告給自己75分&lt;/h4&gt;&lt;/p&gt;</summary><category term="scrum1"></category><category term="task1"></category><category term="40323214"></category></entry></feed>
