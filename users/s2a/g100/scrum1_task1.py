@@ -652,12 +652,16 @@ x9, y9 = mychain.basic_rot(x8, y8, -90)
 x10, y10 = mychain.basic_rot(x8, y8, -180)
 mychain.basic(x10, y10, x1, y1, color="red")
 '''
+<<<<<<< HEAD
     response = make_response(outstring)
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
     response.headers['Access-Control-Allow-Origin'] = 'http://cdw2-ladisai.rhcloud.com'
     response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
     response.headers['Access-Control-Max-Age'] = '86400'
     return response
+=======
+    return outstring
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 
 
 # 畫 b 函式
@@ -788,12 +792,16 @@ x12, y12 = mychain.basic_rot(x11, y11, 210)
 # 水平接回起點
 mychain.basic(x12,y12, 0, 0, color="red")
 '''
+<<<<<<< HEAD
     response = make_response(outstring)
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
     response.headers['Access-Control-Allow-Origin'] = 'http://cdw2-ladisai.rhcloud.com'
     response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
     response.headers['Access-Control-Max-Age'] = '86400'
     return response
+=======
+    return outstring
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 
 
 # 畫 C 函式
@@ -1055,6 +1063,7 @@ def week8_abcd():
     outstring = week8_main()
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_a'></script>"
     outstring += "<script type='text/python' src='/ag100/scrum1_week8_b'></script>"
+<<<<<<< HEAD
     # C 與 D 打算由 cdw2-ladisai.rhcloud.com 協同者執行繪圖
     # 由於 cdw2-ag100.rhcloud.com 需要呼叫 cdw2-ladisai.rhcloud.com 的繪圖函式
     # 因此從 cdw2-ladisai.rhcloud.com 送出的 C 與 D 繪圖內容必須同意此項 cross origin request
@@ -1078,4 +1087,21 @@ def week8_abc():
     outstring += week8_tail()
     return outstring
     
+=======
+    outstring += "<script type='text/python' src='/ag100/scrum1_week8_c'></script>"
+    outstring += "<script type='text/python' src='/ag100/scrum1_week8_d'></script>"
+    outstring += week8_tail()
+    return outstring
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
     
+# 在 URL傳回字串的層次呼叫測試
+@scrum1_task1.route('/scrum1_week8_abc')
+def week8_abc():
+    outstring = week8_main()
+    outstring += "<script type='text/python' src='/ag100/scrum1_week8_a'></script>"
+    outstring += "<script type='text/python' src='/ag100/scrum1_week8_b'></script>"
+    outstring += "<script type='text/python' src='/ag100/scrum1_week8_c'></script>"
+    # 假如 scrum1 程式碼與 scrum2 所寫的程式碼同時更版且在同一台 server 上運行, 否則要給 scrum2_week8_d 的完整 url
+    outstring += "<script type='text/python' src='/ag100/scrum2_week8_d'></script>"
+    outstring += week8_tail()
+    return outstring

@@ -8,6 +8,7 @@ scrum40123134_task1 = Blueprint('scrum40123134_task1', __name__, url_prefix='/bg
 @scrum40123134_task1.route('/scrum40123134_task1')
 def task1():
     outstring = '''
+<<<<<<< HEAD
 from javascript import JSConstructor
 from browser import window
 import math
@@ -82,6 +83,34 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
 O(0, 0, 0, 0, 0, "blue", True, 4)
+=======
+   basic1 = cmbr.dup()
+    # basic1 轉 120 度
+    basic1.rotate(120)
+    basic2 = cmbr.dup()
+    basic2.rotate(60)
+    basic2.translate(0, -20)
+    
+    basic3 = cmbr.dup()
+    basic3.rotate(60)
+    basic3.translate(20*math.cos(30*deg), 20*math.sin(30*deg))
+    
+    basic4 = cmbr.dup()
+    basic4.rotate(120)
+    basic4.translate(20*math.cos(30*deg), -20*math.sin(30*deg)-20)
+    
+    basic5 = cmbr.dup()
+    basic5.translate(2*20*math.cos(30*deg), 0)
+    
+    cmbr.appendPath(basic1)
+    cmbr.appendPath(basic2)
+    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
+
+O(0, 0, 0, 0, 0, "red", True, 4)
+
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 '''
     return outstring
     

@@ -14,6 +14,7 @@
 <v t="leo.20160414102635.1"><vh>@edit task0.py</vh></v>
 <v t="leo.20160414102639.1"><vh>@path templates</vh></v>
 <v t="leo.20160414102639.2"><vh>@edit scrum1_task40123250.py</vh></v>
+<<<<<<< HEAD
 <v t="leo.20160414102640.1" a="E"><vh>@path ./../../../</vh>
 <v t="leo.20160421111817.1" a="E"><vh>@clean myflaskapp.py</vh>
 <v t="leo.20160421111822.1"><vh>myflaskapp declarations</vh></v>
@@ -30,6 +31,10 @@
 </v>
 </v>
 </v>
+=======
+<v t="leo.20160414102640.1"><vh>@path ./../../../</vh></v>
+</v>
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 <v t="leo.20160414102447.3"><vh>@path ./../../../s2b_files/task0</vh></v>
 <v t="leo.20160414102448.1" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20160414102742.1"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh></v>
@@ -709,6 +714,7 @@ Diff...
   
   
 </t>
+<<<<<<< HEAD
 <t tx="leo.20160421111817.1">@language python
 @tabwidth -4
 @others
@@ -1113,5 +1119,7 @@ def download(filename):
 
 
 </t>
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 </tnodes>
 </leo_file>

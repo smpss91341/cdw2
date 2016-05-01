@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
 from flask import Blueprint, render_template
 
@@ -87,3 +88,6 @@ O(0, 0, 0, 0, 0, "green", True, 4)
 
     
     
+=======
+http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1">http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1</a>
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746

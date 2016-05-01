@@ -52,6 +52,7 @@
 <v t="leo.20160421110611.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
+<<<<<<< HEAD
 <v t="leo.20160421115850.2" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20160421115850.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="leo.20160421115850.4"><vh>old:myflaskapp declarations</vh></v>
@@ -64,6 +65,8 @@
 <v t="leo.20160428092701.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 </vnodes>
 <tnodes>
 <t tx="amd.20160314224057.1">目前新增的 Blueprint 方法有
@@ -86,8 +89,11 @@ task1 則利用 render_template 傳回資料</t>
 app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
 # 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
+<<<<<<< HEAD
 #g3
 app.register_blueprint(users.s2a.g3.scrum1_task40123254.scrum1_task40123254)
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 #g6
 app.register_blueprint(users.s2a.g6.ag6.ag6)
 app.register_blueprint(users.s2a.g6.ag6_40323112_task1.ag6_40323112)
@@ -114,11 +120,17 @@ app.register_blueprint(users.s2b.g1.scrum40123131_task1.scrum40123131_task1)
 app.register_blueprint(users.s2b.g1.scrum40123133_task1.scrum40123133_task1)
 app.register_blueprint(users.s2b.g1.scrum40123144_task1.scrum40123144_task1)
 app.register_blueprint(users.s2b.g1.scrum40123134_task1.scrum40123134_task1)
+<<<<<<< HEAD
 app.register_blueprint(users.s2b.g1.bg1_task1.bg1_task1)
 
 # 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
 app.register_blueprint(users.s2b.g2.task0.bg2)
 
+=======
+# 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
+app.register_blueprint(users.s2b.g2.task0.bg2)
+app.register_blueprint(users.s2b.g9.task0.bg9)
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 #g2
 app.register_blueprint(users.s2b.g2.scrum1_task40123235.scrum1_task40123235)
 app.register_blueprint(users.s2b.g2.scrum2_task40123202.scrum2_task40123202)
@@ -137,6 +149,7 @@ app.register_blueprint(users.s2b.g3.scrum2_task40123250.scrum2_task40123250)
 app.register_blueprint(users.s2b.g3.scrum3_task40123224.scrum3_task40123224)
 app.register_blueprint(users.s2b.g3.scrum3_task40123242.scrum3_task40123242)
 app.register_blueprint(users.s2b.g3.scrum3_task40123250.scrum3_task40123250)
+<<<<<<< HEAD
 #g4 
 #app.register_blueprint(users.s2b.g4.scrum1_task40323201.scrum1_task40323201)
 #app.register_blueprint(users.s2b.g4.scrum2_task40323202.scrum2_task40323202)
@@ -172,7 +185,29 @@ app.register_blueprint(users.s2b.g10.task0.bg10)
 app.register_blueprint(users.s2b.g10.scrum1_task40328242.scrum1_task40328242)
 
 
+=======
+#g5 
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 
+app.register_blueprint(users.s2b.g5.scrum1_task40323204.scrum1_task40323204)
+app.register_blueprint(users.s2b.g5.scrum2_task40323206.scrum2_task40323206)
+app.register_blueprint(users.s2b.g5.scrum3_task40323217.scrum3_task40323217)
+app.register_blueprint(users.s2b.g5.scrum4_task40323251.scrum4_task40323251)
+app.register_blueprint(users.s2b.g5.scrum5_task40323253.scrum5_task40323253)
+app.register_blueprint(users.s2b.g5.scrum6_task40323255.scrum6_task40323255)
+#g6
+app.register_blueprint(users.s2b.g6.scrum1_task40323210.scrum1_task40323210)
+#g7
+app.register_blueprint(users.s2b.g7.scrum1_task40323212.scrum1_task40323212)
+app.register_blueprint(users.s2b.g7.scrum2_task40323216.scrum2_task40323216)
+app.register_blueprint(users.s2b.g7.scrum3_task40323236.scrum3_task40323236)
+#g9
+app.register_blueprint(users.s2b.g9.scrum1_task40323250.scrum1_task40323250)
+app.register_blueprint(users.s2b.g9.scrum2_task40323218.scrum2_task40323218)
+app.register_blueprint(users.s2b.g9.scrum4_task40323231.scrum4_task40323231)
+app.register_blueprint(users.s2b.g9.scrum3_task40323214.scrum3_task40323214)
+app.register_blueprint(users.s2b.g9.scrum5_task40323230.scrum5_task40323230)
+app.register_blueprint(users.s2b.g9.scrum6_task40323233.scrum6_task40323233)
 if __name__ == "__main__":
     app.run()
 
@@ -191,8 +226,11 @@ import init
 # 導入 ag100 所屬的模組
 import users.s2a.g100.scrum1_task1
 import users.s2a.g100.scrum2_task1
+<<<<<<< HEAD
 #g3
 import users.s2a.g3.scrum1_task40123254
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 #g6
 import users.s2a.g6.ag6
 import users.s2a.g6.ag6_40323112_task1
@@ -219,7 +257,10 @@ import users.s2b.g1.scrum40123131_task1
 import users.s2b.g1.scrum40123133_task1
 import users.s2b.g1.scrum40123144_task1
 import users.s2b.g1.scrum40123134_task1
+<<<<<<< HEAD
 import users.s2b.g1.bg1_task1
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 #g2
 import users.s2b.g2.task0
 import users.s2b.g2.scrum1_task40123235
@@ -240,6 +281,7 @@ import users.s2b.g3.scrum2_task40123250
 import users.s2b.g3.scrum3_task40123224
 import users.s2b.g3.scrum3_task40123242
 import users.s2b.g3.scrum3_task40123250
+<<<<<<< HEAD
 #g4
 import users.s2b.g4.taskbg4
 import users.s2b.g4.scrum1_task40323201
@@ -248,6 +290,8 @@ import users.s2b.g4.scrum3_task40323203
 import users.s2b.g4.scrum4_task40323205
 import users.s2b.g4.scrum5_task40323208
 import users.s2b.g4.scrum6_task40123128
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 #g5
 import users.s2b.g5.task0
 import users.s2b.g5.scrum1_task40323204
@@ -266,6 +310,7 @@ import users.s2b.g7.scrum1_task40323212
 import users.s2b.g7.scrum2_task40323216
 import users.s2b.g7.scrum3_task40323236
 #g9
+<<<<<<< HEAD
 #import users.s2b.g9.task0
 #import users.s2b.g9.scrum1_task40323250
 #import users.s2b.g9.scrum2_task40323218
@@ -276,6 +321,15 @@ import users.s2b.g7.scrum3_task40323236
 #g10
 import users.s2b.g10.task0
 import users.s2b.g10.scrum1_task40328242
+=======
+import users.s2b.g9.task0
+import users.s2b.g9.scrum1_task40323250
+import users.s2b.g9.scrum2_task40323218
+import users.s2b.g9.scrum3_task40323214
+import users.s2b.g9.scrum4_task40323231
+import users.s2b.g9.scrum5_task40323230
+import users.s2b.g9.scrum6_task40323233
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
 # 設定在雲端與近端的資料儲存目錄
@@ -870,6 +924,7 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
+<<<<<<< HEAD
 <t tx="leo.20160421115850.2"></t>
 <t tx="leo.20160421115850.3">(uncached) amd.20160314224223.1
 Diff...
@@ -1629,5 +1684,7 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 </tnodes>
 </leo_file>

@@ -8,6 +8,7 @@ scrum40123156_task1 = Blueprint('scrum40123156_task1', __name__, url_prefix='/bg
 @scrum40123156_task1.route('/scrum40123156_task1')
 def task1():
     outstring = '''
+<<<<<<< HEAD
 from javascript import JSConstructor
 from browser import window
 import math
@@ -64,6 +65,26 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     basic40123156_D_2 = cmbr.dup()
     basic40123156_D_2.rotate(180)
     basic40123156_D_2.translate(160, -40)
+=======
+    basic40123156_A_1 = cmbr.dup()
+    basic40123156_A_1.rotate(30)
+    basic40123156_A_1.translate(-40, 40)
+    basic40123156_B_1 = cmbr.dup()
+    basic40123156_B_1.rotate(0)
+    basic40123156_B_1.translate(0, 40)
+    basic40123156_B_2 = cmbr.dup()
+    basic40123156_B_2.rotate(60)
+    basic40123156_B_2.translate(20, 40)
+    basic40123156_C_1 = cmbr.dup()
+    basic40123156_C_1.rotate(0)
+    basic40123156_C_1.translate(80, 60)
+    basic40123156_D_1 = cmbr.dup()
+    basic40123156_D_1.rotate(0)
+    basic40123156_D_1.translate(160, 20)
+    basic40123156_D_2 = cmbr.dup()
+    basic40123156_D_2.rotate(90)
+    basic40123156_D_2.translate(160, 0)
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 
     cmbr.appendPath(basic40123156_A_1)
     cmbr.appendPath(basic40123156_B_1)
@@ -71,6 +92,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(basic40123156_C_1)
     cmbr.appendPath(basic40123156_D_1)
     cmbr.appendPath(basic40123156_D_2)
+<<<<<<< HEAD
 
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -80,6 +102,8 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 1 倍
     cgo.render(cmbr, x, y, 1, rot)
 O(0, 0, 0, 0, 0, "purple", True, 4)
+=======
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 '''
     return outstring
     
