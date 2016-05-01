@@ -2,12 +2,12 @@
 from flask import Blueprint, render_template, make_response
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-bg6 = Blueprint('bg6', __name__, url_prefix='/bg6', template_folder='templates')
+bg9 = Blueprint('bg9', __name__, url_prefix='/bg9', template_folder='templates')
 
-    
+
 
 # 展示傳回 Brython 程式
-@bg6.route('/task2')
+@bg9.route('/task2')
 def task2():
     outstring = '''
 <!DOCTYPE html>
@@ -61,23 +61,26 @@ cgo.drawAxes(0, 240, 0, 240, {
 
 
 
+
 '''
     return outstring
-    
 
-@bg6.route('/task2_tail')
+
+
+@bg9.route('/task2_tail')
 def task2_tail():
     return "</body></html>"
     
    
  
-@bg6.route('/task2_ABCD')
-def task2_ABCD():
+@bg9.route('/task2_homework')
+def task2_homework():
     outstring = task2()
-    outstring += "<script type='text/python' src='http://2016spring-bjli0148.rhcloud.com/bg6/scrum1_40323210_A'></script>"
-    outstring += "<script type='text/python' src='http://2016spring-bjli0148.rhcloud.com/bg6/scrum1_40323210_B'></script>"
-    outstring += "<script type='text/python' src='http://2016spring-bjli0148.rhcloud.com/bg6/scrum1_40323210_C'></script>"
-    outstring += "<script type='text/python' src='http://2016spring-bjli0148.rhcloud.com/bg6/scrum1_40323210_D'></script>"
+    outstring += "<script type='text/python' src='http://2016spring-40323250.rhcloud.com/bg9/scrum1_50_1'></script>"
+    outstring += "<script type='text/python' src='http://2016spring-40323230.rhcloud.com/bg9/scrum5_30_1'></script>"
+    outstring += "<script type='text/python' src='http://2016spring-w2651363.rhcloud.com/bg9/scrum6_33_1'></script>"
+    outstring += "<script type='text/python' src='http://2016spring-40323231.rhcloud.com/bg9/scrum4_31_1'></script>"
+    outstring += "<script type='text/python' src='http://2016spring-40323214.rhcloud.com/bg9/scrum3_14_1'></script>"
+    outstring += "<script type='text/python' src='http://2016spring-40323218.rhcloud.com/bg9/scrum2_18_1'></script>"
     outstring += task2_tail()
-    return outstring  
-
+    return outstring

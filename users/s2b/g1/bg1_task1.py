@@ -2,10 +2,17 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 scrum40123133_task1, 並且 url 前綴為 /bg1, 並設定 template 存放目錄
+<<<<<<< HEAD
 bg1_task1 = Blueprint('bg1_task1', __name__, url_prefix='/bg1', template_folder='templates')
 
 # scrum40123133_task1 為完整可以單獨執行的繪圖程式
 @bg1_task1.route('/bg1_task1')
+=======
+scrum40123133_task1 = Blueprint('scrum40123133_task1', __name__, url_prefix='/bg1', template_folder='templates')
+
+# scrum40123133_task1 為完整可以單獨執行的繪圖程式
+@scrum40123133_task1.route('/scrum40123133_task1')
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 def task1():
     outstring = '''
 <!DOCTYPE html>
@@ -63,6 +70,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
 </script>
+<<<<<<< HEAD
 
 <!-- 以協同方式加上 bg1 的 scrum40123156 組員所寫的 task1 程式碼 -->
 <script type="text/python" src="/bg1/scrum40123134_task1"></script>
@@ -73,6 +81,22 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 <script type="text/python" src="/bg1/scrum40123126_task1"></script>
 <script type="text/python" src="/bg1/scrum40123131_task1"></script>
 <script type="text/python" src="/bg1/scrum40123156_task1"></script>
+=======
+<!-- 以協同方式加上 bg1 的 scrum40123126 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/bg1/scrum40123126_task1/"></script>
+<!-- 以協同方式加上 bg1 的 scrum40123129 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/bg1/scrum40123129_task1/"></script>
+<!-- 以協同方式加上 bg1 的 scrum40123131 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/bg1/scrum40123131_task1/"></script>
+<!-- 以協同方式加上 bg1 的 scrum40123133 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/bg1/scrum40123133_task1/"></script>
+<!-- 以協同方式加上 bg1 的 scrum40123134 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/bg1/scrum40123134_task1/"></script>
+<!-- 以協同方式加上 bg1 的 scrum40123144 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/bg1/scrum40123144_task1/"></script>
+<!-- 以協同方式加上 bg1 的 scrum40123156 組員所寫的 task1 程式碼 -->
+<script type="text/python" src="/bg1/scrum40123156_task1/"></script>
+>>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 </body>
 </html>
 '''

@@ -54,6 +54,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     B8 = cmbr.dup()
     B8.rotate(0)
     B8.translate(20*math.cos(30*deg)+80,10)
+<<<<<<< HEAD
     C2 = cmbr.dup()
     C2.rotate(10)
     C2.translate(120, -20)
@@ -69,6 +70,11 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cmbr.appendPath(C2)
     cmbr.appendPath(D5)
     cmbr.appendPath(D8)   
+=======
+    cmbr.appendPath(A5)
+    cmbr.appendPath(B2)
+    cmbr.appendPath(B8)
+>>>>>>> 46882a9e75aae821be5d46ec1a426bfa3abe0746
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
     cmbr.appendPath(hole)
