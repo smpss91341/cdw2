@@ -109,6 +109,15 @@ import users.s2b.g9.scrum6_task40323233
 import users.s2b.g10.task0
 import users.s2b.g10.scrum1_task40328242
 import users.s2b.g10.scrum3_task40323222
+
+#g11
+import users.s2b.g11.task0
+import users.s2b.g11.scrum1_task40323245
+import users.s2b.g11.scrum2_task40323223
+import users.s2b.g11.scrum3_task40323240
+import users.s2b.g11.scrum4_task40323247
+import users.s2b.g11.scrum5_task40323252
+
 =======
 >>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
@@ -521,10 +530,16 @@ app.register_blueprint(users.s2b.g9.scrum6_task40323233.scrum6_task40323233)
 app.register_blueprint(users.s2b.g10.task0.bg10) 
 app.register_blueprint(users.s2b.g10.scrum1_task40328242.scrum1_task40328242)
 app.register_blueprint(users.s2b.g10.scrum3_task40323222.scrum3_task40323222)
-
-
 =======
 >>>>>>> e89a8e1c4ce1add6961e51c30a4712170e0a4ae8
+#g11
+app.register_blueprint(users.s2b.g11.task0.bg11) 
+app.register_blueprint(users.s2b.g11.scrum1_task40323245.scrum1_task40323245)
+app.register_blueprint(users.s2b.g11.scrum2_task40323223.scrum1_task40323223)
+app.register_blueprint(users.s2b.g11.scrum1_task40323240.scrum1_task40323240)
+app.register_blueprint(users.s2b.g11.scrum1_task40323247.scrum1_task40323247)
+app.register_blueprint(users.s2b.g11.scrum1_task40323252.scrum1_task40323252)
+<<<<<<< HEAD
 if __name__ == "__main__":
     app.run()
 
