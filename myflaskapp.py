@@ -25,6 +25,14 @@ import users.s2a.g6.ag6_40323147_task1
 import users.s2a.g6.ag6_40323152_task1
 import users.s2a.g6.ag6_40323155_task1
 import users.s2a.g6.ag6_40323156_task1
+#g8
+import users.s2a.g8.ag8_40323131_task1
+import users.s2a.g8.ag8_40323123_task1
+import users.s2a.g8.ag8_40323145_task1
+import users.s2a.g8.ag8_40323154_task1
+import users.s2a.g8.ag8_40323143_task1
+import users.s2a.g8.ag8_40323137_task1
+import users.s2a.g8.ag8
 #g9
 import users.s2a.g9.ag9
 import users.s2a.g9.ag9_40323132_task1
@@ -437,6 +445,14 @@ app.register_blueprint(users.s2a.g6.ag6_40323147_task1.ag6_40323147)
 app.register_blueprint(users.s2a.g6.ag6_40323152_task1.ag6_40323152)
 app.register_blueprint(users.s2a.g6.ag6_40323155_task1.ag6_40323155)
 app.register_blueprint(users.s2a.g6.ag6_40323156_task1.ag6_40323156)
+#g8
+app.register_blueprint(users.s2a.g8.ag8_40323145_task1.ag8_40323145)
+app.register_blueprint(users.s2a.g8.ag8_40323123_task1.ag8_40323123)
+app.register_blueprint(users.s2a.g8.ag8_40323131_task1.ag8_40323131)
+app.register_blueprint(users.s2a.g8.ag8_40323154_task1.ag8_40323154)
+app.register_blueprint(users.s2a.g8.ag8_40323143_task1.ag8_40323143)
+app.register_blueprint(users.s2a.g8.ag8_40323137_task1.ag8_40323137)
+
 #g9
 app.register_blueprint(users.s2a.g9.ag9.ag9)
 app.register_blueprint(users.s2a.g9.ag9_40323132_task1.ag9_40323132)

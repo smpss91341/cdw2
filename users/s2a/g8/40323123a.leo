@@ -9,33 +9,33 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="123.20160421132757.2"><vh>NewHeadline</vh></v>
-<v t="123.20160421132853.1"><vh>@edit ag8_40323154_task1.py</vh></v>
-<v t="123.20160421132930.1" a="E"><vh>@clean myflaskapp.py</vh>
-<v t="123.20160421132930.2"><vh>myflaskapp declarations</vh></v>
+<v t="123.20160421132759.2"><vh>NewHeadline</vh></v>
+<v t="123.20160421132855.1"><vh>@edit ag8_40323123_task1.py</vh></v>
+<v t="123.20160421132932.1"><vh>@clean myflaskapp.py</vh>
+<v t="123.20160421132932.2"><vh>myflaskapp declarations</vh></v>
 </v>
-<v t="123.20160421190555.2"><vh>Recovered Nodes</vh>
-<v t="123.20160421190555.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="123.20160421190555.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="123.20160421190555.5"><vh>new:myflaskapp declarations</vh></v>
-</v>
-</v>
-<v t="leo.20160428160945.2" a="E"><vh>Recovered Nodes</vh>
-<v t="leo.20160428160945.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="leo.20160428160945.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="leo.20160428160945.5"><vh>new:myflaskapp declarations</vh></v>
+<v t="123.20160421190527.2"><vh>Recovered Nodes</vh>
+<v t="123.20160421190527.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
+<v t="123.20160421190527.4"><vh>old:myflaskapp declarations</vh></v>
+<v t="123.20160421190527.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
-<v t="leo.20160430033725.2" a="E"><vh>Recovered Nodes</vh>
-<v t="leo.20160430033725.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
-<v t="leo.20160430033725.4"><vh>old:myflaskapp declarations</vh></v>
-<v t="leo.20160430033725.5"><vh>new:myflaskapp declarations</vh></v>
+<v t="leo.20160428160920.2"><vh>Recovered Nodes</vh>
+<v t="leo.20160428160920.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
+<v t="leo.20160428160920.4"><vh>old:myflaskapp declarations</vh></v>
+<v t="leo.20160428160920.5"><vh>new:myflaskapp declarations</vh></v>
+</v>
+</v>
+<v t="leo.20160430034658.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20160430034658.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
+<v t="leo.20160430034658.4"><vh>old:myflaskapp declarations</vh></v>
+<v t="leo.20160430034658.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
 </vnodes>
 <tnodes>
-<t tx="123.20160421132757.2"></t>
-<t tx="123.20160421132930.1">@language python
+<t tx="123.20160421132759.2"></t>
+<t tx="123.20160421132932.1">@language python
 @tabwidth -4
 @others
 # 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     app.run()
 
 </t>
-<t tx="123.20160421132930.2"># coding: utf-8
+<t tx="123.20160421132932.2"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -218,8 +218,8 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="123.20160421190555.2"></t>
-<t tx="123.20160421190555.3">(uncached) 123.20160421132930.2
+<t tx="123.20160421190527.2"></t>
+<t tx="123.20160421190527.3">(uncached) 123.20160421132932.2
 Diff...
   # coding: utf-8
   from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
@@ -259,7 +259,7 @@ Diff...
 + import users.s2a.g8.ag8_40323137_task1
   import users.s2a.g8.ag8_40323154_task1
   import users.s2a.g8.ag8_40323143_task1
-- 
+  
   # 二乙
   #g1
   import s2b_files.task1.g1.task0 as bg1_0
@@ -329,7 +329,7 @@ Diff...
   
   
 </t>
-<t tx="123.20160421190555.4"># coding: utf-8
+<t tx="123.20160421190527.4"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -367,6 +367,7 @@ import users.s2a.g8.ag8_40323145_task1
 import users.s2a.g8.ag8_40323137_task1
 import users.s2a.g8.ag8_40323154_task1
 import users.s2a.g8.ag8_40323143_task1
+
 # 二乙
 #g1
 import s2b_files.task1.g1.task0 as bg1_0
@@ -436,7 +437,7 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="123.20160421190555.5"># coding: utf-8
+<t tx="123.20160421190527.5"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -543,8 +544,8 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="leo.20160428160945.2"></t>
-<t tx="leo.20160428160945.3">(uncached) 123.20160421132930.2
+<t tx="leo.20160428160920.2"></t>
+<t tx="leo.20160428160920.3">(uncached) 123.20160421132932.2
 Diff...
   # coding: utf-8
   from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
@@ -654,7 +655,7 @@ Diff...
   
   
 </t>
-<t tx="leo.20160428160945.4"># coding: utf-8
+<t tx="leo.20160428160920.4"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -761,7 +762,7 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="leo.20160428160945.5"># coding: utf-8
+<t tx="leo.20160428160920.5"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -869,8 +870,8 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="leo.20160430033725.2"></t>
-<t tx="leo.20160430033725.3">(uncached) 123.20160421132930.2
+<t tx="leo.20160430034658.2"></t>
+<t tx="leo.20160430034658.3">(uncached) 123.20160421132932.2
 Diff...
   # coding: utf-8
   from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
@@ -981,7 +982,7 @@ Diff...
   
   
 </t>
-<t tx="leo.20160430033725.4"># coding: utf-8
+<t tx="leo.20160430034658.4"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -1089,7 +1090,7 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 </t>
-<t tx="leo.20160430033725.5"># coding: utf-8
+<t tx="leo.20160430034658.5"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
