@@ -8,8 +8,9 @@ scrum4_task40323237 = Blueprint('scrum4_task40323237', __name__, url_prefix='/bg
 @scrum4_task40323237.route('/scrum4_37_1')
 def scrum4_37_1():
     outstring = '''
-    
-    from javascript import JSConstructor
+
+
+from javascript import JSConstructor
 from browser import window
 import math
 cango = JSConstructor(window.Cango)
@@ -130,7 +131,7 @@ x7, y7 = mychain.basic_rot(x6, y6, -0, color="black")
  
     response = make_response(outstring)
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
-    response.headers['Access-Control-Allow-Origin'] = 'http://2016spring-40323250.rhcloud.com'
+    response.headers['Access-Control-Allow-Origin'] = 'http://2016spring-40323200.rhcloud.com'
     response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
     response.headers['Access-Control-Max-Age'] = '86400'
     return response
