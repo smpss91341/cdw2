@@ -131,10 +131,6 @@ x11, y11 = mychain.basic_rot(x10, y10, -180, color="red")
 '''
 
 
-
-
-
-
 # scrum1_task1 為完整可以單獨執行的繪圖程式
 @scrum1_task40323213.route('/scrum1_13_1')
 def scrum1_13_1():
