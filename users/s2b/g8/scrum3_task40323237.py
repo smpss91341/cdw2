@@ -2,15 +2,14 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-scrum1_task40323213 = Blueprint('scrum1_task40323213', __name__, url_prefix='/bg8', template_folder='templates')
-
+scrum3_task40323237 = Blueprint('scrum3_task40323237', __name__, url_prefix='/bg8', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40323213.route('/scrum1_13_1')
-def scrum1_13_1():
+@scrum3_task40323237.route('/scrum3_37_1')
+def scrum3_37_1():
     outstring = '''
-    
-    
+
+
 from javascript import JSConstructor
 from browser import window
 import math
@@ -107,37 +106,40 @@ class chain():
 mychain = chain()
 
 
-# 畫 A
-# 左邊四個垂直單元
-x1, y1 = mychain.basic_rot(0, 0, 90, color="red")
-x2, y2 = mychain.basic_rot(x1, y1, 90, color="red")
-x3, y3 = mychain.basic_rot(x2, y2, 80, color="red")
-x4, y4 = mychain.basic_rot(x3, y3, 70, color="red")
-# 上方一個水平單元
-x5, y5 = mychain.basic_rot(x4, y4, 0, color="red")
-# 右斜 -70度
-x6, y6 = mychain.basic_rot(x5, y5, -70, color="red")
-x7, y7 = mychain.basic_rot(x6, y6, -80, color="red")
-# 右中垂直向下單元
-x8, y8 = mychain.basic_rot(x7, y7, -90, color="red")
-# -90 度
-x9, y9 = mychain.basic_rot(x8, y8, -90, color="red")
-# -180
-x10, y10 = mychain.basic_rot(x8, y8, -180, color="red")
-# -180
-x11, y11 = mychain.basic_rot(x10, y10, -180, color="red")
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90, color="black")
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80, color="black")
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30, color="black")
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0, color="black")
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80, color="black")
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30, color="black")
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0, color="black")
+ 
  
 
 '''
-
-
-
+ 
+ 
+    response = make_response(outstring)
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Origin'] = 'http://2016spring-40323200.rhcloud.com'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
+    response.headers['Access-Control-Max-Age'] = '86400'
+    return response
 
 
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@scrum1_task40323213.route('/scrum1_13_ABCD')
-def scrum1_13_ABCD():
+@scrum3_task40323237.route('/scrum3_37_C')
+def scrum3_37_C():
     outstring = '''
 <!DOCTYPE html>  
 <html>
@@ -255,25 +257,22 @@ class chain():
 mychain = chain()
 
 
-# 畫 A
-# 左邊四個垂直單元
-x1, y1 = mychain.basic_rot(0, 0, 90, color="red")
-x2, y2 = mychain.basic_rot(x1, y1, 90, color="red")
-x3, y3 = mychain.basic_rot(x2, y2, 80, color="red")
-x4, y4 = mychain.basic_rot(x3, y3, 70, color="red")
-# 上方一個水平單元
-x5, y5 = mychain.basic_rot(x4, y4, 0, color="red")
-# 右斜 -70度
-x6, y6 = mychain.basic_rot(x5, y5, -70, color="red")
-x7, y7 = mychain.basic_rot(x6, y6, -80, color="red")
-# 右中垂直向下單元
-x8, y8 = mychain.basic_rot(x7, y7, -90, color="red")
-# -90 度
-x9, y9 = mychain.basic_rot(x8, y8, -90, color="red")
-# -180
-x10, y10 = mychain.basic_rot(x8, y8, -180, color="red")
-# -180
-x11, y11 = mychain.basic_rot(x10, y10, -180, color="red")
+# 畫 C
+# 上半部
+# 左邊中間垂直起點, 圓心位於線段中央, y 方向再向上平移兩個鏈條圓心距單位
+x1, y1 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), 90, color="black")
+# 上方轉 80 度
+x2, y2 = mychain.basic_rot(x1, y1, 80, color="black")
+# 上方轉 30 度
+x3, y3 = mychain.basic_rot(x2, y2, 30, color="black")
+# 上方水平
+x4, y4 = mychain.basic_rot(x3, y3, 0, color="black")
+# 下半部, 從起點開始 -80 度
+x5, y5 = mychain.basic_rot(0+65*2, -10+10+20*math.sin(80*deg)+20*math.sin(30*deg), -80, color="black")
+# 下斜 -30 度
+x6, y6 = mychain.basic_rot(x5, y5, -30, color="black")
+# 下方水平單元
+x7, y7 = mychain.basic_rot(x6, y6, -0, color="black")
  
  
 </script>
