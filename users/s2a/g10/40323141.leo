@@ -22,7 +22,7 @@
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
 <v t="amd.20160329174131.1" a="E"><vh>@path ag10</vh>
-<v t="amd.20160329174139.1"><vh>@clean 40323141-20160329.md</vh></v>
+<v t="amd.20160329174139.1"><vh>@clean 40323141-20160509.md</vh></v>
 </v>
 </v>
 </v>
@@ -49,18 +49,26 @@ g.es("admin pelican 執行完畢")
 </t>
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
-Title: 40323141-回報 ag10 40323141 初步繪圖主機與連結
+Title: 40323141-回報 ag10 40323141 期中報告
 Category: ag10
 Tags: 40323141, task1
 Author: 40323141
 @others
-ag10 組員 40323141 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323141.leo 並且完成 Task1 的繪圖藍圖建立與註冊
+組別繪圖:http://g10-40323139.rhcloud.com/ag10/scrum1_task1
+
+組別圖檔:&lt;img src="http://i.imgur.com/rLCRdy0.png="100%"/&gt;
+
+個人圖檔:&lt;img src="http://i.imgur.com/rFFwIj0.png="100%"/&gt;
+
+期中報告心得:
+這學期教的東西很困難，一定要做筆記，不然這次做了下禮拜又會忘記，而且裡面的程式也相當複雜，需要用到的網站也是很多，像是GITHUB、OPENSHIFT等等，中間也是很多次不會用，後來問了班上比較厲害的同學，才大概懂要如何修改程式。
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
 目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://g10-40323139.rhcloud.com/ag10/scrum1_task1"&gt;http://g10-40323139.rhcloud.com/ag10/scrum1_task1&lt;/a&gt;
 
 其中已經在主程式中導入 scrum1_task1.py 中的 scrum1_task1 藍圖變數, 並且複製範例中的鏈條繪圖 ,準備進一步完成 Task1 協同任務.
+
 </t>
 <t tx="amd.20160329211330.1"></t>
 </tnodes>
