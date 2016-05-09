@@ -21,7 +21,7 @@
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
 <v t="amd.20160329174131.1" a="E"><vh>@path ag4</vh>
-<v t="amd.20160329174139.1"><vh>@clean 40323136-20160411.md</vh></v>
+<v t="amd.20160329174139.1"><vh>@clean 40323136-0509.md</vh></v>
 </v>
 </v>
 </v>
@@ -48,13 +48,28 @@ g.es("admin pelican 執行完畢")
 </t>
 <t tx="amd.20160329174131.1"></t>
 <t tx="amd.20160329174139.1">@language md
-Title: 40323136-回報 ag4 40323136 初步繪圖主機與連結
+Title: 40323136-回報 ag4 40323136 期中報告
 Category: ag4
 Tags: 40323136, task1
 Author: 40323136
+
 @others
 ag4 組員 40323136 已經在 cdw2 倉儲中的 master 分支建立對應的組員 40323136.leo 並且完成 Task1 的繪圖藍圖建立與註冊
 
+組別繪圖 :http://cdw2fork-40323138.rhcloud.com/ag4/task1
+個人繪圖 : http://cdw2fork-40323136.rhcloud.com/ag4_40323136abcd/abcd
+
+&lt;img src="http://imgur.com/nrdvmDL="100%" /&gt;
+
+
+40323109 red   
+40323130 Orange 
+40323135lightred
+40323136lightpink
+40323138blue
+40323144balck
+心得報告:
+這次的期中作業相比以往，難上許多，但是基於團隊的合作，以及好同學的幫忙，總算是不負期望，弄出協同程式。  .
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
 目前所完成的 OpenShift 對應繪圖連結為: &lt;a href="http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1"&gt;http://cdw2-ag100.rhcloud.com/ag100/scrum1_task1&lt;/a&gt;
