@@ -108,7 +108,7 @@ mychain = chain()
 
 
 # 畫 A
-# 左邊四個垂直單元
+# 左邊4個垂直單元
 x1, y1 = mychain.basic_rot(0, 0, 90, color="red")
 x2, y2 = mychain.basic_rot(x1, y1, 90, color="red")
 x3, y3 = mychain.basic_rot(x2, y2, 80, color="red")
